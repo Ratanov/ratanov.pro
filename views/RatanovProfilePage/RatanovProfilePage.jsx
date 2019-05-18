@@ -149,19 +149,19 @@ class RatanovProfilePage extends React.Component {
                               <img
                                 alt="..."
                                 src={studio2}
-                                className={navImageClasses}
+                                className={navImageClasses+" imgRounded0"}
                               />
                             </GridItem>
                             <GridItem xs={12} sm={12} md={4}>
                               <img
                                 alt="..."
                                 src={studio5}
-                                className={navImageClasses}
+                                className={navImageClasses+" imgRounded0"}
                               />
                               <img
                                 alt="..."
                                 src={studio4}
-                                className={navImageClasses}
+                                className={navImageClasses+" imgRounded0"}
                               />
                             </GridItem>
                           </GridContainer>
@@ -176,29 +176,29 @@ class RatanovProfilePage extends React.Component {
                               <img
                                 alt="..."
                                 src={work1}
-                                className={navImageClasses}
+                                className={navImageClasses+" imgRounded0"}
                               />
                               <img
                                 alt="..."
                                 src={work2}
-                                className={navImageClasses}
+                                className={navImageClasses+" imgRounded0"}
                               />
                               <img
                                 alt="..."
                                 src={work3}
-                                className={navImageClasses}
+                                className={navImageClasses+" imgRounded0"}
                               />
                             </GridItem>
                             <GridItem xs={12} sm={12} md={4}>
                               <img
                                 alt="..."
                                 src={work4}
-                                className={navImageClasses}
+                                className={navImageClasses+" imgRounded0"}
                               />
                               <img
                                 alt="..."
                                 src={work5}
-                                className={navImageClasses}
+                                className={navImageClasses+" imgRounded0"}
                               />
                             </GridItem>
                           </GridContainer>
@@ -213,29 +213,29 @@ class RatanovProfilePage extends React.Component {
                               <img
                                 alt="..."
                                 src={work4}
-                                className={navImageClasses}
+                                className={navImageClasses+" imgRounded0"}
                               />
                               <img
                                 alt="..."
                                 src={studio3}
-                                className={navImageClasses}
+                                className={navImageClasses+" imgRounded0"}
                               />
                             </GridItem>
                             <GridItem xs={12} sm={12} md={4}>
                               <img
                                 alt="..."
                                 src={work2}
-                                className={navImageClasses}
+                                className={navImageClasses+" imgRounded0"}
                               />
                               <img
                                 alt="..."
                                 src={work1}
-                                className={navImageClasses}
+                                className={navImageClasses+" imgRounded0"}
                               />
                               <img
                                 alt="..."
                                 src={studio1}
-                                className={navImageClasses}
+                                className={navImageClasses+" imgRounded0"}
                               />
                             </GridItem>
                           </GridContainer>
