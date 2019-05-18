@@ -31,7 +31,10 @@ const parallaxStyle = {
     height: "380px"
   },
   big: {
-      height: "100vh"
+    height: "100vh"
+  },
+  smallprofile: {
+    height: "300px"
   }
 };
 

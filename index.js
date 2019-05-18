@@ -8,7 +8,7 @@ import "assets/scss/style.scss?v=1.0.0";
 
 // pages for this product
 import LandingPage from "views/LandingPage/LandingPage.jsx";
-import RatanovProfilePage from "views/RatanovProfilePage/ProfilePage.jsx";
+import RatanovProfilePage from "views/RatanovProfilePage/RatanovProfilePage.jsx";
 import Components from "views/Components/Components.jsx";
 import ProfilePage from "views/ProfilePage/ProfilePage.jsx";
 import LoginPage from "views/LoginPage/LoginPage.jsx";

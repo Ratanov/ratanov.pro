@@ -21,7 +21,7 @@ import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.js
 import ProductSection from "./Sections/ProductSection.jsx";
 import TeamSection from "./Sections/TeamSection.jsx";
 import WorkSection from "./Sections/WorkSection.jsx";
-import PortfolioSection from "./Sections/PortfolioSection.jsx";
+// import PortfolioSection from "./Sections/PortfolioSection.jsx";
 
 const dashboardRoutes = [];
 
@@ -84,11 +84,11 @@ class LandingPage extends React.Component {
             </GridContainer>
           </div>
         </Parallax>
-        <div className={classNames(classes.main, classes.mainRaised)+ " container-mobile"}>
+        <div className={classNames(classes.main, classes.mainRaised)+" container-mobile"}>
           <div className={classes.container}>
             <ProductSection />
             <TeamSection />
-            <PortfolioSection />
+            {/*<PortfolioSection />*/}
             <WorkSection />
           </div>
         </div>
