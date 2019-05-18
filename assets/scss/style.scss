@@ -1,0 +1,22 @@
+.m-0 {
+  margin: 0!important;
+}
+
+.mr-1 {
+  margin-right: 1em!important;
+}
+
+.mr-3 {
+  margin-right: 3em!important;
+}
+
+.d-none {
+  display: none!important;
+  color: rebeccapurple!important;
+}
+
+@media (max-width: 978px) {
+  .container-mobile {
+    margin: -60px 15px 0px!important;
+  }
+}
