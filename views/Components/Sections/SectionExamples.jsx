@@ -22,7 +22,7 @@ class SectionExamples extends React.Component {
         <div className={classes.container}>
           <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={6}>
-              <Link to="landing-page" className={classes.link}>
+              {/*<Link to="landing-page" className={classes.link}>*/}
                 <img
                   src={landing}
                   alt="..."
@@ -37,7 +37,7 @@ class SectionExamples extends React.Component {
                 <Button color="primary" size="lg" simple>
                   View landing page
                 </Button>
-              </Link>
+              {/*</Link>*/}
             </GridItem>
             <GridItem xs={12} sm={12} md={6}>
               <Link to="profile-page" className={classes.link}>
