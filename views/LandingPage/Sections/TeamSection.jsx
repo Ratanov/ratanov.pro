@@ -1,4 +1,6 @@
 import React from "react";
+// react components for routing our app without refresh
+import { Link } from "react-router-dom";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
@@ -17,7 +19,7 @@ import CardFooter from "components/Card/CardFooter.jsx";
 import teamStyle from "assets/jss/material-kit-react/views/landingPageSections/teamStyle.jsx";
 
 import team1 from "assets/img/faces/avatar.jpg";
-import team2 from "assets/img/faces/christian.jpg";
+import ratanov from "assets/img/faces/ratanov.png";
 import team3 from "assets/img/faces/kendall.jpg";
 
 class TeamSection extends React.Component {
@@ -78,11 +80,16 @@ class TeamSection extends React.Component {
             </GridItem>
             <GridItem xs={12} sm={12} md={4}>
               <Card plain>
+
                 <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                  <img src={team2} alt="..." className={imageClasses} />
+                  <Link to={"/olegratanov"} className={classes.link}>
+                    <img src={ratanov} alt="..." className={imageClasses} />
+                  </Link>
                 </GridItem>
                 <h4 className={classes.cardTitle}>
-                  Christian Louboutin
+                  <Link to={"/olegratanov"} className={classes.link}>
+                    Олег Ратанов
+                  </Link>
                   <br />
                   <small className={classes.smallTitle}>Designer</small>
                 </h4>
