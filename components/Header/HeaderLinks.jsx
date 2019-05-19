@@ -1,4 +1,3 @@
-/*eslint-disable*/
 import React from "react";
 // react components for routing our app without refresh
 import { Link } from "react-router-dom";
@@ -74,7 +73,7 @@ function HeaderLinks({ ...props }) {
             </Button>
         </ListItem>
         <ListItem className={classes.listItem + " mr-3"}>
-            <ScrollLink className={classes.navLink} to="scroll-to-contact" spy={true} smooth={true} duration={500}>Контакты</ScrollLink>
+          <Link to={"/contact"} className={classes.navLink}>Контакты</Link>
         </ListItem>
       {/*<ListItem className={classes.listItem}>*/}
         {/*<Button*/}

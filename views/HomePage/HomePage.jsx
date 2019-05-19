@@ -11,7 +11,6 @@ import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import Button from "components/CustomButtons/Button.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 
@@ -23,8 +22,6 @@ import TeamSection from "./Sections/TeamSection.jsx";
 import WorkSection from "./Sections/WorkSection.jsx";
 // import PortfolioSection from "./Sections/PortfolioSection.jsx";
 import ScrollToTopOnMount from "components/ScrollToTop/ScrollToTop.jsx";
-
-const dashboardRoutes = [];
 
 class LandingPage extends React.Component {
   render() {

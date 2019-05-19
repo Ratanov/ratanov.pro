@@ -31,7 +31,7 @@ class LandingPage extends React.Component {
     return (
       <div>
         <Header
-            // routes={dashboardRoutes}
+            routes={dashboardRoutes}
             brand="Ratanov.pro"
             rightLinks={<HeaderLinks />}
             fixed

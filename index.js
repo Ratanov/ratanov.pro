@@ -13,6 +13,7 @@ import RatanovProfilePage from "views/RatanovProfilePage/RatanovProfilePage.jsx"
 import Components from "views/Components/Components.jsx";
 import ProfilePage from "views/ProfilePage/ProfilePage.jsx";
 import LoginPage from "views/LoginPage/LoginPage.jsx";
+import ContactPage from "./views/ContactPage/ContactPage.jsx";
 
 var hist = createBrowserHistory();
 
@@ -24,6 +25,7 @@ ReactDOM.render(
       <Route path="/components" component={Components} />
       <Route path="/landing-page" component={LandingPage} />
       <Route path="/olegratanov" component={RatanovProfilePage} />
+      <Route path="/contact" component={ContactPage} />
       <Route path="/" component={HomePage} />
     </Switch>
   </Router>,
