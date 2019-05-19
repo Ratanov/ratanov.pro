@@ -22,6 +22,7 @@ import ProductSection from "./Sections/ProductSection.jsx";
 import TeamSection from "./Sections/TeamSection.jsx";
 import WorkSection from "./Sections/WorkSection.jsx";
 // import PortfolioSection from "./Sections/PortfolioSection.jsx";
+import ScrollToTopOnMount from "components/ScrollToTop/ScrollToTop.jsx";
 
 const dashboardRoutes = [];
 
@@ -30,9 +31,7 @@ class LandingPage extends React.Component {
     const { classes, ...rest } = this.props;
     return (
       <div>
-        {/*<Header*/}
-          {/*routes={dashboardRoutes}*/}
-        {/*/>*/}
+        <ScrollToTopOnMount />
           <Header
               brand="Ratanov.pro"
               rightLinks={<HeaderLinks />}
@@ -44,32 +43,6 @@ class LandingPage extends React.Component {
               }}
               {...rest}
           />
-        {/*<Parallax filter image={require("assets/img/landing-bg.jpg")}>*/}
-          {/*<div className={classes.container}>*/}
-            {/*<GridContainer>*/}
-              {/*<GridItem xs={12} sm={12} md={6}>*/}
-                {/*<h1 className={classes.title}>Your Story Starts With Us.</h1>*/}
-                {/*<h4>*/}
-                  {/*Every landing page needs a small description after the big*/}
-                  {/*bold title, that's why we added this text here. Add here all*/}
-                  {/*the information that can make you or your product create the*/}
-                  {/*first impression.*/}
-                {/*</h4>*/}
-                {/*<br />*/}
-                {/*<Button*/}
-                  {/*color="danger"*/}
-                  {/*size="lg"*/}
-                  {/*href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"*/}
-                  {/*target="_blank"*/}
-                  {/*rel="noopener noreferrer"*/}
-                {/*>*/}
-                  {/*<i className="fas fa-play" />*/}
-                  {/*Watch video*/}
-                {/*</Button>*/}
-              {/*</GridItem>*/}
-            {/*</GridContainer>*/}
-          {/*</div>*/}
-        {/*</Parallax>*/}
         <Parallax big filter image={require("assets/img/bg4.jpg")}>
           <div className={classes.container}>
             <GridContainer>

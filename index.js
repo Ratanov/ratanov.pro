@@ -20,8 +20,8 @@ ReactDOM.render(
   <Router history={hist}>
     <Switch>
       <Route path="/profile-page" component={ProfilePage} />
-      {/*<Route path="/login-page" component={LoginPage} />*/}
-      {/*<Route path="/components" component={Components} />*/}
+      <Route path="/login-page" component={LoginPage} />
+      <Route path="/components" component={Components} />
       <Route path="/landing-page" component={LandingPage} />
       <Route path="/olegratanov" component={RatanovProfilePage} />
       <Route path="/" component={HomePage} />

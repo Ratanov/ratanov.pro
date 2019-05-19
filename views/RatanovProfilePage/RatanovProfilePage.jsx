@@ -33,6 +33,8 @@ import work5 from "assets/img/examples/clem-onojegaw.jpg";
 
 import ratanovProfilePageStyle from "assets/jss/material-kit-react/views/ratanovProfilePageStyle";
 
+import ScrollToTopOnMount from "components/ScrollToTop/ScrollToTop.jsx";
+
 class RatanovProfilePage extends React.Component {
   render() {
     const { classes, ...rest } = this.props;
@@ -44,6 +46,7 @@ class RatanovProfilePage extends React.Component {
     const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
     return (
       <div>
+        <ScrollToTopOnMount />
         <Header
           brand="Ratanov.pro"
           rightLinks={<HeaderLinks />}
