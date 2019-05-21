@@ -21,6 +21,7 @@ import ProductSection from "./Sections/ProductSection.jsx";
 import WorkSection from "./Sections/WorkSection.jsx";
 // import PortfolioSection from "./Sections/PortfolioSection.jsx";
 import ScrollToTopOnMount from "components/ScrollToTop/ScrollToTop.jsx";
+// react-scroll https://github.com/fisshy/react-scroll
 import { Link as ScrollLink } from 'react-scroll'
 
 class HomePage extends React.Component {
