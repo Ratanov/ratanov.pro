@@ -14,32 +14,32 @@ import GridItem from "components/Grid/GridItem.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 
-import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.jsx";
+import homePageStyle from "assets/jss/material-kit-react/views/homePageStyle.jsx";
 
 // Sections for this page
 import ProductSection from "./Sections/ProductSection.jsx";
-import TeamSection from "./Sections/TeamSection.jsx";
 import WorkSection from "./Sections/WorkSection.jsx";
 // import PortfolioSection from "./Sections/PortfolioSection.jsx";
 import ScrollToTopOnMount from "components/ScrollToTop/ScrollToTop.jsx";
+import { Link as ScrollLink } from 'react-scroll'
 
-class LandingPage extends React.Component {
+class HomePage extends React.Component {
   render() {
     const { classes, ...rest } = this.props;
     return (
       <div>
         <ScrollToTopOnMount />
-          <Header
-              brand="Ratanov.pro"
-              rightLinks={<HeaderLinks />}
-              fixed
-              color="transparent"
-              changeColorOnScroll={{
-                  height: 300,
-                  color: "white"
-              }}
-              {...rest}
-          />
+        <Header
+            brand="Ratanov.pro"
+            rightLinks={<HeaderLinks />}
+            fixed
+            color="transparent"
+            changeColorOnScroll={{
+                height: 300,
+                color: "white"
+            }}
+            {...rest}
+        />
         <Parallax big filter image={require("assets/img/bg4.jpg")}>
           <div className={classes.container}>
             <GridContainer>
@@ -52,21 +52,26 @@ class LandingPage extends React.Component {
                 </div>
               </GridItem>
             </GridContainer>
+            <ScrollLink
+              className={classes.scrolldown}
+              to="scroll-to-container"
+              spy={true}
+              smooth={true}
+              duration={1000} >
+              <i className={"fas fa-chevron-down icon-jump"} />
+            </ScrollLink>
           </div>
         </Parallax>
-        <div className={classNames(classes.main, classes.mainRaised)+" container-mobile"}>
+        <div name="scroll-to-container" className={classNames(classes.main, classes.mainRaised)+" container-mobile"}>
           <div className={classes.container}>
             <ProductSection />
-            <TeamSection />
-            {/*<PortfolioSection />*/}
             <WorkSection />
           </div>
         </div>
         <Footer />
-
       </div>
     );
   }
 }
 
-export default withStyles(landingPageStyle)(LandingPage);
+export default withStyles(homePageStyle)(HomePage);

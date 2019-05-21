@@ -157,6 +157,12 @@ class ContactPage extends React.Component {
                   </form>
                 </Card>
               </GridItem>
+              <GridItem xs={12} sm={12} md={8}>
+                <Card className={classes[this.state.cardAnimaton]}>
+                  <CardBody>
+                  </CardBody>
+                </Card>
+              </GridItem>
             </GridContainer>
           </div>
           <Footer whiteFont />

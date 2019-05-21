@@ -49,7 +49,7 @@ function HeaderLinks({ ...props }) {
       {/*</ListItem>*/}
 
         <ListItem className={classes.listItem + " mr-1"}>
-          <ScrollLink className={classes.navLink} to="scroll-to-about-us" spy={true} smooth={true} duration={500} >О нас</ScrollLink>
+          <Link to="/about" className={classes.navLink}>О нас</Link>
         </ListItem>
 
         <ListItem className={classes.listItem + " mr-1"}>
@@ -62,18 +62,8 @@ function HeaderLinks({ ...props }) {
                 Услуги
             </Button>
         </ListItem>
-        <ListItem className={classes.listItem + " mr-1"}>
-            <Button
-                href="#"
-                color="transparent"
-                target="_self"
-                className={classes.navLink}
-            >
-               Портфолио
-            </Button>
-        </ListItem>
         <ListItem className={classes.listItem + " mr-3"}>
-          <Link to={"/contact"} className={classes.navLink}>Контакты</Link>
+          <Link to="/contact" className={classes.navLink}>Контакты</Link>
         </ListItem>
       {/*<ListItem className={classes.listItem}>*/}
         {/*<Button*/}

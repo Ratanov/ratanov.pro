@@ -30,8 +30,8 @@ class ProductSection extends React.Component {
           <GridContainer>
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
-                title="Индивидуальность"
-                description="Каждый проект мы рассматриваем с неординарной точки зрения. Учитывая специфику задания, делаем проект самостоятельным, своеобразным и непохожим на других."
+                title="1"
+                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
                 icon={Fingerprint}
                 iconColor="info"
                 vertical
@@ -39,7 +39,7 @@ class ProductSection extends React.Component {
             </GridItem>
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
-                title="Сотрудничество"
+                title="2"
                 description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
                 icon={Cake}
                 iconColor="warning"
@@ -48,7 +48,7 @@ class ProductSection extends React.Component {
             </GridItem>
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
-                title="Любовь к делу"
+                title="3"
                 description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
                 icon={Favorite}
                 iconColor="rose"

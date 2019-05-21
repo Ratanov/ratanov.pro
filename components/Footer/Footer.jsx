@@ -1,5 +1,7 @@
 /*eslint-disable*/
 import React from "react";
+// react components for routing our app without refresh
+import { Link } from "react-router-dom";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
 // nodejs library that concatenates classes
@@ -27,47 +29,21 @@ function Footer({ ...props }) {
         <div className={classes.left}>
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/"
-                className={classes.block}
-                target="_blank"
-              >
-                Creative Tim
-              </a>
+              <Link to="/about" className={classes.block}>О нас</Link>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/presentation"
-                className={classes.block}
-                target="_blank"
-              >
-                About us
-              </a>
+              <Link to="/landing-page" className={classes.block}>landing-page</Link>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <a
-                href="http://blog.creative-tim.com/"
-                className={classes.block}
-                target="_blank"
-              >
-                Blog
-              </a>
+              <Link to="/components" className={classes.block}>components</Link>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/license"
-                className={classes.block}
-                target="_blank"
-              >
-                Licenses
-              </a>
+              <Link to="/login-page" target="_blank" className={classes.block}>login-page</Link>
             </ListItem>
           </List>
         </div>
         <div className={classes.right}>
-          &copy; 2015–{1900 + new Date().getYear()}{" "}
-          <Favorite className={classes.icon} />
-            {" "}Веб-студия{" "}
+          &copy; 2015–{1900 + new Date().getYear()}{" "}Веб-студия{" "}
           <a
             href="https://www.ratanov.pro"
             className={aClasses}
