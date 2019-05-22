@@ -29,7 +29,7 @@ function Footer({ ...props }) {
         <div className={classes.left}>
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
-              <Link to="/about" className={classes.block}>О нас</Link>
+              <Link to="/about" className={classes.block+" pl-0"}>О нас</Link>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <Link to="/landing-page" className={classes.block}>landing-page</Link>
@@ -37,7 +37,7 @@ function Footer({ ...props }) {
             <ListItem className={classes.inlineBlock}>
               <Link to="/components" className={classes.block}>components</Link>
             </ListItem>
-            <ListItem className={classes.inlineBlock}>
+            <ListItem className={classes.inlineBlock+ " pr-0"}>
               <Link to="/login-page" target="_blank" className={classes.block}>login-page</Link>
             </ListItem>
           </List>

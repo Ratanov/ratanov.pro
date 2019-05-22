@@ -35,6 +35,9 @@ const parallaxStyle = {
   },
   smallprofile: {
     height: "300px"
+  },
+  smallabout: {
+    height: "200px"
   }
 };
 

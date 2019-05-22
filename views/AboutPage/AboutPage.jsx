@@ -32,7 +32,7 @@ class AboutPage extends React.Component {
           }}
           {...rest}
         />
-        <Parallax smallprofile filter image={require("assets/img/bg2.jpg")} />
+        <Parallax smallabout filter image={require("assets/img/bg2.jpg")} />
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
             <TeamSection />

@@ -44,7 +44,8 @@ class Parallax extends React.Component {
       image,
       small,
       big,
-      smallprofile
+      smallprofile,
+      smallabout
     } = this.props;
     const parallaxClasses = classNames({
       [classes.parallax]: true,
@@ -52,6 +53,7 @@ class Parallax extends React.Component {
       [classes.small]: small,
       [classes.big]: big,
       [classes.smallprofile]: smallprofile,
+      [classes.smallabout]: smallabout,
       [className]: className !== undefined
     });
     return (

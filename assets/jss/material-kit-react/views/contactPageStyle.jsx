@@ -38,8 +38,8 @@ const contactPageStyle = {
       color: "#FFFFFF"
     },
     "& footer": {
-      position: "absolute",
-      bottom: "0",
+      position: "relative",
+      // bottom: "0",
       width: "100%"
     }
   },
@@ -84,6 +84,9 @@ const contactPageStyle = {
   },
   inputIconsColor: {
     color: "#495057"
+  },
+  contactFooter: {
+    position: "relative!important"
   }
 };
 
