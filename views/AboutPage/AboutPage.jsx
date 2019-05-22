@@ -34,12 +34,12 @@ class AboutPage extends React.Component {
           fixed
           color="transparent"
           changeColorOnScroll={{
-            height: 300,
+            height: 100,
             color: "white"
           }}
           {...rest}
         />
-        <Parallax small filter image={require("assets/img/profile-bg.jpg")} />
+        <Parallax smallprofile filter image={require("assets/img/bg2.jpg")} />
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
             <TeamSection />

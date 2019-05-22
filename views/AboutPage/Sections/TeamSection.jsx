@@ -39,7 +39,7 @@ class TeamSection extends React.Component {
               <Card plain>
 
                 <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                  <Link to="/oleg-ratanov" className={classes.link}>
+                  <Link to="/about/oleg-ratanov" className={classes.link}>
                     <img src={ratanov} alt="..." className={imageClasses} />
                   </Link>
                 </GridItem>
