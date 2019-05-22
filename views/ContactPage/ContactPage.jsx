@@ -2,7 +2,6 @@ import React from "react";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import InputAdornment from "@material-ui/core/InputAdornment";
-import Icon from "@material-ui/core/Icon";
 // @material-ui/icons
 import Email from "@material-ui/icons/Email";
 import People from "@material-ui/icons/People";
@@ -64,45 +63,59 @@ class ContactPage extends React.Component {
         >
           <div className={classes.container}>
             <GridContainer justify="center">
+              <GridItem xs={12} sm={12} md={8}>
+                <Card className={classes[this.state.cardAnimaton]+" get-in-touch"}>
+                  <h1>Get in Touch</h1>
+                  <p>You need more information? Check what other persons are saying about our product. They are very happy with their purchase.</p>
+                  <b>Find us at the office</b>
+                  <p>Bld Mihail Kogalniceanu, nr. 8,<br />
+                  7652 Bucharest,<br />
+                  Romania</p>
+                  <br />
+                  <b>Give us a ring</b>
+                  <p>Michael Jordan<br />
+                    +40 762 321 762<br />
+                    Mon - Fri, 8:00-22:00</p>
+                </Card>
+              </GridItem>
               <GridItem xs={12} sm={12} md={4}>
                 <Card className={classes[this.state.cardAnimaton]}>
                   <form className={classes.form}>
                     <CardHeader color="primary" className={classes.cardHeader}>
-                      <h4>Login</h4>
-                      <div className={classes.socialLine}>
-                        <Button
-                          justIcon
-                          href="#pablo"
-                          target="_blank"
-                          color="transparent"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <i className={"fab fa-twitter"} />
-                        </Button>
-                        <Button
-                          justIcon
-                          href="#pablo"
-                          target="_blank"
-                          color="transparent"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <i className={"fab fa-facebook"} />
-                        </Button>
-                        <Button
-                          justIcon
-                          href="#pablo"
-                          target="_blank"
-                          color="transparent"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <i className={"fab fa-google-plus-g"} />
-                        </Button>
-                      </div>
+                      <h4>Напишите нам</h4>
+                      {/*<div className={classes.socialLine}>*/}
+                        {/*<Button*/}
+                          {/*justIcon*/}
+                          {/*href="#pablo"*/}
+                          {/*target="_blank"*/}
+                          {/*color="transparent"*/}
+                          {/*onClick={e => e.preventDefault()}*/}
+                        {/*>*/}
+                          {/*<i className={"fab fa-twitter"} />*/}
+                        {/*</Button>*/}
+                        {/*<Button*/}
+                          {/*justIcon*/}
+                          {/*href="#pablo"*/}
+                          {/*target="_blank"*/}
+                          {/*color="transparent"*/}
+                          {/*onClick={e => e.preventDefault()}*/}
+                        {/*>*/}
+                          {/*<i className={"fab fa-facebook"} />*/}
+                        {/*</Button>*/}
+                        {/*<Button*/}
+                          {/*justIcon*/}
+                          {/*href="#pablo"*/}
+                          {/*target="_blank"*/}
+                          {/*color="transparent"*/}
+                          {/*onClick={e => e.preventDefault()}*/}
+                        {/*>*/}
+                          {/*<i className={"fab fa-google-plus-g"} />*/}
+                        {/*</Button>*/}
+                      {/*</div>*/}
                     </CardHeader>
-                    <p className={classes.divider}>Or Be Classical</p>
                     <CardBody>
                       <CustomInput
-                        labelText="First Name..."
+                        labelText="Имя"
                         id="first"
                         formControlProps={{
                           fullWidth: true
@@ -117,7 +130,7 @@ class ContactPage extends React.Component {
                         }}
                       />
                       <CustomInput
-                        labelText="Email..."
+                        labelText="Email"
                         id="email"
                         formControlProps={{
                           fullWidth: true
@@ -132,35 +145,24 @@ class ContactPage extends React.Component {
                         }}
                       />
                       <CustomInput
-                        labelText="Password"
-                        id="pass"
+                        labelText="Сообщение"
+                        id="message"
                         formControlProps={{
-                          fullWidth: true
+                          fullWidth: true,
+                          className: classes.textArea
                         }}
                         inputProps={{
-                          type: "password",
-                          endAdornment: (
-                            <InputAdornment position="end">
-                              <Icon className={classes.inputIconsColor}>
-                                lock_outline
-                              </Icon>
-                            </InputAdornment>
-                          )
+                          multiline: true,
+                          rows: 5
                         }}
                       />
                     </CardBody>
                     <CardFooter className={classes.cardFooter}>
-                      <Button simple color="primary" size="lg">
-                        Get started
+                      <Button color="primary" size="lg">
+                        Отправить
                       </Button>
                     </CardFooter>
                   </form>
-                </Card>
-              </GridItem>
-              <GridItem xs={12} sm={12} md={8}>
-                <Card className={classes[this.state.cardAnimaton]}>
-                  <CardBody>
-                  </CardBody>
                 </Card>
               </GridItem>
             </GridContainer>
