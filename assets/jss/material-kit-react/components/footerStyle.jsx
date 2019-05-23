@@ -38,7 +38,11 @@ const footerStyle = {
       color: "#FFFFFF"
     }
   },
-  container,
+  container: {
+    ...container,
+    paddingLeft: "16px",
+    paddingRight: "16px"
+  },
   list: {
     marginBottom: "0",
     padding: "0",

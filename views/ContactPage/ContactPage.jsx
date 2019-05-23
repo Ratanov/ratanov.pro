@@ -63,7 +63,7 @@ class ContactPage extends React.Component {
         >
           <div className={classes.container}>
             <GridContainer justify="center">
-              <GridItem xs={12} sm={12} md={8}>
+              <GridItem xs={12} sm={12} md={7}>
                 <Card className={classes[this.state.cardAnimaton]+" get-in-touch"}>
                   <h1>Get in Touch</h1>
                   <p>You need more information? Check what other persons are saying about our product. They are very happy with their purchase.</p>
@@ -78,7 +78,7 @@ class ContactPage extends React.Component {
                     Mon - Fri, 8:00-22:00</p>
                 </Card>
               </GridItem>
-              <GridItem xs={12} sm={12} md={4}>
+              <GridItem xs={12} sm={12} md={5}>
                 <Card className={classes[this.state.cardAnimaton]}>
                   <form className={classes.form}>
                     <CardHeader color="primary" className={classes.cardHeader}>

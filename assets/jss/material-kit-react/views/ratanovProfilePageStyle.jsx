@@ -15,7 +15,7 @@ const profilePageStyle = {
   },
   description: {
     margin: "0 auto 0",
-    maxWidth: "600px",
+    // maxWidth: "600px",
     color: "#999",
     textAlign: "left !important"
   },
@@ -56,6 +56,9 @@ const profilePageStyle = {
   navWrapper: {
     margin: "20px auto 50px auto",
     textAlign: "center",
+  },
+  profileDescription: {
+    padding: "20px 30px"
   }
 };
 

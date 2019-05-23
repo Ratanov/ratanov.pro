@@ -33,7 +33,7 @@ class AboutPage extends React.Component {
           {...rest}
         />
         <Parallax smallabout filter image={require("assets/img/bg2.jpg")} />
-        <div className={classNames(classes.main, classes.mainRaised)}>
+        <div className={classNames(classes.main, classes.mainRaised)+" container-mobile"}>
           <div className={classes.container}>
             <TeamSection />
           </div>

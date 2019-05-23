@@ -18,7 +18,7 @@ import NavPills from "components/NavPills/NavPills.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 import CustomLinearProgress from "components/CustomLinearProgress/CustomLinearProgress.jsx";
 
-import profile from "assets/img/faces/ratanov.png";
+import profile from "assets/img/faces/oleg-ratanov.jpg";
 
 import studio1 from "assets/img/examples/studio-1.jpg";
 import studio2 from "assets/img/examples/studio-2.jpg";
@@ -83,7 +83,7 @@ class RatanovProfilePage extends React.Component {
                     </div>
                   </div>
                 </GridItem>
-                <GridItem xs={12} sm={12} md={4} className={classes.dis}>
+                <GridItem xs={12} sm={12} md={8} className={classes.profileDescription}>
                   <div className={classes.title}>
                     <h4>Здравствуйте!</h4>
                   </div>
@@ -93,6 +93,9 @@ class RatanovProfilePage extends React.Component {
                     </p>
                   </div>
                 </GridItem>
+              </GridContainer>
+
+              <GridContainer justify="flex-start">
                 <GridItem xs={12} sm={12} md={4}>
                   <div className={classes.title}>
                     <h4>Скилл</h4>
@@ -130,9 +133,6 @@ class RatanovProfilePage extends React.Component {
                     />
                   </div>
                 </GridItem>
-              </GridContainer>
-
-              <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={8} className={classes.navWrapper+" px-0"}>
                   <NavPills
                     alignCenter
