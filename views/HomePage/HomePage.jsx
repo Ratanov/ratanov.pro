@@ -37,7 +37,7 @@ class HomePage extends React.Component {
             fixed
             color="transparent"
             changeColorOnScroll={{
-                height: 300,
+                height: 200,
                 color: "white"
             }}
             {...rest}
@@ -64,7 +64,7 @@ class HomePage extends React.Component {
             </ScrollLink>
           </div>
         </Parallax>
-        <div className={classNames(classes.main, classes.mainRaised)+" container-mobile"}>
+        <div className={classNames(classes.main, classes.mainRaised)+" home-container-mobile"}>
           <div name="scroll-to-container" className={classes.container+" containerMaxContent"}>
             <ProductSection />
             <PortfolioSection />

@@ -37,7 +37,7 @@ const parallaxStyle = {
     height: "300px"
   },
   smallabout: {
-    height: "200px"
+    height: "140px"
   }
 };
 

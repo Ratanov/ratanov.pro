@@ -53,7 +53,7 @@ class RatanovProfilePage extends React.Component {
           fixed
           color="transparent"
           changeColorOnScroll={{
-            height: 200,
+            height: 0,
             color: "white"
           }}
           {...rest}

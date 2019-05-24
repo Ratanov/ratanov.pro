@@ -26,13 +26,14 @@ class AboutPage extends React.Component {
           rightLinks={<HeaderLinks />}
           fixed
           color="transparent"
+          // color="white"
           changeColorOnScroll={{
-            height: 100,
+            height: 0,
             color: "white"
           }}
           {...rest}
         />
-        <Parallax smallabout filter image={require("assets/img/bg2.jpg")} />
+        <Parallax className="parallaxAboutPage" smallabout filter image={require("assets/img/bg2.jpg")} />
         <div className={classNames(classes.main, classes.mainRaised)+" container-mobile"}>
           <div className={classes.container+" containerMaxContent"}>
             <TeamSection />
