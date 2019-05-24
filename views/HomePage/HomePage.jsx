@@ -64,8 +64,8 @@ class HomePage extends React.Component {
             </ScrollLink>
           </div>
         </Parallax>
-        <div name="scroll-to-container" className={classNames(classes.main, classes.mainRaised)+" container-mobile"}>
-          <div className={classes.container}>
+        <div className={classNames(classes.main, classes.mainRaised)+" container-mobile"}>
+          <div name="scroll-to-container" className={classes.container+" containerMaxContent"}>
             <ProductSection />
             <PortfolioSection />
             <WorkSection />

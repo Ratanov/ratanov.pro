@@ -18,7 +18,7 @@ import CardFooter from "components/Card/CardFooter.jsx";
 
 import teamStyle from "assets/jss/material-kit-react/views/aboutPageSections/teamStyle.jsx";
 
-import ratanov from "assets/img/faces/oleg-ratanov1.jpg";
+import ratanov from "assets/img/faces/oleg-ratanov.jpg";
 import team2 from "assets/img/faces/avatar.jpg";
 import team3 from "assets/img/faces/kendall.jpg";
 

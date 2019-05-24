@@ -18,7 +18,7 @@ import NavPills from "components/NavPills/NavPills.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 import CustomLinearProgress from "components/CustomLinearProgress/CustomLinearProgress.jsx";
 
-import profile from "assets/img/faces/oleg-ratanov1.jpg";
+import profile from "assets/img/faces/oleg-ratanov.jpg";
 
 import studio1 from "assets/img/examples/studio-1.jpg";
 import studio2 from "assets/img/examples/studio-2.jpg";
@@ -61,7 +61,7 @@ class RatanovProfilePage extends React.Component {
         <Parallax smallprofile filter image={require("assets/img/profile-bg.jpg")} />
         <div className={classNames(classes.main, classes.mainRaised)+" container-mobile"}>
           <div>
-            <div className={classes.container}>
+            <div className={classes.container+" containerMaxContent"}>
               <GridContainer justify="flex-start">
                 <GridItem xs={12} sm={12} md={4}>
                   <div className={classes.profile}>

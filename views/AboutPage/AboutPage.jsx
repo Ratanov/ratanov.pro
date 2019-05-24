@@ -34,7 +34,7 @@ class AboutPage extends React.Component {
         />
         <Parallax smallabout filter image={require("assets/img/bg2.jpg")} />
         <div className={classNames(classes.main, classes.mainRaised)+" container-mobile"}>
-          <div className={classes.container}>
+          <div className={classes.container+" containerMaxContent"}>
             <TeamSection />
           </div>
         </div>
