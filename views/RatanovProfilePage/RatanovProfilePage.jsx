@@ -18,7 +18,7 @@ import NavPills from "components/NavPills/NavPills.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 import CustomLinearProgress from "components/CustomLinearProgress/CustomLinearProgress.jsx";
 
-import profile from "assets/img/faces/oleg-ratanov.jpg";
+import profile from "assets/img/faces/oleg-ratanov1.jpg";
 
 import studio1 from "assets/img/examples/studio-1.jpg";
 import studio2 from "assets/img/examples/studio-2.jpg";

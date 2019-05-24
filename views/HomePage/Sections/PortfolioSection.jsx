@@ -1,6 +1,4 @@
 import React from "react";
-// react components for routing our app without refresh
-import { Link } from "react-router-dom";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
@@ -9,24 +7,32 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Button from "components/CustomButtons/Button.jsx";
-import Style from "assets/jss/style.jsx";
 
-import landing from "assets/img/landing.jpg";
-import profile from "assets/img/profile.jpg";
+import bozik from "assets/img/portfolio/bozik.jpg";
+import liverka from "assets/img/portfolio/liverka-art.jpg";
+import godmed from "assets/img/portfolio/godmed.jpg";
+import chipgas from "assets/img/portfolio/chipgas.jpg";
 
-class SectionExamples extends React.Component {
+import portfolioStyle from "assets/jss/material-kit-react/views/homePageSections/portfolioStyle.jsx";
+
+class PortfolioSection extends React.Component {
   render() {
     const { classes } = this.props;
     return (
       <div className={classes.section}>
-        <h2 className={classes.title}>Наша команда</h2>
         <div className={classes.container}>
           <GridContainer justify="center">
+            <GridItem xs={12} sm={12} md={8}>
+              <h2 className={classes.title}>Наши работы</h2>
+            </GridItem>
+          </GridContainer>
+          <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={4}>
-              {/*<Link to="landing-page" className={classes.link}>*/}
+              <h4 className={classes.portfolioTitle}>Сайт художника Дамира Bozik'a</h4>
+              <a href="https://bozik.ru/" target="_blank" rel="noopener noreferrer" className={classes.link}>
                 <img
-                  src={landing}
-                  alt="..."
+                  src={bozik}
+                  alt="Bozik.ru"
                   className={
                     classes.imgRaised +
                     " " +
@@ -36,15 +42,16 @@ class SectionExamples extends React.Component {
                   }
                 />
                 <Button color="primary" size="lg" simple>
-                  View landing page
+                  bozik.ru
                 </Button>
-              {/*</Link>*/}
+              </a>
             </GridItem>
             <GridItem xs={12} sm={12} md={4}>
-              <Link to="profile-page" className={classes.link}>
+              <h4 className={classes.portfolioTitle}>Сайт художницы Валерии Liverka</h4>
+              <a href="https://liverka-art.ru/" target="_blank" rel="noopener noreferrer" className={classes.link}>
                 <img
-                  src={profile}
-                  alt="..."
+                  src={liverka}
+                  alt="Liverka-art.ru"
                   className={
                     classes.imgRaised +
                     " " +
@@ -54,15 +61,16 @@ class SectionExamples extends React.Component {
                   }
                 />
                 <Button color="primary" size="lg" simple>
-                  View profile page
+                  liverka-art.ru
                 </Button>
-              </Link>
+              </a>
             </GridItem>
             <GridItem xs={12} sm={12} md={4}>
-              {/*<Link to="landing-page" className={classes.link}>*/}
+              <h4 className={classes.portfolioTitle}>Интернет магазин Экомёд</h4>
+              <a href="https://godmed.ru/" target="_blank" rel="noopener noreferrer" className={classes.link}>
                 <img
-                  src={landing}
-                  alt="..."
+                  src={godmed}
+                  alt="Godmed.ru"
                   className={
                     classes.imgRaised +
                     " " +
@@ -72,9 +80,28 @@ class SectionExamples extends React.Component {
                   }
                 />
                 <Button color="primary" size="lg" simple>
-                  View landing page
+                  godmed.ru
                 </Button>
-              {/*</Link>*/}
+              </a>
+            </GridItem>
+            <GridItem xs={12} sm={12} md={4}>
+              <h4 className={classes.portfolioTitle}>Сайт автоцентра ChipGas</h4>
+              <a href="https://chipgas.ru/" target="_blank" rel="noopener noreferrer" className={classes.link}>
+                <img
+                  src={chipgas}
+                  alt="Chipgas.ru"
+                  className={
+                    classes.imgRaised +
+                    " " +
+                    classes.imgRounded +
+                    " " +
+                    classes.imgFluid
+                  }
+                />
+                <Button color="primary" size="lg" simple>
+                  chipgas.ru
+                </Button>
+              </a>
             </GridItem>
           </GridContainer>
         </div>
@@ -83,4 +110,4 @@ class SectionExamples extends React.Component {
   }
 }
 
-export default withStyles(Style)(SectionExamples);
+export default withStyles(portfolioStyle)(PortfolioSection);

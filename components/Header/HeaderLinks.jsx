@@ -17,8 +17,6 @@ import Button from "components/CustomButtons/Button.jsx";
 
 import headerLinksStyle from "assets/jss/material-kit-react/components/headerLinksStyle.jsx";
 
-import { Link as ScrollLink } from 'react-scroll'
-
 function HeaderLinks({ ...props }) {
 
   const { classes } = props;
