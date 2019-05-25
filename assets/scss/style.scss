@@ -14,6 +14,10 @@
   margin-right: 3em!important;
 }
 
+.p-0 {
+  padding: 0!important;
+}
+
 .px-0 {
   padding-left: 0!important;
   padding-right: 0!important;
@@ -92,17 +96,17 @@
 
 @media (max-width: 959px) {
   .home-container-mobile {
-    margin: 0 5px!important;
+    margin: 0!important;
     box-shadow: none!important;
   }
   .container-mobile {
-    margin: -6px 3px 0!important;
+    margin: -30px 0 0!important;
   }
   .get-in-touch {
     padding-right: 0!important;
   }
   .parallaxAboutPage {
-    height: 100px!important;
+    height: 130px!important;
   }
 }
 

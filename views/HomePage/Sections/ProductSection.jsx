@@ -21,9 +21,9 @@ class ProductSection extends React.Component {
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={8}>
             <h2 className={classes.title}>Давайте поговорим о нашем подходе</h2>
-            <h5 className={classes.description}>
-              3 наших качества
-            </h5>
+            {/*<h5 className={classes.description}>*/}
+              {/*3 наших качества*/}
+            {/*</h5>*/}
           </GridItem>
         </GridContainer>
         <div>
