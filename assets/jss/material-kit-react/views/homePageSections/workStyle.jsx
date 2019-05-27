@@ -1,8 +1,13 @@
-import { title } from "assets/jss/material-kit-react.jsx";
+import { container, title } from "assets/jss/material-kit-react.jsx";
 
 const workStyle = {
+  container: {
+    zIndex: "12",
+    color: "#FFFFFF",
+    ...container
+  },
   section: {
-    padding: "70px 0"
+    padding: "70px 15px"
   },
   title: {
     ...title,

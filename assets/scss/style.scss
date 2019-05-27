@@ -86,7 +86,7 @@
 }
 
 .home-container-mobile {
-  box-shadow: none!important;
+  //box-shadow: none!important;
 }
 
 .container-mobile {
@@ -96,11 +96,11 @@
 
 @media (max-width: 959px) {
   .home-container-mobile {
-    margin: 0!important;
-    box-shadow: none!important;
+    margin: 0 8px 0!important;
+    //box-shadow: none!important;
   }
   .container-mobile {
-    margin: -30px 0 0!important;
+    margin: -30px 8px 0!important;
   }
   .get-in-touch {
     padding-right: 0!important;
