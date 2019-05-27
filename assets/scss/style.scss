@@ -94,6 +94,27 @@
   //margin: 0 10px 0!important;
 }
 
+.containerMaxContent {
+  max-width: max-content!important;
+}
+
+.containerMaxWidthInherit {
+  max-width: inherit!important;
+}
+
+.home-page-portfolio-item {
+  padding-left: 5px!important;
+  padding-right: 5px!important;
+}
+
+.pl-0-portfolio-item {
+  padding-left: 0!important;
+}
+
+.pr-0-portfolio-item {
+  padding-right: 0!important;
+}
+
 @media (max-width: 959px) {
   .home-container-mobile {
     margin: 0 8px 0!important;
@@ -108,15 +129,15 @@
   .parallaxAboutPage {
     height: 130px!important;
   }
+  .home-page-portfolio-item {
+    padding-left: 0!important;
+    padding-right: 0!important;
+  }
 }
 
 @media (max-width: 575px) {
   .imgRounded0 {
     border-radius: 0!important;
   }
-}
-
-.containerMaxContent {
-  max-width: max-content!important;
 }
 

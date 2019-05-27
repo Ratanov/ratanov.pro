@@ -11,13 +11,12 @@ import CustomInput from "components/CustomInput/CustomInput.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 
 import workStyle from "assets/jss/material-kit-react/views/homePageSections/workStyle.jsx";
-import classNames from "classnames";
 
 class WorkSection extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className={classNames(classes.section, classes.container)}>
+      <div className={classes.section}>
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={8}>
             <h2 className={classes.title}>Work with us</h2>

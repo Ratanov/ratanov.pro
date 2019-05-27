@@ -23,9 +23,6 @@ const portfolioStyle = {
   },
   portfolioTitle: {
     color: "#3C4858"
-  },
-  gridItemPadding: {
-    padding: "0 15px"
   }
 };
 

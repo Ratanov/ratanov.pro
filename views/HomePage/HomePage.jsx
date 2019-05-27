@@ -67,8 +67,10 @@ class HomePage extends React.Component {
         <div name="scroll-to-container" className={classNames(classes.main, classes.mainRaised)+" home-container-mobile"}>
           <ProductSection />
         </div>
-        <div className={classes.mainRaised2+" home-container-mobile containerMaxContent"}>
-          <PortfolioSection />
+        <div className={classes.mainRaised2+" home-container-mobile"}>
+          <div className={classes.container+" containerMaxWidthInherit"}>
+            <PortfolioSection />
+          </div>
         </div>
         <div className={classNames(classes.main, classes.mainRaised3)+" home-container-mobile"}>
           <WorkSection />

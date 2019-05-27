@@ -27,7 +27,7 @@ class PortfolioSection extends React.Component {
             </GridItem>
           </GridContainer>
           <GridContainer justify="center">
-            <GridItem xs={12} sm={12} md={4} className={classes.gridItemPadding}>
+            <GridItem xs={12} sm={12} md={4} className={"home-page-portfolio-item pl-0-portfolio-item"}>
               <h4 className={classes.portfolioTitle}>Художник Дамир Bozik</h4>
               <a href="https://bozik.ru/" target="_blank" rel="noopener noreferrer" className={classes.link}>
                 <img
@@ -46,7 +46,7 @@ class PortfolioSection extends React.Component {
                 </Button>
               </a>
             </GridItem>
-            <GridItem xs={12} sm={12} md={4} className={classes.gridItemPadding}>
+            <GridItem xs={12} sm={12} md={4} className={"home-page-portfolio-item"}>
               <h4 className={classes.portfolioTitle}>Художница Валерия Liverka</h4>
               <a href="https://liverka-art.ru/" target="_blank" rel="noopener noreferrer" className={classes.link}>
                 <img
@@ -65,7 +65,7 @@ class PortfolioSection extends React.Component {
                 </Button>
               </a>
             </GridItem>
-            <GridItem xs={12} sm={12} md={4} className={classes.gridItemPadding}>
+            <GridItem xs={12} sm={12} md={4} className={"home-page-portfolio-item pr-0-portfolio-item"}>
               <h4 className={classes.portfolioTitle}>Интернет магазин Экомёд</h4>
               <a href="https://godmed.ru/" target="_blank" rel="noopener noreferrer" className={classes.link}>
                 <img
@@ -84,7 +84,7 @@ class PortfolioSection extends React.Component {
                 </Button>
               </a>
             </GridItem>
-            <GridItem xs={12} sm={12} md={4} className={classes.gridItemPadding}>
+            <GridItem xs={12} sm={12} md={4} className={"home-page-portfolio-item"}>
               <h4 className={classes.portfolioTitle}>Автоцентр ChipGas</h4>
               <a href="https://chipgas.ru/" target="_blank" rel="noopener noreferrer" className={classes.link}>
                 <img
