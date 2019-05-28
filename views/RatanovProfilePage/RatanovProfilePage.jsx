@@ -61,8 +61,8 @@ class RatanovProfilePage extends React.Component {
         <Parallax smallprofile filter image={require("assets/img/profile-bg.jpg")} />
         <div className={classNames(classes.main, classes.mainRaised)+" container-mobile"}>
           <div>
-            <div className={classes.container+" containerMaxContent"}>
-              <GridContainer justify="flex-start">
+            <div className={classes.container}>
+              <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={4}>
                   <div className={classes.profile}>
                     <div>
@@ -83,7 +83,7 @@ class RatanovProfilePage extends React.Component {
                     </div>
                   </div>
                 </GridItem>
-                <GridItem xs={12} sm={12} md={8} className={classes.profileDescription}>
+                <GridItem xs={12} sm={12} md={4}>
                   <div className={classes.title}>
                     <h4>Здравствуйте!</h4>
                   </div>
@@ -93,9 +93,6 @@ class RatanovProfilePage extends React.Component {
                     </p>
                   </div>
                 </GridItem>
-              </GridContainer>
-
-              <GridContainer justify="flex-start">
                 <GridItem xs={12} sm={12} md={4}>
                   <div className={classes.title}>
                     <h4>Скилл</h4>
@@ -133,6 +130,9 @@ class RatanovProfilePage extends React.Component {
                     />
                   </div>
                 </GridItem>
+              </GridContainer>
+
+              <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={8} className={classes.navWrapper+" px-0"}>
                   <NavPills
                     alignCenter
