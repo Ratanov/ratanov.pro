@@ -21,7 +21,7 @@ import teamStyle from "assets/jss/material-kit-react/views/aboutPageSections/tea
 
 import ratanov from "assets/img/faces/oleg-ratanov.jpg";
 import liverka from "assets/img/faces/liverka.jpg";
-import team3 from "assets/img/faces/card-profile1-square.jpg";
+import team3 from "assets/img/faces/card-profile2-square.jpg";
 
 class TeamSection extends React.Component {
   render() {

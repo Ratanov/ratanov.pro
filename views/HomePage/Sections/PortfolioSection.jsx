@@ -61,7 +61,7 @@ class PortfolioSection extends React.Component {
                     )
                   },
                   {
-                    tabButton: "Tasks",
+                    tabButton: "Реклама",
                     tabIcon: List,
                     tabContent: (
                       <span>
