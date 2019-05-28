@@ -21,7 +21,6 @@ import teamStyle from "assets/jss/material-kit-react/views/aboutPageSections/tea
 
 import ratanov from "assets/img/faces/oleg-ratanov.jpg";
 import liverka from "assets/img/faces/liverka.jpg";
-import team2 from "assets/img/faces/avatar.jpg";
 import team3 from "assets/img/faces/kendall.jpg";
 
 class TeamSection extends React.Component {
@@ -42,13 +41,11 @@ class TeamSection extends React.Component {
 
                 <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                   <Link to="/about/oleg-ratanov">
-                    <img src={ratanov} alt="..." className={imageClasses} />
+                    <img src={ratanov} alt="ratanov" className={imageClasses} />
                   </Link>
                 </GridItem>
                 <h4 className={classes.cardTitle}>
-                  <Link to={"/about/oleg-ratanov"}>
-                    Олег Ратанов
-                  </Link>
+                  <Link to={"/about/oleg-ratanov"}>Олег Ратанов</Link>
                   <br />
                   <small className={classes.smallTitle}>Директор</small>
                 </h4>
@@ -99,10 +96,12 @@ class TeamSection extends React.Component {
             <GridItem xs={12} sm={12} md={4}>
               <Card plain>
                 <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                  <img src={liverka} alt="..." className={imageClasses} />
+                  <Link to="/about/liverka">
+                    <img src={liverka} alt="liverka" className={imageClasses} />
+                  </Link>
                 </GridItem>
                 <h4 className={classes.cardTitle}>
-                  Валерия Губанова
+                  <Link to="/about/liverka">Валерия Губанова</Link>
                   <br />
                   <small className={classes.smallTitle}>Художник Дизайнер Иллюстратор</small>
                 </h4>

@@ -10,6 +10,7 @@ import "assets/scss/style.scss?v=1.0.0";
 import HomePage from "views/HomePage/HomePage.jsx";
 import LandingPage from "views/LandingPage/LandingPage.jsx";
 import RatanovProfilePage from "views/RatanovProfilePage/RatanovProfilePage.jsx";
+import LiverkaProfilePage from "views/LiverkaProfilePage/LiverkaProfilePage.jsx";
 import Components from "views/Components/Components.jsx";
 import AboutPage from "views/AboutPage/AboutPage.jsx";
 import LoginPage from "views/LoginPage/LoginPage.jsx";
@@ -24,6 +25,7 @@ ReactDOM.render(
       <Route path="/components" component={Components} />
       <Route path="/landing-page" component={LandingPage} />
       <Route path="/contact" component={ContactPage} />
+      <Route path="/about/liverka" component={LiverkaProfilePage} />
       <Route path="/about/oleg-ratanov" component={RatanovProfilePage} />
       <Route path="/about" component={AboutPage} />
       <Route path="/" component={HomePage} />
