@@ -12,7 +12,7 @@ import List from "@material-ui/icons/List";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import NavPills from "components/NavPills/NavPills.jsx";
-import pillsStyle from "assets/jss/material-kit-react/views/componentsSections/pillsStyle.jsx";
+import portfolioStyle from "assets/jss/material-kit-react/views/homePageSections/portfolioStyle.jsx";
 
 // Sections for this page
 import WebsiteSection from "./WebsiteSection.jsx";
@@ -23,17 +23,11 @@ class PortfolioSection extends React.Component {
     return (
       <div className={classes.section}>
         {/*<div className={classes.container}>*/}
-          <div className={classes.title}>
-            <h3>Наши работы</h3>
-          </div>
-          <div className={classes.title}>
-            <h3>
-              <small>With Icons</small>
-            </h3>
-          </div>
+        <h2 className={classes.title}>Наши работы</h2>
           <GridContainer>
-            <GridItem xs={12} sm={12} md={12} lg={12}>
+            <GridItem xs={12} sm={12} md={12} lg={12} className={"portfolioSection-mobile"}>
               <NavPills
+                alignCenter
                 color="primary"
                 tabs={[
                   {
@@ -105,4 +99,4 @@ class PortfolioSection extends React.Component {
   }
 }
 
-export default withStyles(pillsStyle)(PortfolioSection);
+export default withStyles(portfolioStyle)(PortfolioSection);

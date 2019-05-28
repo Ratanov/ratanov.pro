@@ -64,16 +64,12 @@ class HomePage extends React.Component {
             </ScrollLink>
           </div>
         </Parallax>
-        <div name="scroll-to-container" className={classNames(classes.main, classes.mainRaised)+" home-container-mobile"}>
-          <ProductSection />
-        </div>
-        <div className={classes.mainRaised2+" home-container-mobile"}>
-          <div className={classes.container+" containerMaxWidthInherit"}>
+        <div className={classNames(classes.main, classes.mainRaised)+" home-container-mobile"}>
+          <div name="scroll-to-container" className={classes.container+" containerMaxContent"}>
+            <ProductSection />
             <PortfolioSection />
+            <WorkSection />
           </div>
-        </div>
-        <div className={classNames(classes.main, classes.mainRaised3)+" home-container-mobile"}>
-          <WorkSection />
         </div>
         <Footer />
       </div>

@@ -16,7 +16,6 @@ import Drawer from "@material-ui/core/Drawer";
 import Menu from "@material-ui/icons/Menu";
 // core components
 import headerStyle from "assets/jss/material-kit-react/components/headerStyle.jsx";
-import {conatinerFluid} from "../../assets/jss/material-kit-react";
 
 class Header extends React.Component {
   constructor(props) {

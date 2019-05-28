@@ -21,7 +21,7 @@ import teamStyle from "assets/jss/material-kit-react/views/aboutPageSections/tea
 
 import ratanov from "assets/img/faces/oleg-ratanov.jpg";
 import liverka from "assets/img/faces/liverka.jpg";
-import team3 from "assets/img/faces/kendall.jpg";
+import team3 from "assets/img/faces/card-profile1-square.jpg";
 
 class TeamSection extends React.Component {
   render() {
@@ -155,7 +155,7 @@ class TeamSection extends React.Component {
                   <img src={team3} alt="..." className={imageClasses} />
                 </GridItem>
                 <h4 className={classes.cardTitle}>
-                  Kendall Jenner
+                  Alec Thompson
                   <br />
                   <small className={classes.smallTitle}>Model</small>
                 </h4>
