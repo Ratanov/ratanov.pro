@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
+import Tooltip from "@material-ui/core/Tooltip";
 
 // @material-ui/icons
 
@@ -19,6 +20,7 @@ import CardFooter from "components/Card/CardFooter.jsx";
 import teamStyle from "assets/jss/material-kit-react/views/aboutPageSections/teamStyle.jsx";
 
 import ratanov from "assets/img/faces/oleg-ratanov.jpg";
+import liverka from "assets/img/faces/liverka.jpg";
 import team2 from "assets/img/faces/avatar.jpg";
 import team3 from "assets/img/faces/kendall.jpg";
 
@@ -39,12 +41,12 @@ class TeamSection extends React.Component {
               <Card plain>
 
                 <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                  <Link to="/about/oleg-ratanov" className={classes.link}>
+                  <Link to="/about/oleg-ratanov">
                     <img src={ratanov} alt="..." className={imageClasses} />
                   </Link>
                 </GridItem>
                 <h4 className={classes.cardTitle}>
-                  <Link to={"/about/oleg-ratanov"} className={classes.link}>
+                  <Link to={"/about/oleg-ratanov"}>
                     Олег Ратанов
                   </Link>
                   <br />
@@ -59,32 +61,50 @@ class TeamSection extends React.Component {
                   </p>
                 </CardBody>
                 <CardFooter className={classes.justifyCenter}>
-                  <Button
-                    justIcon
-                    color="transparent"
-                    className={classes.margin5}
+                  <Tooltip
+                    id="tooltip-ratanov-vk"
+                    title="Перейти Вконтакт"
+                    placement="bottom"
+                    classes={{ tooltip: classes.tooltip }}
                   >
-                    <i className={classes.socials + " fab fa-twitter"} />
-                  </Button>
-                  <Button
-                    justIcon
-                    color="transparent"
-                    className={classes.margin5}
+                    <a href="https://vk.com/o.ratanov" target="_blank" rel="noopener noreferrer">
+                      <Button
+                        justIcon
+                        color="transparent"
+                        className={classes.margin5}
+                      >
+                        <i className={classes.socials + " fab fa-vk"} />
+                      </Button>
+                    </a>
+                  </Tooltip>
+                  <Tooltip
+                    id="tooltip-ratanov-insta"
+                    title="Перейти в Instagram"
+                    placement="bottom"
+                    classes={{ tooltip: classes.tooltip }}
                   >
-                    <i className={classes.socials + " fab fa-linkedin"} />
-                  </Button>
+                    <a href="https://www.instagram.com/olegratanov/" target="_blank" rel="noopener noreferrer">
+                      <Button
+                        justIcon
+                        color="transparent"
+                        className={classes.margin5}
+                      >
+                        <i className={classes.socials + " fab fa-instagram"} />
+                      </Button>
+                    </a>
+                  </Tooltip>
                 </CardFooter>
               </Card>
             </GridItem>
             <GridItem xs={12} sm={12} md={4}>
               <Card plain>
                 <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                  <img src={team2} alt="..." className={imageClasses} />
+                  <img src={liverka} alt="..." className={imageClasses} />
                 </GridItem>
                 <h4 className={classes.cardTitle}>
-                  Gigi Hadid
+                  Валерия Губанова
                   <br />
-                  <small className={classes.smallTitle}>Model</small>
+                  <small className={classes.smallTitle}>Художник Дизайнер Иллюстратор</small>
                 </h4>
                 <CardBody>
                   <p className={classes.description}>
@@ -95,27 +115,38 @@ class TeamSection extends React.Component {
                   </p>
                 </CardBody>
                 <CardFooter className={classes.justifyCenter}>
-                  <Button
-                    justIcon
-                    color="transparent"
-                    className={classes.margin5}
+                  <Tooltip
+                    id="tooltip-liverka-vk"
+                    title="Перейти Вконтакт"
+                    placement="bottom"
+                    classes={{ tooltip: classes.tooltip }}
                   >
-                    <i className={classes.socials + " fab fa-twitter"} />
-                  </Button>
-                  <Button
-                    justIcon
-                    color="transparent"
-                    className={classes.margin5}
+                    <a href="https://vk.com/id63163502" target="_blank" rel="noopener noreferrer">
+                      <Button
+                        justIcon
+                        color="transparent"
+                        className={classes.margin5}
+                      >
+                        <i className={classes.socials + " fab fa-vk"} />
+                      </Button>
+                    </a>
+                  </Tooltip>
+                  <Tooltip
+                    id="tooltip-liverka-insta"
+                    title="Перейти в Instagram"
+                    placement="bottom"
+                    classes={{ tooltip: classes.tooltip }}
                   >
-                    <i className={classes.socials + " fab fa-instagram"} />
-                  </Button>
-                  <Button
-                    justIcon
-                    color="transparent"
-                    className={classes.margin5}
-                  >
-                    <i className={classes.socials + " fab fa-facebook"} />
-                  </Button>
+                    <a href="https://www.instagram.com/liverka/" target="_blank" rel="noopener noreferrer">
+                      <Button
+                        justIcon
+                        color="transparent"
+                        className={classes.margin5}
+                      >
+                        <i className={classes.socials + " fab fa-instagram"} />
+                      </Button>
+                    </a>
+                  </Tooltip>
                 </CardFooter>
               </Card>
             </GridItem>

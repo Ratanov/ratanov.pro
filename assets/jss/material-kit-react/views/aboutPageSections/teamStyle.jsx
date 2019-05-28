@@ -1,5 +1,6 @@
 import { cardTitle, title } from "assets/jss/material-kit-react.jsx";
 import imagesStyle from "assets/jss/material-kit-react/imagesStyles.jsx";
+import tooltipsStyle from "assets/jss/material-kit-react/tooltipsStyle.jsx";
 
 const teamStyle = {
   section: {
@@ -37,11 +38,12 @@ const teamStyle = {
     height: "100%",
     lineHeight: "41px",
     fontSize: "20px",
-    color: "#999"
+    color: "#999999"
   },
   margin5: {
     margin: "5px"
-  }
+  },
+  ...tooltipsStyle,
 };
 
 export default teamStyle;

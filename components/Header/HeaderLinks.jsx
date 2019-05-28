@@ -73,23 +73,23 @@ function HeaderLinks({ ...props }) {
           {/*<CloudDownload className={classes.icons} /> Скачать*/}
         {/*</Button>*/}
       {/*</ListItem>*/}
-        <ListItem className={classes.listItem}>
-            <Tooltip
-                id="vk"
-                title="Подписывайся в Вконтакте"
-                placement={window.innerWidth > 959 ? "bottom" : "left"}
-                classes={window.innerWidth > 959 ? { tooltip: classes.tooltip } : { tooltip: classes.tooltip + " d-none"}}
-            >
-                <Button
-                    href="https://vk.com/ratanovpro"
-                    target="_blank"
-                    color="transparent"
-                    className={classes.navLink}
-                >
-                    <i className={classes.socialIcons + " fab fa-vk m-0"} />
-                </Button>
-            </Tooltip>
-        </ListItem>
+      <ListItem className={classes.listItem}>
+        <Tooltip
+          id="vk"
+          title="Подписывайся в Вконтакте"
+          placement={window.innerWidth > 959 ? "bottom" : "left"}
+          classes={window.innerWidth > 959 ? { tooltip: classes.tooltip } : { tooltip: classes.tooltip + " d-none"}}
+        >
+          <Button
+            href="https://vk.com/ratanovpro"
+            target="_blank"
+            color="transparent"
+            className={classes.navLink}
+          >
+            <i className={classes.socialIcons + " fab fa-vk m-0"} />
+          </Button>
+        </Tooltip>
+      </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-twitter"
@@ -98,29 +98,12 @@ function HeaderLinks({ ...props }) {
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            href="https://twitter.com/CreativeTim"
+            href="https://twitter.com/RatanovPro"
             target="_blank"
             color="transparent"
             className={classes.navLink}
           >
             <i className={classes.socialIcons + " fab fa-twitter m-0"} />
-          </Button>
-        </Tooltip>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Tooltip
-          id="instagram-facebook"
-          title="Подписывайся в фейсбуке"
-          placement={window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            color="transparent"
-            href="https://www.facebook.com/CreativeTim"
-            target="_blank"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-facebook m-0"} />
           </Button>
         </Tooltip>
       </ListItem>
@@ -133,7 +116,7 @@ function HeaderLinks({ ...props }) {
         >
           <Button
             color="transparent"
-            href="https://www.instagram.com/CreativeTimOfficial"
+            href="https://www.instagram.com/ratanov.pro/"
             target="_blank"
             className={classes.navLink}
           >
@@ -141,6 +124,23 @@ function HeaderLinks({ ...props }) {
           </Button>
         </Tooltip>
       </ListItem>
+      {/*<ListItem className={classes.listItem}>*/}
+        {/*<Tooltip*/}
+          {/*id="instagram-facebook"*/}
+          {/*title="Подписывайся в фейсбуке"*/}
+          {/*placement={window.innerWidth > 959 ? "top" : "left"}*/}
+          {/*classes={{ tooltip: classes.tooltip }}*/}
+        {/*>*/}
+          {/*<Button*/}
+            {/*color="transparent"*/}
+            {/*href="https://www.facebook.com/ratanov.pro"*/}
+            {/*target="_blank"*/}
+            {/*className={classes.navLink}*/}
+          {/*>*/}
+            {/*<i className={classes.socialIcons + " fab fa-facebook m-0"} />*/}
+          {/*</Button>*/}
+        {/*</Tooltip>*/}
+      {/*</ListItem>*/}
     </List>
   );
 }
