@@ -1,9 +1,9 @@
 import { conatinerFluid, title } from "assets/jss/material-kit-react.jsx";
 import imagesStyle from "assets/jss/material-kit-react/imagesStyles.jsx";
 
-const portfolioStyle = {
+const websiteSectionStyle = {
   section: {
-    padding: "70px 0"
+    padding: "0"
   },
   container: {
     ...conatinerFluid,
@@ -11,7 +11,8 @@ const portfolioStyle = {
   },
   ...imagesStyle,
   link: {
-    textDecoration: "none"
+    textDecoration: "none",
+    cursor: "pointer"
   },
   title: {
     ...title,
@@ -26,4 +27,4 @@ const portfolioStyle = {
   }
 };
 
-export default portfolioStyle;
+export default websiteSectionStyle;
