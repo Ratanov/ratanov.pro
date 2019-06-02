@@ -23,7 +23,17 @@ const websiteSectionStyle = {
     textAlign: "center"
   },
   portfolioTitle: {
-    color: "#3C4858"
+    width: "max-content",
+    position: "absolute",
+    top: "-15px",
+    left: "50%",
+    transform: "translate(-50%, 0)",
+    padding: "5px 15px",
+    color: "#ffffff",
+    borderRadius: "3px",
+    margin: "0",
+    background: "linear-gradient(60deg, #ab47bc, #8e24aa)",
+    boxShadow: "0 12px 20px -10px rgba(156, 39, 176, 0.28), 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(156, 39, 176, 0.2)"
   }
 };
 

@@ -27,11 +27,11 @@ class WebsiteSection extends React.Component {
             {/*</GridItem>*/}
           {/*</GridContainer>*/}
           <GridContainer justify="center" className={"m-0"}>
-            <GridItem xs={12} sm={12} md={4} className={"home-page-portfolio-item pl-0-portfolio-item"}>
+            <GridItem xs={12} sm={12} md={6} className={"home-page-portfolio-item"}>
               <h4 className={classes.portfolioTitle}>Художник Дамир Bozik</h4>
               <img
                 src={bozik}
-                alt="Bozik.ru"
+                alt="bozik-art.ru"
                 className={
                   classes.imgRaised +
                   " " +
@@ -42,15 +42,15 @@ class WebsiteSection extends React.Component {
               />
               <a href="https://bozik.ru/" target="_blank" rel="noopener noreferrer" className={classes.link}>
                 <Button color="primary" size="lg" simple>
-                  bozik.ru
+                  https://bozik.ru/
                 </Button>
               </a>
             </GridItem>
-            <GridItem xs={12} sm={12} md={4} className={"home-page-portfolio-item"}>
+            <GridItem xs={12} sm={12} md={6} className={"home-page-portfolio-item"}>
               <h4 className={classes.portfolioTitle}>Художница Валерия Liverka</h4>
               <img
                 src={liverka}
-                alt="Liverka-art.ru"
+                alt="liverka-art.ru"
                 className={
                   classes.imgRaised +
                   " " +
@@ -61,15 +61,15 @@ class WebsiteSection extends React.Component {
               />
               <a href="https://liverka-art.ru/" target="_blank" rel="noopener noreferrer" className={classes.link}>
                 <Button color="primary" size="lg" simple>
-                  liverka-art.ru
+                  https://liverka-art.ru/
                 </Button>
               </a>
             </GridItem>
-            <GridItem xs={12} sm={12} md={4} className={"home-page-portfolio-item pr-0-portfolio-item"}>
+            <GridItem xs={12} sm={12} md={6} className={"home-page-portfolio-item"}>
               <h4 className={classes.portfolioTitle}>Интернет магазин Экомёд</h4>
               <img
                 src={godmed}
-                alt="Godmed.ru"
+                alt="godmed.ru"
                 className={
                   classes.imgRaised +
                   " " +
@@ -80,11 +80,11 @@ class WebsiteSection extends React.Component {
               />
               <a href="https://godmed.ru/" target="_blank" rel="noopener noreferrer" className={classes.link}>
                 <Button color="primary" size="lg" simple>
-                  godmed.ru
+                  https://godmed.ru/
                 </Button>
               </a>
             </GridItem>
-            <GridItem xs={12} sm={12} md={4} className={"home-page-portfolio-item"}>
+            <GridItem xs={12} sm={12} md={6} className={"home-page-portfolio-item"}>
               <h4 className={classes.portfolioTitle}>Автоцентр ChipGas</h4>
               <img
                 src={chipgas}
@@ -99,7 +99,7 @@ class WebsiteSection extends React.Component {
               />
               <a href="https://chipgas.ru/" target="_blank" rel="noopener noreferrer" className={classes.link}>
                 <Button color="primary" size="lg" simple>
-                  chipgas.ru
+                  https://chipgas.ru/
                 </Button>
               </a>
             </GridItem>
