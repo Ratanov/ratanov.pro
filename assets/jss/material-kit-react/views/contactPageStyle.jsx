@@ -49,10 +49,10 @@ const contactPageStyle = {
   cardHeader: {
     width: "auto",
     textAlign: "center",
-    marginLeft: "20px",
-    marginRight: "20px",
-    marginTop: "-40px",
-    padding: "20px 0",
+    marginLeft: "15px",
+    marginRight: "15px",
+    marginTop: "-30px",
+    padding: "8px 0",
     marginBottom: "15px"
   },
   socialIcons: {
