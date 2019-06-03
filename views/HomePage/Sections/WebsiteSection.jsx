@@ -27,8 +27,7 @@ class WebsiteSection extends React.Component {
             {/*</GridItem>*/}
           {/*</GridContainer>*/}
           <GridContainer justify="center" className={"m-0"}>
-            <GridItem xs={12} sm={12} md={6} className={"home-page-portfolio-item"}>
-              <h4 className={classes.portfolioTitle}>Художник Дамир Bozik</h4>
+            <GridItem xs={12} sm={12} md={3} className={"home-page-portfolio-item"}>
               <img
                 src={bozik}
                 alt="bozik-art.ru"
@@ -40,14 +39,14 @@ class WebsiteSection extends React.Component {
                   classes.imgFluid
                 }
               />
+              <h5 className={classes.portfolioTitle}>Художник Дамир Bozik</h5>
               <a href="https://bozik.ru/" target="_blank" rel="noopener noreferrer" className={classes.link}>
                 <Button color="primary" size="lg" simple>
                   https://bozik.ru/
                 </Button>
               </a>
             </GridItem>
-            <GridItem xs={12} sm={12} md={6} className={"home-page-portfolio-item"}>
-              <h4 className={classes.portfolioTitle}>Художница Валерия Liverka</h4>
+            <GridItem xs={12} sm={12} md={3} className={"home-page-portfolio-item"}>
               <img
                 src={liverka}
                 alt="liverka-art.ru"
@@ -60,13 +59,13 @@ class WebsiteSection extends React.Component {
                 }
               />
               <a href="https://liverka-art.ru/" target="_blank" rel="noopener noreferrer" className={classes.link}>
+                <h5 className={classes.portfolioTitle}>Художница Валерия Liverka</h5>
                 <Button color="primary" size="lg" simple>
                   https://liverka-art.ru/
                 </Button>
               </a>
             </GridItem>
-            <GridItem xs={12} sm={12} md={6} className={"home-page-portfolio-item"}>
-              <h4 className={classes.portfolioTitle}>Интернет магазин Экомёд</h4>
+            <GridItem xs={12} sm={12} md={3} className={"home-page-portfolio-item"}>
               <img
                 src={godmed}
                 alt="godmed.ru"
@@ -78,14 +77,14 @@ class WebsiteSection extends React.Component {
                   classes.imgFluid
                 }
               />
+              <h5 className={classes.portfolioTitle}>Интернет магазин Экомёд</h5>
               <a href="https://godmed.ru/" target="_blank" rel="noopener noreferrer" className={classes.link}>
                 <Button color="primary" size="lg" simple>
                   https://godmed.ru/
                 </Button>
               </a>
             </GridItem>
-            <GridItem xs={12} sm={12} md={6} className={"home-page-portfolio-item"}>
-              <h4 className={classes.portfolioTitle}>Автоцентр ChipGas</h4>
+            <GridItem xs={12} sm={12} md={3} className={"home-page-portfolio-item"}>
               <img
                 src={chipgas}
                 alt="Chipgas.ru"
@@ -97,6 +96,7 @@ class WebsiteSection extends React.Component {
                   classes.imgFluid
                 }
               />
+              <h5 className={classes.portfolioTitle}>Автоцентр ChipGas</h5>
               <a href="https://chipgas.ru/" target="_blank" rel="noopener noreferrer" className={classes.link}>
                 <Button color="primary" size="lg" simple>
                   https://chipgas.ru/

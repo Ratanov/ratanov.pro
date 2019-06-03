@@ -2,7 +2,7 @@ import { container, title } from "assets/jss/material-kit-react.jsx";
 
 const portfolioStyle = {
   section: {
-    padding: "70px 0"
+    padding: "50px 0"
   },
   container,
   title: {

@@ -4,7 +4,7 @@ import tooltipsStyle from "assets/jss/material-kit-react/tooltipsStyle.jsx";
 
 const teamStyle = {
   section: {
-    padding: "70px 0",
+    padding: "50px 0",
     textAlign: "center"
   },
   title: {

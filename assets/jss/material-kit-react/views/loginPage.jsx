@@ -5,7 +5,7 @@ const signupPageStyle = {
     ...container,
     zIndex: "2",
     position: "relative",
-    paddingTop: "20vh",
+    paddingTop: "13vh",
     color: "#FFFFFF"
   },
   cardHidden: {

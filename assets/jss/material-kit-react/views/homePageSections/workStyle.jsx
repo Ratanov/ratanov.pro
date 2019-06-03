@@ -7,7 +7,7 @@ const workStyle = {
     ...container
   },
   section: {
-    padding: "70px 15px"
+    padding: "42px 0"
   },
   title: {
     ...title,

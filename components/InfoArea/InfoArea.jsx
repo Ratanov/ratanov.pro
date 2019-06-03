@@ -21,7 +21,7 @@ function InfoArea({ ...props }) {
   });
   return (
     <div className={classes.infoArea}>
-      <div className={iconWrapper}>
+      <div className={iconWrapper+" mr-0"}>
         <props.icon className={iconClasses} />
       </div>
       <div className={classes.descriptionWrapper}>

@@ -35,7 +35,7 @@ class TeamSection extends React.Component {
         <h2 className={classes.title}>Наша команда</h2>
         <div>
           <GridContainer justify="center">
-            <GridItem xs={12} sm={12} md={4}>
+            <GridItem xs={12} sm={12} md={5}>
               <Card plain>
                 <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                   <Link to="/about/oleg-ratanov">
@@ -91,7 +91,7 @@ class TeamSection extends React.Component {
                 </CardFooter>
               </Card>
             </GridItem>
-            <GridItem xs={12} sm={12} md={4}>
+            <GridItem xs={12} sm={12} md={5}>
               <Card plain>
                 <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                   <Link to="/about/liverka">
@@ -105,10 +105,9 @@ class TeamSection extends React.Component {
                 </h4>
                 <CardBody>
                   <p className={classes.description}>
-                    You can write here details about one of your team members.
-                    You can give more details about what they do. Feel free to
-                    add some <a href="#pablo">links</a> for people to be able to
-                    follow them outside the site.
+                    Творческое мышление и креатив мои верные спутники.
+                    К проектам отношусь с душой и любовью. Готова творить
+                    и реализовывать свое вдохновение в Ваших проектах
                   </p>
                 </CardBody>
                 <CardFooter className={classes.justifyCenter}>
