@@ -36,7 +36,7 @@ class Components extends React.Component {
     return (
       <div>
         <Header
-          brand="Ratanov.pro"
+          brand="Material Kit React"
           rightLinks={<HeaderLinks />}
           fixed
           color="transparent"
@@ -51,7 +51,7 @@ class Components extends React.Component {
             <GridContainer>
               <GridItem>
                 <div className={classes.brand}>
-                  <h1 className={classes.title}>Веб-студия Ratanov.pro</h1>
+                  <h1 className={classes.title}>Веб-студия ratanov.pro</h1>
                   <h3 className={classes.subtitle}>
                     Объединяем вместе технологию и творчество
                   </h3>

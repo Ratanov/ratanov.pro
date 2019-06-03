@@ -43,14 +43,14 @@ function Footer({ ...props }) {
           </List>
         </div>
         <div className={classes.right}>
-          &copy; 2015–{1900 + new Date().getYear()}{" "}Веб-студия{" "}
+          &copy; {1900 + new Date().getYear()}{" "}
           <a
             href="https://www.ratanov.pro"
             className={aClasses}
             target="_blank"
           >
             Ratanov.pro
-          </a>
+          </a>{" "}Web Studio
         </div>
       </div>
     </footer>

@@ -32,7 +32,7 @@ class HomePage extends React.Component {
       <div>
         <ScrollToTopOnMount />
         <Header
-            brand="Ratanov.pro"
+            brand="RATANOV.PRO"
             rightLinks={<HeaderLinks />}
             fixed
             color="transparent"

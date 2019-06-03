@@ -49,7 +49,7 @@ class ContactPage extends React.Component {
         <Header
           absolute
           color="transparent"
-          brand="Ratanov.pro"
+          brand="RATANOV.PRO"
           rightLinks={<HeaderLinks />}
           {...rest}
         />

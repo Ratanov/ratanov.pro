@@ -31,7 +31,7 @@ class LandingPage extends React.Component {
       <div>
         <Header
             routes={dashboardRoutes}
-            brand="Ratanov.pro"
+            brand="Material Kit React"
             rightLinks={<HeaderLinks />}
             fixed
             color="transparent"
