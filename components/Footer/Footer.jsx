@@ -8,10 +8,8 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import { List, ListItem, withStyles } from "@material-ui/core";
 
-// @material-ui/icons
-import Favorite from "@material-ui/icons/Favorite";
-
 import footerStyle from "assets/jss/material-kit-react/components/footerStyle.jsx";
+import reactLogo from 'assets/img/react-logo.svg';
 
 function Footer({ ...props }) {
   const { classes, whiteFont } = props;
@@ -26,31 +24,33 @@ function Footer({ ...props }) {
   return (
     <footer className={footerClasses}>
       <div className={classes.container}>
-        <div className={classes.left}>
-          <List className={classes.list}>
-            <ListItem className={classes.inlineBlock}>
-              <Link to="/about" className={classes.block+" pl-0"}>О нас</Link>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <Link to="/landing-page" className={classes.block}>landing-page</Link>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <Link to="/components" className={classes.block}>components</Link>
-            </ListItem>
-            <ListItem className={classes.inlineBlock+ " pr-0"}>
-              <Link to="/login-page" target="_blank" className={classes.block}>login-page</Link>
-            </ListItem>
-          </List>
-        </div>
-        <div className={classes.right}>
+        {/*<div className={classes.left}>*/}
+          {/*<List className={classes.list}>*/}
+            {/*<ListItem className={classes.inlineBlock}>*/}
+              {/*<Link to="/about" className={classes.block+" pl-0"}>О нас</Link>*/}
+            {/*</ListItem>*/}
+          {/*</List>*/}
+        {/*</div>*/}
+        <div className={classes.center}>
           &copy; {1900 + new Date().getYear()}{" "}
           <a
             href="https://www.ratanov.pro"
             className={aClasses}
             target="_blank"
+            rel="noopener noreferrer"
           >
             Ratanov.pro
           </a>{" "}Web Studio
+          <br />
+          Made with <img src={reactLogo} className="react-logo" alt="React-logo" />
+          <a
+            href="https://reactjs.org/"
+            className={"react-link"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            React
+          </a>
         </div>
       </div>
     </footer>

@@ -17,7 +17,8 @@ import Primary from "components/Typography/Primary.jsx";
 import Muted from "components/Typography/Muted.jsx";
 import Quote from "components/Typography/Quote.jsx";
 import typographyStyle from "assets/jss/material-kit-react/views/componentsSections/typographyStyle.jsx";
-import image from "assets/img/faces/avatar.jpg";
+import image from "assets/img/faces/oleg-ratanov.jpg";
+
 class SectionTypography extends React.Component {
   render() {
     const { classes } = this.props;

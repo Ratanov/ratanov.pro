@@ -175,3 +175,21 @@ main.react-images__pager {
   cursor: zoom-in!important;
 }
 
+.react-logo {
+  animation: react-logo-spin infinite 8s linear;
+  height: 22px;
+  pointer-events: none;
+}
+
+@keyframes react-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.react-link, .react-link:hover, .react-link:visited {
+  color: #61dafb;
+}

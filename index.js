@@ -8,7 +8,6 @@ import "assets/scss/style.scss?v=1.0.0";
 
 // pages for this product
 import HomePage from "views/HomePage/HomePage.jsx";
-import LandingPage from "views/LandingPage/LandingPage.jsx";
 import RatanovProfilePage from "views/RatanovProfilePage/RatanovProfilePage.jsx";
 import LiverkaProfilePage from "views/LiverkaProfilePage/LiverkaProfilePage.jsx";
 import Components from "views/Components/Components.jsx";
@@ -23,7 +22,6 @@ ReactDOM.render(
     <Switch>
       <Route path="/login-page" component={LoginPage} />
       <Route path="/components" component={Components} />
-      <Route path="/landing-page" component={LandingPage} />
       <Route path="/contact" component={ContactPage} />
       <Route path="/about/liverka" component={LiverkaProfilePage} />
       <Route path="/about/oleg-ratanov" component={RatanovProfilePage} />
