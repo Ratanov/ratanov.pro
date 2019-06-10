@@ -54,8 +54,10 @@ const profilePageStyle = {
     color: "#999"
   },
   navWrapper: {
-    margin: "20px auto 50px auto",
+    margin: "20px auto 15px auto",
     textAlign: "center",
+    paddingLeft: "0",
+    paddingRight: "0"
   },
   profileDescription: {
     padding: "20px 30px"
