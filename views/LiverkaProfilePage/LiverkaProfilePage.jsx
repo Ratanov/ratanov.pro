@@ -152,12 +152,8 @@ class LiverkaProfilePage extends React.Component {
                 </div>
               </GridItem>
             </GridContainer>
-            <GridContainer justify="center">
-              <GridItem xs={12} sm={12} md={12} className={classes.navWrapper}>
-                <LiverkaPortfolio />
-              </GridItem>
-            </GridContainer>
           </div>
+          <LiverkaPortfolio />
         </div>
         <Footer />
       </div>

@@ -133,12 +133,10 @@ class RatanovProfilePage extends React.Component {
                 </div>
               </GridItem>
             </GridContainer>
-
-            <GridContainer justify="center">
-              <GridItem xs={12} sm={12} md={12} className={classes.navWrapper+" portfolioSection-mobile"}>
-                <WebsiteSection />
-              </GridItem>
-            </GridContainer>
+          </div>
+          <br /><br /><br />
+          <div className={"portfolioSection-mobile"}>
+            <WebsiteSection />
           </div>
         </div>
         <Footer />
