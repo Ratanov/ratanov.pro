@@ -150,6 +150,12 @@
   }
 }
 
+@media (min-width: 960px) {
+  .desktop-d-none {
+    display: none!important;
+  }
+}
+
 @media (max-width: 575px) {
   .imgRounded0 {
     border-radius: 0!important;

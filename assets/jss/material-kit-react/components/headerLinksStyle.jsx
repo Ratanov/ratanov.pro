@@ -67,6 +67,13 @@ const headerLinksStyle = theme => ({
       }
     }
   },
+  telNavLink: {
+    textDecoration: "none",
+    color: "inherit",
+      "&:hover,&:focus": {
+      color: "inherit",
+    }
+  },
   notificationNavLink: {
     color: "inherit",
     padding: "0.9375rem",
@@ -98,6 +105,12 @@ const headerLinksStyle = theme => ({
     width: "20px",
     height: "20px",
     marginRight: "3px"
+  },
+  iconCall: {
+    width: "20px",
+    height: "20px",
+    marginRight: "3px",
+    fill: "#228B22"
   },
   socialIcons: {
     position: "relative",
