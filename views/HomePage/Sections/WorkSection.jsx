@@ -18,7 +18,7 @@ class WorkSection extends React.Component {
     return (
       <div className={classes.section} name="scroll-to-order">
         <GridContainer justify="center">
-          <GridItem xs={12} sm={12} md={8}>
+          <GridItem xs={12} sm={12} md={6}>
             <h2 className={classes.title}>Отправьте заявку, чтобы создать крутой проект</h2>
             <h4 className={classes.description}>
               Заполните поля ниже и мы свяжемся с Вами как можно быстрее.

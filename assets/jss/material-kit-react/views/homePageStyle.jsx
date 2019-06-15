@@ -10,7 +10,7 @@ const homePageStyle = {
     ...title,
     display: "inline-block",
     position: "relative",
-    marginTop: "30px",
+    margin: ".88rem 0",
     minHeight: "32px",
     color: "#FFFFFF",
     textDecoration: "none"
@@ -18,7 +18,7 @@ const homePageStyle = {
   subtitle: {
     fontSize: "1.313rem",
     maxWidth: "500px",
-    margin: "10px 0 0"
+    margin: ".88rem 0 0"
   },
   main: {
     background: "#FFFFFF",
