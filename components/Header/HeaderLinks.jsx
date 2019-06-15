@@ -14,6 +14,7 @@ import { PhoneInTalk } from "@material-ui/icons";
 // core components
 import Button from "components/CustomButtons/Button.jsx";
 import OrderButton from "components/Header/OrderButton.jsx";
+import { Link as ScrollLink } from 'react-scroll'
 
 import headerLinksStyle from "assets/jss/material-kit-react/components/headerLinksStyle.jsx";
 
@@ -39,7 +40,72 @@ function HeaderLinks({ ...props }) {
         <Link to="/contact" className={classes.navLink}>Контакты</Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <OrderButton />
+        <Tooltip
+          id="vk"
+          title="Подписывайся в Вконтакте"
+          placement={window.innerWidth > 959 ? "bottom" : "left"}
+          classes={window.innerWidth > 959 ? { tooltip: classes.tooltip } : { tooltip: classes.tooltip + " d-none"}}
+        >
+          <Button
+            href="https://vk.com/ratanovpro"
+            target="_blank"
+            color="transparent"
+            className={classes.navLink}
+          >
+            <i className={classes.socialIcons + " fab fa-vk m-0"} />
+          </Button>
+        </Tooltip>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Tooltip
+          id="instagram-twitter"
+          title="Подписывайся в твиттере"
+          placement={window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <Button
+            href="https://twitter.com/RatanovPro"
+            target="_blank"
+            color="transparent"
+            className={classes.navLink}
+          >
+            <i className={classes.socialIcons + " fab fa-twitter m-0"} />
+          </Button>
+        </Tooltip>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Tooltip
+          id="instagram-tooltip"
+          title="Подписывайся в инстаграме"
+          placement={window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <Button
+            color="transparent"
+            href="https://www.instagram.com/ratanov.pro/"
+            target="_blank"
+            className={classes.navLink}
+          >
+            <i className={classes.socialIcons + " fab fa-instagram m-0"} />
+          </Button>
+        </Tooltip>
+      </ListItem>
+      <ListItem className={classes.listItem + " mr-3"}>
+        <Tooltip
+          id="instagram-facebook"
+          title="Подписывайся в фейсбуке"
+          placement={window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <Button
+            color="transparent"
+            href="https://www.facebook.com/ratanov.pro"
+            target="_blank"
+            className={classes.navLink}
+          >
+            <i className={classes.socialIcons + " fab fa-facebook m-0"} />
+          </Button>
+        </Tooltip>
       </ListItem>
       <ListItem className={classes.listItem+" desktop-d-none"}>
         <a className={classes.telNavLink} href="tel:+7600878708">
@@ -48,79 +114,21 @@ function HeaderLinks({ ...props }) {
             target="_blank"
             className={classes.navLink}
           >
-
-            <PhoneInTalk className={classes.iconCall} /> Позвонить
+            Позвонить&nbsp;
+            <PhoneInTalk className={classes.iconCall} />
           </Button>
         </a>
       </ListItem>
-      {/*<ListItem className={classes.listItem}>*/}
-        {/*<Tooltip*/}
-          {/*id="vk"*/}
-          {/*title="Подписывайся в Вконтакте"*/}
-          {/*placement={window.innerWidth > 959 ? "bottom" : "left"}*/}
-          {/*classes={window.innerWidth > 959 ? { tooltip: classes.tooltip } : { tooltip: classes.tooltip + " d-none"}}*/}
-        {/*>*/}
-          {/*<Button*/}
-            {/*href="https://vk.com/ratanovpro"*/}
-            {/*target="_blank"*/}
-            {/*color="transparent"*/}
-            {/*className={classes.navLink}*/}
-          {/*>*/}
-            {/*<i className={classes.socialIcons + " fab fa-vk m-0"} />*/}
-          {/*</Button>*/}
-        {/*</Tooltip>*/}
-      {/*</ListItem>*/}
-      {/*<ListItem className={classes.listItem}>*/}
-        {/*<Tooltip*/}
-          {/*id="instagram-twitter"*/}
-          {/*title="Подписывайся в твиттере"*/}
-          {/*placement={window.innerWidth > 959 ? "top" : "left"}*/}
-          {/*classes={{ tooltip: classes.tooltip }}*/}
-        {/*>*/}
-          {/*<Button*/}
-            {/*href="https://twitter.com/RatanovPro"*/}
-            {/*target="_blank"*/}
-            {/*color="transparent"*/}
-            {/*className={classes.navLink}*/}
-          {/*>*/}
-            {/*<i className={classes.socialIcons + " fab fa-twitter m-0"} />*/}
-          {/*</Button>*/}
-        {/*</Tooltip>*/}
-      {/*</ListItem>*/}
-      {/*<ListItem className={classes.listItem}>*/}
-        {/*<Tooltip*/}
-          {/*id="instagram-tooltip"*/}
-          {/*title="Подписывайся в инстаграме"*/}
-          {/*placement={window.innerWidth > 959 ? "top" : "left"}*/}
-          {/*classes={{ tooltip: classes.tooltip }}*/}
-        {/*>*/}
-          {/*<Button*/}
-            {/*color="transparent"*/}
-            {/*href="https://www.instagram.com/ratanov.pro/"*/}
-            {/*target="_blank"*/}
-            {/*className={classes.navLink}*/}
-          {/*>*/}
-            {/*<i className={classes.socialIcons + " fab fa-instagram m-0"} />*/}
-          {/*</Button>*/}
-        {/*</Tooltip>*/}
-      {/*</ListItem>*/}
-      {/*<ListItem className={classes.listItem}>*/}
-        {/*<Tooltip*/}
-          {/*id="instagram-facebook"*/}
-          {/*title="Подписывайся в фейсбуке"*/}
-          {/*placement={window.innerWidth > 959 ? "top" : "left"}*/}
-          {/*classes={{ tooltip: classes.tooltip }}*/}
-        {/*>*/}
-          {/*<Button*/}
-            {/*color="transparent"*/}
-            {/*href="https://www.facebook.com/ratanov.pro"*/}
-            {/*target="_blank"*/}
-            {/*className={classes.navLink}*/}
-          {/*>*/}
-            {/*<i className={classes.socialIcons + " fab fa-facebook m-0"} />*/}
-          {/*</Button>*/}
-        {/*</Tooltip>*/}
-      {/*</ListItem>*/}
+      <ListItem className={classes.listItem}>
+        <ScrollLink
+          className={classes.orderButtonScroll}
+          to="scroll-to-order"
+          spy={true}
+          smooth={true}
+          duration={1000} >
+          <OrderButton />
+        </ScrollLink>
+      </ListItem>
     </List>
   );
 }

@@ -1,6 +1,4 @@
 import React from "react";
-// react plugin for creating date-time-picker
-import Datetime from "react-datetime";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import Slide from "@material-ui/core/Slide";
@@ -12,7 +10,7 @@ import DialogActions from "@material-ui/core/DialogActions";
 import InputLabel from "@material-ui/core/InputLabel";
 import FormControl from "@material-ui/core/FormControl";
 // @material-ui/icons
-import { Star , Close } from "@material-ui/icons";
+import { Star, StarBorder, Close } from "@material-ui/icons";
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
@@ -50,14 +48,15 @@ class OrderButton extends React.Component {
     return (
       <div>
         <Button
-          // color="primary"
           color="transparent"
           // block
-          className={classes.navLink}
-          onClick={() => this.handleClickOpen("classicModal")}
+          className={classes.navLink+" buttonOrder"}
+          // onClick={() => this.handleClickOpen("classicModal")}
+          onClick={() => this.handleClickOpen()}
         >
-          <Star className={classes.iconOrder} />
-          Заказать
+          Заказать&nbsp;
+          <Star className={classes.iconOrder+" iconOrderStar"} />
+          <StarBorder className={"iconOrderStarHover"} />
         </Button>
         <Dialog
           classes={{
@@ -91,19 +90,6 @@ class OrderButton extends React.Component {
             id="classic-modal-slide-description"
             className={classes.modalBody}
           >
-            {/*<GridContainer justify="center">*/}
-              {/*<GridItem xs={12} sm={12} md={6}>*/}
-                <InputLabel className={classes.label}>
-                  Datetime Picker
-                </InputLabel>
-                <br />
-                <FormControl fullWidth>
-                  <Datetime
-                    inputProps={{ placeholder: "Datetime Picker Here" }}
-                  />
-                </FormControl>
-              {/*</GridItem>*/}
-            {/*</GridContainer>*/}
             <p>
               Far far away, behind the word mountains, far from the
               countries Vokalia and Consonantia, there live the blind

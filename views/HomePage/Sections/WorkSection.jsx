@@ -16,7 +16,7 @@ class WorkSection extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className={classes.section}>
+      <div className={classes.section} name="scroll-to-order">
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={8}>
             <h2 className={classes.title}>Отправьте заявку, чтобы создать крутой проект</h2>
@@ -25,7 +25,7 @@ class WorkSection extends React.Component {
             </h4>
             <form>
               <GridContainer>
-                <GridItem xs={12} sm={12} md={6}>
+                <GridItem xs={12} sm={12} md={4}>
                   <CustomInput
                     labelText="Имя"
                     id="name"
@@ -34,10 +34,19 @@ class WorkSection extends React.Component {
                     }}
                   />
                 </GridItem>
-                <GridItem xs={12} sm={12} md={6}>
+                <GridItem xs={12} sm={12} md={4}>
                   <CustomInput
                     labelText="Email"
                     id="email"
+                    formControlProps={{
+                      fullWidth: true
+                    }}
+                  />
+                </GridItem>
+                <GridItem xs={12} sm={12} md={4}>
+                  <CustomInput
+                    labelText="Телефон"
+                    id="phone"
                     formControlProps={{
                       fullWidth: true
                     }}

@@ -24,14 +24,7 @@ function Footer({ ...props }) {
   return (
     <footer className={footerClasses}>
       <div className={classes.container}>
-        {/*<div className={classes.left}>*/}
-          {/*<List className={classes.list}>*/}
-            {/*<ListItem className={classes.inlineBlock}>*/}
-              {/*<Link to="/about" className={classes.block+" pl-0"}>О нас</Link>*/}
-            {/*</ListItem>*/}
-          {/*</List>*/}
-        {/*</div>*/}
-        <div className={classes.center}>
+        <div className={classes.left}>
           &copy; {1900 + new Date().getYear()}{" "}
           <a
             href="https://www.ratanov.pro"
@@ -41,8 +34,15 @@ function Footer({ ...props }) {
           >
             Ratanov.pro
           </a>{" "}Web Studio
-          <br />
-          Made with <img src={reactLogo} className="react-logo" alt="React-logo" />
+          {/*<List className={classes.list}>*/}
+            {/*<ListItem className={classes.inlineBlock}>*/}
+              {/*<Link to="/about" className={classes.block+" pl-0"}>О нас</Link>*/}
+            {/*</ListItem>*/}
+          {/*</List>*/}
+        </div>
+        <div className={classes.right}>
+          Made with
+          <img src={reactLogo} className="react-logo" alt="React" />
           <a
             href="https://reactjs.org/"
             className={"react-link"}

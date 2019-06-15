@@ -5,6 +5,7 @@ import InputAdornment from "@material-ui/core/InputAdornment";
 // @material-ui/icons
 import Email from "@material-ui/icons/Email";
 import People from "@material-ui/icons/People";
+import Phone from "@material-ui/icons/Phone";
 // core components
 import Header from "components/Header/Header.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
@@ -140,6 +141,21 @@ class ContactPage extends React.Component {
                           endAdornment: (
                             <InputAdornment position="end">
                               <Email className={classes.inputIconsColor} />
+                            </InputAdornment>
+                          )
+                        }}
+                      />
+                      <CustomInput
+                        labelText="Телефон"
+                        id="phone"
+                        formControlProps={{
+                          fullWidth: true
+                        }}
+                        inputProps={{
+                          type: "tel",
+                          endAdornment: (
+                            <InputAdornment position="end">
+                              <Phone className={classes.inputIconsColor} />
                             </InputAdornment>
                           )
                         }}

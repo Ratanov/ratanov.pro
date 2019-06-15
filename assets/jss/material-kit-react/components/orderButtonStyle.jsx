@@ -48,7 +48,7 @@ const orderButtonStyle = theme => ({
     width: "20px",
     height: "20px",
     marginRight: "3px",
-    fill: "#DAA520"
+    fill: "#daa520"
   },
   ...modalStyle,
   label: {

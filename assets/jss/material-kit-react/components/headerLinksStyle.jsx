@@ -110,7 +110,7 @@ const headerLinksStyle = theme => ({
     width: "20px",
     height: "20px",
     marginRight: "3px",
-    fill: "#228B22"
+    fill: "#228b22"
   },
   socialIcons: {
     position: "relative",
@@ -128,6 +128,13 @@ const headerLinksStyle = theme => ({
   ...tooltip,
   marginRight5: {
     marginRight: "5px",
+  },
+  orderButtonScroll: {
+    color: "inherit",
+    transition: "all .225s ease-in-out",
+    "&:hover,&:focus": {
+      color: "#daa520",
+    }
   }
 });
 

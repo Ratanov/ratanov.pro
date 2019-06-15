@@ -183,7 +183,7 @@ main.react-images__pager {
 
 .react-logo {
   animation: react-logo-spin infinite 8s linear;
-  height: 22px;
+  height: 20px;
   pointer-events: none;
 }
 
@@ -198,4 +198,26 @@ main.react-images__pager {
 
 .react-link, .react-link:hover, .react-link:visited {
   color: #61dafb;
+}
+
+/*header order button*/
+.buttonOrder svg {
+  margin-right: 0!important;
+}
+
+.buttonOrder .iconOrderStar {
+  display: none;
+}
+
+.buttonOrder .iconOrderStarHover {
+  fill: #daa520;
+  display: block;
+}
+
+.buttonOrder:hover .iconOrderStar {
+  display: block!important;
+}
+
+.buttonOrder:hover .iconOrderStarHover {
+  display: none!important;
 }
