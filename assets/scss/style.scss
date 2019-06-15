@@ -18,6 +18,10 @@
   margin-right: 1em!important;
 }
 
+.mr-2 {
+  margin-right: 2em!important;
+}
+
 .mr-3 {
   margin-right: 3em!important;
 }
@@ -148,6 +152,9 @@
     padding-left: 8px!important;
     padding-right: 8px!important;
   }
+  .mobile-d-none {
+    display: none!important;
+  }
 }
 
 @media (min-width: 960px) {
@@ -200,7 +207,11 @@ main.react-images__pager {
   color: #61dafb;
 }
 
-/*header order button*/
+/*header->order button*/
+.buttonOrder:hover span {
+  color: #daa520;
+}
+
 .buttonOrder svg {
   margin-right: 0!important;
 }
@@ -220,4 +231,8 @@ main.react-images__pager {
 
 .buttonOrder:hover .iconOrderStarHover {
   display: none!important;
+}
+/*contact, order modal->form*/
+.contactInput div {
+  margin-bottom: 3px!important;
 }

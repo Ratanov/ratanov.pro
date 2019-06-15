@@ -51,6 +51,18 @@ const orderButtonStyle = theme => ({
     fill: "#daa520"
   },
   ...modalStyle,
+  modalHeader: {
+    paddingLeft: "15px",
+    paddingRight: "15px"
+  },
+  modalBody: {
+    paddingLeft: "15px",
+    paddingRight: "15px"
+  },
+  modalFooter: {
+    paddingLeft: "15px",
+    paddingRight: "15px"
+  },
   label: {
     color: "rgba(0, 0, 0, 0.26)",
     cursor: "pointer",

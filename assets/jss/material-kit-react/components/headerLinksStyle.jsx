@@ -128,13 +128,6 @@ const headerLinksStyle = theme => ({
   ...tooltip,
   marginRight5: {
     marginRight: "5px",
-  },
-  orderButtonScroll: {
-    color: "inherit",
-    transition: "all .225s ease-in-out",
-    "&:hover,&:focus": {
-      color: "#daa520",
-    }
   }
 });
 

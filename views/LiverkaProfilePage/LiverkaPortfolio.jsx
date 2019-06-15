@@ -18,23 +18,7 @@ function LiverkaPortfolio() {
 
   return (
     <div className={'liverka'}>
-      <Gallery photos={photos} onClick={openLightbox} />
-      <ModalGateway>
-        {viewerIsOpen ? (
-          <Modal onClose={closeLightbox}>
-            <Carousel
-              currentIndex={currentImage}
-              views={photos.map(x => ({
-                ...x,
-                srcset: x.srcSet,
-                caption: x.title
-              }))}
-            />
-          </Modal>
-        ) : null}
-      </ModalGateway>
-      <br /><br /><br />
-      <Gallery photos={photos} direction={"column"} onClick={openLightbox} />
+      <Gallery photos={photos} direction="column" onClick={openLightbox} />
       <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>

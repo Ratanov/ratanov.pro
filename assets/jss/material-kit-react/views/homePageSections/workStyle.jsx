@@ -23,10 +23,6 @@ const workStyle = {
   },
   textCenter: {
     textAlign: "center"
-  },
-  textArea: {
-    marginRight: "15px",
-    marginLeft: "15px"
   }
 };
 

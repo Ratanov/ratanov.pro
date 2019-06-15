@@ -16,6 +16,7 @@ import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import orderButtonStyle from "assets/jss/material-kit-react/components/orderButtonStyle.jsx";
+import CustomInput from "components/CustomInput/CustomInput.jsx";
 
 function Transition(props) {
   return <Slide direction="left" {...props} />;
@@ -51,8 +52,7 @@ class OrderButton extends React.Component {
           color="transparent"
           // block
           className={classes.navLink+" buttonOrder"}
-          // onClick={() => this.handleClickOpen("classicModal")}
-          onClick={() => this.handleClickOpen()}
+          onClick={() => this.handleClickOpen("classicModal")}
         >
           Заказать&nbsp;
           <Star className={classes.iconOrder+" iconOrderStar"} />
@@ -84,30 +84,67 @@ class OrderButton extends React.Component {
             >
               <Close className={classes.modalClose} />
             </IconButton>
-            <h4 className={classes.modalTitle}>Modal title</h4>
+            <h4 className={classes.modalTitle}>Новая заявка</h4>
           </DialogTitle>
           <DialogContent
             id="classic-modal-slide-description"
             className={classes.modalBody}
           >
-            <p>
-              Far far away, behind the word mountains, far from the
-              countries Vokalia and Consonantia, there live the blind
-              texts. Separated they live in Bookmarksgrove right at
-              the coast of the Semantics, a large language ocean. A
-              small river named Duden flows by their place and
-              supplies it with the necessary regelialia. It is a
-              paradisematic country, in which roasted parts of
-              sentences fly into your mouth. Even the all-powerful
-              Pointing has no control about the blind texts it is an
-              almost unorthographic life One day however a small line
-              of blind text by the name of Lorem Ipsum decided to
-              leave for the far World of Grammar.
-            </p>
+            <form>
+              <GridContainer className="contactInput">
+                <GridItem xs={12} sm={12} md={12}>
+                  <CustomInput
+                    labelText="Имя"
+                    id="name"
+                    formControlProps={{
+                      fullWidth: true
+                    }}
+                  />
+                </GridItem>
+                <GridItem xs={12} sm={12} md={12}>
+                  <CustomInput
+                    labelText="Email"
+                    id="email"
+                    formControlProps={{
+                      fullWidth: true
+                    }}
+                  />
+                </GridItem>
+                <GridItem xs={12} sm={12} md={12}>
+                  <CustomInput
+                    labelText="Телефон"
+                    id="phone"
+                    formControlProps={{
+                      fullWidth: true
+                    }}
+                  />
+                </GridItem>
+                <GridItem xs={12} sm={12} md={12}>
+                  <CustomInput
+                    labelText="Сообщение"
+                    id="message"
+                    formControlProps={{
+                      fullWidth: true
+                    }}
+                    inputProps={{
+                      multiline: true,
+                      rows: 5
+                    }}
+                  />
+                </GridItem>
+                <GridItem xs={12} sm={12} md={12}>
+                  <p>
+                    Обращаем ваше внимание, что заявка будет рассмотрена в рабочие часы студии.<br />
+                    Если вы оставили заявку в нерабочее время, она будет обработана в начале следующего рабочего дня.
+                    По возможности, пожалуйста, указывайте желаемое время для связи с вами.
+                  </p>
+                </GridItem>
+              </GridContainer>
+            </form>
           </DialogContent>
           <DialogActions className={classes.modalFooter}>
             <Button color="transparent" simple>
-              Nice Button
+              Отправить
             </Button>
             <Button
               onClick={() => this.handleClose("classicModal")}
