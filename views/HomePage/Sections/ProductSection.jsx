@@ -18,7 +18,7 @@ import { translate } from "react-i18next";
 class ProductSection extends React.Component {
   render() {
     const { classes } = this.props;
-    const { t, i18n } = this.props;
+    const { t } = this.props;
     return (
       <div className={classes.section}>
         <GridContainer justify="center">

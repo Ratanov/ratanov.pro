@@ -28,7 +28,7 @@ import { translate } from "react-i18next";
 class HomePage extends React.Component {
   render() {
     const { classes, ...rest } = this.props;
-    const { t, i18n } = this.props;
+    const { t } = this.props;
     return (
       <div>
         <ScrollToTopOnMount />
