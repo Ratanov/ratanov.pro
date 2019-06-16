@@ -4,8 +4,6 @@ import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 
-// @material-ui/icons
-
 // core components
 import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
@@ -23,11 +21,14 @@ import PortfolioSection from "./Sections/PortfolioSection.jsx";
 import ScrollToTopOnMount from "components/ScrollToTop/ScrollToTop.jsx";
 
 // react-scroll https://github.com/fisshy/react-scroll
-import { Link as ScrollLink } from 'react-scroll'
+import { Link as ScrollLink } from 'react-scroll';
+
+import { translate } from "react-i18next";
 
 class HomePage extends React.Component {
   render() {
     const { classes, ...rest } = this.props;
+    const { t, i18n } = this.props;
     return (
       <div>
         <ScrollToTopOnMount />
@@ -47,10 +48,8 @@ class HomePage extends React.Component {
             <GridContainer>
               <GridItem>
                 <div className={classes.brand}>
-                  <h1 className={classes.title}>Веб-студия Ratanov.pro</h1>
-                  <h3 className={classes.subtitle}>
-                    Объединяем вместе технологию и творчество
-                  </h3>
+                  <h1 className={classes.title}>{t('HomePage Brand Title')}</h1>
+                  <h3 className={classes.subtitle}>{t('HomePage Brand Subtitle')}</h3>
                 </div>
               </GridItem>
             </GridContainer>
@@ -77,4 +76,4 @@ class HomePage extends React.Component {
   }
 }
 
-export default withStyles(homePageStyle)(HomePage);
+export default withStyles(homePageStyle)(translate("translations")(HomePage));

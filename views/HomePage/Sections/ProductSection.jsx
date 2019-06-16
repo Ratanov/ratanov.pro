@@ -13,14 +13,17 @@ import InfoArea from "components/InfoArea/InfoArea.jsx";
 
 import productStyle from "assets/jss/material-kit-react/views/homePageSections/productStyle.jsx";
 
+import { translate } from "react-i18next";
+
 class ProductSection extends React.Component {
   render() {
     const { classes } = this.props;
+    const { t, i18n } = this.props;
     return (
       <div className={classes.section}>
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={8}>
-            <h2 className={classes.title}>Давайте поговорим о нашем подходе</h2>
+            <h2 className={classes.title}>{t('ProductSection Title')}</h2>
             {/*<h5 className={classes.description}>*/}
               {/*3 наших качества*/}
             {/*</h5>*/}
@@ -62,4 +65,4 @@ class ProductSection extends React.Component {
   }
 }
 
-export default withStyles(productStyle)(ProductSection);
+export default withStyles(productStyle)(translate("translations")(ProductSection));

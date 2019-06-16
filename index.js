@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { createBrowserHistory } from "history";
 import { Router, Route, Switch } from "react-router-dom";
+import { I18nextProvider } from "react-i18next";
 
 import "assets/scss/material-kit-react.scss?v=1.4.0";
 import "assets/scss/style.scss?v=1.0.0";
@@ -15,10 +16,13 @@ import AboutPage from "views/AboutPage/AboutPage.jsx";
 import LoginPage from "views/LoginPage/LoginPage.jsx";
 import ContactPage from "./views/ContactPage/ContactPage.jsx";
 
+import i18n from './i18n';
+
 var hist = createBrowserHistory();
 
 ReactDOM.render(
   <Router history={hist}>
+  <I18nextProvider i18n={i18n}>
     <Switch>
       <Route path="/login-page" component={LoginPage} />
       <Route path="/components" component={Components} />
@@ -28,6 +32,7 @@ ReactDOM.render(
       <Route path="/about" component={AboutPage} />
       <Route path="/" component={HomePage} />
     </Switch>
+  </I18nextProvider>
   </Router>,
   document.getElementById("root")
 );

@@ -14,6 +14,7 @@ import { PhoneInTalk } from "@material-ui/icons";
 // core components
 import Button from "components/CustomButtons/Button.jsx";
 import OrderButton from "components/Header/OrderButton.jsx";
+import Languages from "components/Header/Languages.jsx";
 
 import headerLinksStyle from "assets/jss/material-kit-react/components/headerLinksStyle.jsx";
 
@@ -22,6 +23,9 @@ function HeaderLinks({ ...props }) {
   const { classes } = props;
   return (
     <List className={classes.list}>
+      <ListItem className={classes.listItem + " mr-1"}>
+        <Languages />
+      </ListItem>
       <ListItem className={classes.listItem + " mr-1"}>
         <Link to="/about" className={classes.navLink}>О нас</Link>
       </ListItem>
