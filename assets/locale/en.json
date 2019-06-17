@@ -3,7 +3,7 @@
   "Menu Services": "Services",
   "Menu Contacts": "Contacts",
   "Call": "Call",
-  "Order": "Order now",
+  "Order": "Hire us",
   "Write in WhatsApp": "Write in WhatsApp",
   "HomePage Brand Title": "Ratanov.pro Web Studio",
   "HomePage Brand Subtitle": "We combine technology and creativity",
@@ -13,5 +13,12 @@
   "ProductSection SecondSection Title": "Cooperation",
   "ProductSection SecondSection Description": "Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.",
   "ProductSection ThirdSection Title": "Love to work",
-  "ProductSection ThirdSection Description": "Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+  "ProductSection ThirdSection Description": "Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.",
+  "WorkSection Title": "Send us a request to create unique project for you",
+  "WorkSection Description": "Hire us now - we're here to assist you. Drop us a line, and we'll get back to you in a blink of an eye.",
+  "Name": "Name",
+  "Email": "Email",
+  "Phone": "Phone",
+  "Message": "Message",
+  "Send": "Send"
 }

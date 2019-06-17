@@ -13,5 +13,12 @@
   "ProductSection SecondSection Title": "Сотрудничество",
   "ProductSection SecondSection Description": "Русский текст",
   "ProductSection ThirdSection Title": "Любовь к делу",
-  "ProductSection ThirdSection Description": "Русский текст"
+  "ProductSection ThirdSection Description": "Русский текст",
+  "WorkSection Title": "Отправьте заявку, чтобы создать крутой проект",
+  "WorkSection Description": "Заполните поля ниже и мы свяжемся с Вами как можно быстрее.",
+  "Name": "Имя",
+  "Email": "Email",
+  "Phone": "Телефон",
+  "Message": "Сообщение",
+  "Send": "Отправить"
 }
