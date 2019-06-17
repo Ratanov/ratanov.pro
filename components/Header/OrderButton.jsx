@@ -58,6 +58,7 @@ class OrderButton extends React.Component {
           <StarBorder className={"iconOrderStarHover"} />
         </Button>
         <Dialog
+          fullScreen
           classes={{
             root: classes.center,
             paper: classes.modal,
@@ -83,7 +84,7 @@ class OrderButton extends React.Component {
             >
               <Close className={classes.modalClose} />
             </IconButton>
-            <h4 className={classes.modalTitle}>Новая заявка</h4>
+            <h4 className={classes.modalTitle}><Trans>OrderModal Title</Trans></h4>
           </DialogTitle>
           <DialogContent
             id="classic-modal-slide-description"
@@ -91,27 +92,27 @@ class OrderButton extends React.Component {
           >
             <form>
               <GridContainer className="contactInput">
-                <GridItem xs={12} sm={12} md={12}>
+                <GridItem xs={12} sm={4} md={4}>
                   <CustomInput
-                    labelText="Имя"
+                    labelText={<Trans>Name</Trans>}
                     id="name"
                     formControlProps={{
                       fullWidth: true
                     }}
                   />
                 </GridItem>
-                <GridItem xs={12} sm={12} md={12}>
+                <GridItem xs={12} sm={4} md={4}>
                   <CustomInput
-                    labelText="Email"
+                    labelText={<Trans>Email</Trans>}
                     id="email"
                     formControlProps={{
                       fullWidth: true
                     }}
                   />
                 </GridItem>
-                <GridItem xs={12} sm={12} md={12}>
+                <GridItem xs={12} sm={4} md={4}>
                   <CustomInput
-                    labelText="Телефон"
+                    labelText={<Trans>Phone</Trans>}
                     id="phone"
                     formControlProps={{
                       fullWidth: true
@@ -120,7 +121,7 @@ class OrderButton extends React.Component {
                 </GridItem>
                 <GridItem xs={12} sm={12} md={12}>
                   <CustomInput
-                    labelText="Сообщение"
+                    labelText={<Trans>Message</Trans>}
                     id="message"
                     formControlProps={{
                       fullWidth: true
@@ -133,9 +134,8 @@ class OrderButton extends React.Component {
                 </GridItem>
                 <GridItem xs={12} sm={12} md={12}>
                   <p>
-                    Обращаем ваше внимание, что заявка будет рассмотрена в рабочие часы студии.<br />
-                    Если вы оставили заявку в нерабочее время, она будет обработана в начале следующего рабочего дня.
-                    По возможности, пожалуйста, указывайте желаемое время для связи с вами.
+                    <Trans>OrderModal Description1</Trans><br />
+                    <Trans>OrderModal Description2</Trans>
                   </p>
                 </GridItem>
               </GridContainer>
@@ -143,14 +143,14 @@ class OrderButton extends React.Component {
           </DialogContent>
           <DialogActions className={classes.modalFooter}>
             <Button color="transparent" simple>
-              Отправить
+              <Trans>Send</Trans>
             </Button>
             <Button
               onClick={() => this.handleClose("classicModal")}
               color="danger"
               simple
             >
-              Закрыть
+              <Trans>Close</Trans>
             </Button>
           </DialogActions>
         </Dialog>

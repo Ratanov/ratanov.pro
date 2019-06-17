@@ -20,5 +20,9 @@
   "Email": "Email",
   "Phone": "Phone",
   "Message": "Message",
-  "Send": "Send"
+  "Send": "Send",
+  "Close": "Close",
+  "OrderModal Title": "New order",
+  "OrderModal Description1": "Please note that the application will be reviewed in the studio working hours.",
+  "OrderModal Description2": "If you leave a request after hours, it will be processed at the beginning of the next business day. If possible, please indicate the desired time to contact you."
 }
