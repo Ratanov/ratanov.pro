@@ -14,6 +14,7 @@ import ScrollToTopOnMount from "components/ScrollToTop/ScrollToTop.jsx";
 
 // Sections for this page
 import TeamSection from "./Sections/TeamSection.jsx";
+import { translate } from "react-i18next";
 
 class AboutPage extends React.Component {
   render() {
@@ -45,4 +46,4 @@ class AboutPage extends React.Component {
   }
 }
 
-export default withStyles(aboutPageStyle)(AboutPage);
+export default withStyles(aboutPageStyle)(translate("translations")(AboutPage));

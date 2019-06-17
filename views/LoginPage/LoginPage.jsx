@@ -23,6 +23,8 @@ import loginPageStyle from "assets/jss/material-kit-react/views/loginPage.jsx";
 
 import image from "assets/img/bg7.jpg";
 
+import { translate } from "react-i18next";
+
 class LoginPage extends React.Component {
   constructor(props) {
     super(props);
@@ -163,4 +165,4 @@ class LoginPage extends React.Component {
   }
 }
 
-export default withStyles(loginPageStyle)(LoginPage);
+export default withStyles(loginPageStyle)(translate("translations")(LoginPage));

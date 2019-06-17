@@ -23,6 +23,8 @@ import ScrollToTopOnMount from "components/ScrollToTop/ScrollToTop.jsx";
 // Sections for this page
 import WebsiteSection from "views/HomePage/Sections/WebsiteSection.jsx";
 
+import { translate } from "react-i18next";
+
 class RatanovProfilePage extends React.Component {
   render() {
     const { classes, ...rest } = this.props;
@@ -144,4 +146,4 @@ class RatanovProfilePage extends React.Component {
   }
 }
 
-export default withStyles(ratanovProfilePageStyle)(RatanovProfilePage);
+export default withStyles(ratanovProfilePageStyle)(translate("translations")(RatanovProfilePage));

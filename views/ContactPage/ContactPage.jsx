@@ -5,7 +5,6 @@ import InputAdornment from "@material-ui/core/InputAdornment";
 // @material-ui/icons
 import Email from "@material-ui/icons/Email";
 import People from "@material-ui/icons/People";
-import Phone from "@material-ui/icons/Phone";
 // core components
 import Header from "components/Header/Header.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
@@ -24,6 +23,7 @@ import contactPageStyle from "assets/jss/material-kit-react/views/contactPageSty
 import image from "assets/img/bg7.jpg";
 
 import ScrollToTopOnMount from "components/ScrollToTop/ScrollToTop.jsx";
+import { translate } from "react-i18next";
 
 class ContactPage extends React.Component {
   constructor(props) {
@@ -127,21 +127,6 @@ class ContactPage extends React.Component {
                         }}
                       />
                       <CustomInput
-                        labelText="Телефон"
-                        id="phone"
-                        formControlProps={{
-                          fullWidth: true
-                        }}
-                        inputProps={{
-                          type: "tel",
-                          endAdornment: (
-                            <InputAdornment position="end">
-                              <Phone className={classes.inputIconsColor} />
-                            </InputAdornment>
-                          )
-                        }}
-                      />
-                      <CustomInput
                         labelText="Сообщение"
                         id="message"
                         formControlProps={{
@@ -171,4 +156,4 @@ class ContactPage extends React.Component {
   }
 }
 
-export default withStyles(contactPageStyle)(ContactPage);
+export default withStyles(contactPageStyle)(translate("translations")(ContactPage));

@@ -30,6 +30,8 @@ import SectionDownload from "./Sections/SectionDownload.jsx";
 
 import componentsStyle from "assets/jss/material-kit-react/views/components.jsx";
 
+import { translate } from "react-i18next";
+
 class Components extends React.Component {
   render() {
     const { classes, ...rest } = this.props;
@@ -88,4 +90,4 @@ class Components extends React.Component {
   }
 }
 
-export default withStyles(componentsStyle)(Components);
+export default withStyles(componentsStyle)(translate("translations")(Components));

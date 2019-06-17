@@ -21,6 +21,8 @@ import liverkaProfilePageStyle from "assets/jss/material-kit-react/views/liverka
 import ScrollToTopOnMount from "components/ScrollToTop/ScrollToTop.jsx";
 import LiverkaPortfolio from "./LiverkaPortfolio.jsx";
 
+import { translate } from "react-i18next";
+
 class LiverkaProfilePage extends React.Component {
   render() {
     const { classes, ...rest } = this.props;
@@ -160,4 +162,4 @@ class LiverkaProfilePage extends React.Component {
   }
 }
 
-export default withStyles(liverkaProfilePageStyle)(LiverkaProfilePage);
+export default withStyles(liverkaProfilePageStyle)(translate("translations")(LiverkaProfilePage));
