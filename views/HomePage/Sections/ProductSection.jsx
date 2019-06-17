@@ -12,7 +12,6 @@ import GridItem from "components/Grid/GridItem.jsx";
 import InfoArea from "components/InfoArea/InfoArea.jsx";
 
 import productStyle from "assets/jss/material-kit-react/views/homePageSections/productStyle.jsx";
-
 import { translate } from "react-i18next";
 
 class ProductSection extends React.Component {
@@ -33,8 +32,8 @@ class ProductSection extends React.Component {
           <GridContainer>
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
-                title="Индивидуальность"
-                description="Каждый проект мы рассматриваем с неординарной точки зрения. Учитывая специфику задания, делаем проект самостоятельным, своеобразным и непохожим на других."
+                title={t('ProductSection FirstSection Title')}
+                description={t('ProductSection FirstSection Description')}
                 icon={Fingerprint}
                 iconColor="info"
                 vertical
@@ -42,8 +41,8 @@ class ProductSection extends React.Component {
             </GridItem>
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
-                title="Сотрудничество"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+                title={t('ProductSection SecondSection Title')}
+                description={t('ProductSection SecondSection Description')}
                 icon={Cake}
                 iconColor="warning"
                 vertical
@@ -51,8 +50,8 @@ class ProductSection extends React.Component {
             </GridItem>
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
-                title="Любовь к делу"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+                title={t('ProductSection ThirdSection Title')}
+                description={t('ProductSection ThirdSection Description')}
                 icon={Favorite}
                 iconColor="rose"
                 vertical

@@ -17,29 +17,28 @@ import OrderButton from "components/Header/OrderButton.jsx";
 import Languages from "components/Header/Languages.jsx";
 
 import headerLinksStyle from "assets/jss/material-kit-react/components/headerLinksStyle.jsx";
+import { Trans } from 'react-i18next';
 
 function HeaderLinks({ ...props }) {
-
   const { classes } = props;
   return (
     <List className={classes.list}>
-      <ListItem className={classes.listItem + " mr-1"}>
-        <Link to="/about" className={classes.navLink}>О нас</Link>
+      <ListItem className={classes.listItem}>
+        <Link to="/about" className={classes.navLink}>
+          <Trans>Menu About</Trans>
+        </Link>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Link to="/" className={classes.navLink}>
+          <Trans>Menu Services</Trans>
+        </Link>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Link to="/contact" className={classes.navLink}>
+          <Trans>Menu Contacts</Trans>
+        </Link>
       </ListItem>
       <ListItem className={classes.listItem + " mr-1"}>
-        <Button
-          href="#"
-          color="transparent"
-          target="_self"
-          className={classes.navLink}
-        >
-          Услуги
-        </Button>
-      </ListItem>
-      <ListItem className={classes.listItem + " mr-1"}>
-        <Link to="/contact" className={classes.navLink}>Контакты</Link>
-      </ListItem>
-      <ListItem className={classes.listItem + " mr-2"}>
         <OrderButton />
       </ListItem>
       <ListItem className={classes.listItem+" desktop-d-none"}>
@@ -49,7 +48,7 @@ function HeaderLinks({ ...props }) {
             target="_blank"
             className={classes.navLink}
           >
-            Позвонить&nbsp;
+            <Trans>Call</Trans>&nbsp;
             <PhoneInTalk className={classes.iconCall} />
           </Button>
         </a>
@@ -73,7 +72,7 @@ function HeaderLinks({ ...props }) {
       <ListItem className={classes.listItem}>
         <Tooltip
           id="whatsapp"
-          title="Написать в WhatsApp"
+          title={<Trans>Write in WhatsApp</Trans>}
           placement={window.innerWidth > 959 ? "bottom" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
@@ -86,57 +85,57 @@ function HeaderLinks({ ...props }) {
           </Button>
         </Tooltip>
       </ListItem>
-      <ListItem className={classes.listItem}>
-        <Tooltip
-          id="vk"
-          title="Подписывайся в Вконтакте"
-          placement={window.innerWidth > 959 ? "bottom" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            href="https://vk.com/ratanovpro"
-            target="_blank"
-            color="transparent"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-vk m-0"} />
-          </Button>
-        </Tooltip>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Tooltip
-          id="instagram-facebook"
-          title="Подписывайся в фейсбуке"
-          placement={window.innerWidth > 959 ? "bottom" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            color="transparent"
-            href="https://www.facebook.com/ratanov.pro"
-            target="_blank"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-facebook m-0"} />
-          </Button>
-        </Tooltip>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Tooltip
-          id="instagram-tooltip"
-          title="Подписывайся в инстаграме"
-          placement={window.innerWidth > 959 ? "bottom" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            color="transparent"
-            href="https://www.instagram.com/ratanov.pro/"
-            target="_blank"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-instagram m-0"} />
-          </Button>
-        </Tooltip>
-      </ListItem>
+      {/*<ListItem className={classes.listItem}>*/}
+        {/*<Tooltip*/}
+          {/*id="vk"*/}
+          {/*title="Подписывайся в Вконтакте"*/}
+          {/*placement={window.innerWidth > 959 ? "bottom" : "left"}*/}
+          {/*classes={{ tooltip: classes.tooltip }}*/}
+        {/*>*/}
+          {/*<Button*/}
+            {/*href="https://vk.com/ratanovpro"*/}
+            {/*target="_blank"*/}
+            {/*color="transparent"*/}
+            {/*className={classes.navLink}*/}
+          {/*>*/}
+            {/*<i className={classes.socialIcons + " fab fa-vk m-0"} />*/}
+          {/*</Button>*/}
+        {/*</Tooltip>*/}
+      {/*</ListItem>*/}
+      {/*<ListItem className={classes.listItem}>*/}
+        {/*<Tooltip*/}
+          {/*id="instagram-facebook"*/}
+          {/*title="Подписывайся в фейсбуке"*/}
+          {/*placement={window.innerWidth > 959 ? "bottom" : "left"}*/}
+          {/*classes={{ tooltip: classes.tooltip }}*/}
+        {/*>*/}
+          {/*<Button*/}
+            {/*color="transparent"*/}
+            {/*href="https://www.facebook.com/ratanov.pro"*/}
+            {/*target="_blank"*/}
+            {/*className={classes.navLink}*/}
+          {/*>*/}
+            {/*<i className={classes.socialIcons + " fab fa-facebook m-0"} />*/}
+          {/*</Button>*/}
+        {/*</Tooltip>*/}
+      {/*</ListItem>*/}
+      {/*<ListItem className={classes.listItem}>*/}
+        {/*<Tooltip*/}
+          {/*id="instagram-tooltip"*/}
+          {/*title="Подписывайся в инстаграме"*/}
+          {/*placement={window.innerWidth > 959 ? "bottom" : "left"}*/}
+          {/*classes={{ tooltip: classes.tooltip }}*/}
+        {/*>*/}
+          {/*<Button*/}
+            {/*color="transparent"*/}
+            {/*href="https://www.instagram.com/ratanov.pro/"*/}
+            {/*target="_blank"*/}
+            {/*className={classes.navLink}*/}
+          {/*>*/}
+            {/*<i className={classes.socialIcons + " fab fa-instagram m-0"} />*/}
+          {/*</Button>*/}
+        {/*</Tooltip>*/}
+      {/*</ListItem>*/}
       {/*<ListItem className={classes.listItem}>*/}
         {/*<Tooltip*/}
           {/*id="instagram-twitter"*/}

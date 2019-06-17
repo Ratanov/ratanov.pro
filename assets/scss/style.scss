@@ -129,46 +129,6 @@
   padding-right: 0!important;
 }
 
-@media (max-width: 959px) {
-  .home-container-mobile {
-    margin: 0 8px 0!important;
-    //box-shadow: none!important;
-  }
-  .container-mobile {
-    margin: -30px 8px 0!important;
-  }
-  .get-in-touch {
-    padding-right: 0!important;
-  }
-  .parallaxAboutPage {
-    height: 130px!important;
-  }
-  .home-page-portfolio-item {
-    padding-left: 0!important;
-    padding-right: 0!important;
-    margin-top: 30px!important;
-  }
-  .portfolioSection-mobile {
-    padding-left: 8px!important;
-    padding-right: 8px!important;
-  }
-  .mobile-d-none {
-    display: none!important;
-  }
-}
-
-@media (min-width: 960px) {
-  .desktop-d-none {
-    display: none!important;
-  }
-}
-
-@media (max-width: 575px) {
-  .imgRounded0 {
-    border-radius: 0!important;
-  }
-}
-
 .css-yrspe, .react-images__positioner {
   z-index: 8888!important;
 }
@@ -239,4 +199,45 @@ main.react-images__pager {
 
 .customDropdownLanguage .material-icons {
   font-size: 20px!important;
+  //margin: 0!important;
+}
+
+@media (max-width: 959px) {
+  .home-container-mobile {
+    margin: 0 8px 0!important;
+    //box-shadow: none!important;
+  }
+  .container-mobile {
+    margin: -30px 8px 0!important;
+  }
+  .get-in-touch {
+    padding-right: 0!important;
+  }
+  .parallaxAboutPage {
+    height: 130px!important;
+  }
+  .home-page-portfolio-item {
+    padding-left: 0!important;
+    padding-right: 0!important;
+    margin-top: 30px!important;
+  }
+  .portfolioSection-mobile {
+    padding-left: 8px!important;
+    padding-right: 8px!important;
+  }
+  .mobile-d-none {
+    display: none!important;
+  }
+}
+
+@media (min-width: 960px) {
+  .desktop-d-none {
+    display: none!important;
+  }
+}
+
+@media (max-width: 575px) {
+  .imgRounded0 {
+    border-radius: 0!important;
+  }
 }

@@ -15,6 +15,7 @@ import GridItem from "components/Grid/GridItem.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import orderButtonStyle from "assets/jss/material-kit-react/components/orderButtonStyle.jsx";
 import CustomInput from "components/CustomInput/CustomInput.jsx";
+import { Trans } from 'react-i18next';
 
 function Transition(props) {
   return <Slide direction="left" {...props} />;
@@ -52,7 +53,7 @@ class OrderButton extends React.Component {
           className={classes.navLink+" buttonOrder"}
           onClick={() => this.handleClickOpen("classicModal")}
         >
-          Заказать&nbsp;
+          <Trans>Order</Trans>&nbsp;
           <Star className={classes.iconOrder+" iconOrderStar"} />
           <StarBorder className={"iconOrderStarHover"} />
         </Button>
