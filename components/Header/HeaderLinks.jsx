@@ -24,9 +24,6 @@ function HeaderLinks({ ...props }) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem + " mr-1"}>
-        <Languages />
-      </ListItem>
-      <ListItem className={classes.listItem + " mr-1"}>
         <Link to="/about" className={classes.navLink}>О нас</Link>
       </ListItem>
       <ListItem className={classes.listItem + " mr-1"}>
@@ -157,6 +154,9 @@ function HeaderLinks({ ...props }) {
           {/*</Button>*/}
         {/*</Tooltip>*/}
       {/*</ListItem>*/}
+      <ListItem className={classes.listItem}>
+        <Languages />
+      </ListItem>
     </List>
   );
 }

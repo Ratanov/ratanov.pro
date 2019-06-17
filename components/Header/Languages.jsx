@@ -6,6 +6,7 @@ import Radio from "@material-ui/core/Radio";
 import RadioGroup from "@material-ui/core/RadioGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormControl from "@material-ui/core/FormControl";
+import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx";
 
 import languagesStyle from "assets/jss/material-kit-react/components/languagesStyle.jsx";
 
@@ -14,6 +15,7 @@ import { translate } from "react-i18next";
 class Languages extends React.Component {
   state = {
     value: "ru"
+    // value: this.state.value
   };
 
   handleChange = event => {
@@ -27,30 +29,56 @@ class Languages extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-      <div>
-        <FormControl
-          component="fieldset"
-          className={classes.formControl}
-        >
-          <RadioGroup
-            aria-label="language"
-            name="language"
-            className={classes.group}
-            value={this.state.value}
-            onChange={this.handleChange}
-          >
-            <FormControlLabel
-              value="ru"
-              control={<Radio />}
-              label="Russian"
-            />
-            <FormControlLabel
-              value="en"
-              control={<Radio />}
-              label="English"
-            />
-          </RadioGroup>
-        </FormControl>
+      <div className="customDropdownLanguage">
+        <CustomDropdown
+          left
+          hoverColor="primary"
+          // dropdownHeader="Language"
+          buttonIcon="language"
+          buttonProps={{
+            className: classes.navLink,
+            color: "transparent"
+          }}
+          dropdownList={[
+            <FormControl
+              component="fieldset"
+              className={classes.formControl}
+            >
+              <RadioGroup
+                aria-label="language"
+                name="language"
+                className={classes.group}
+                value={this.state.value}
+                onChange={this.handleChange}
+              >
+                <FormControlLabel
+                  value="ru"
+                  control={<Radio />}
+                  label="Russian"
+                />
+              </RadioGroup>
+            </FormControl>,
+            { divider: true },
+            <FormControl
+              component="fieldset"
+              className={classes.formControl}
+            >
+              <RadioGroup
+                aria-label="language"
+                name="language"
+                className={classes.group}
+                value={this.state.value}
+                onChange={this.handleChange}
+              >
+                <FormControlLabel
+                  value="en"
+                  control={<Radio />}
+                  label="English"
+                />
+              </RadioGroup>
+            </FormControl>
+          ]}
+        />
       </div>
     );
   }
