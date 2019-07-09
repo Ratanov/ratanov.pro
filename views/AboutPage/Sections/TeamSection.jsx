@@ -53,7 +53,7 @@ class TeamSection extends React.Component {
                 </CardBody>
                 <CardFooter className={classes.justifyCenter}>
                   <Tooltip
-                    id="tooltip-ratanov-vk"
+                    id="tooltip-ratanov-github"
                     title="GitHub"
                     placement="bottom"
                     classes={{ tooltip: classes.tooltip }}
@@ -61,6 +61,22 @@ class TeamSection extends React.Component {
                     <a href="https://github.com/Ratanov">
                       <Button justIcon link>
                         <i className={"fab fa-github"} />
+                      </Button>
+                    </a>
+                  </Tooltip>
+                  <Tooltip
+                    id="tooltip-ratanov-fb"
+                    title="Facebook"
+                    placement="bottom"
+                    classes={{ tooltip: classes.tooltip }}
+                  >
+                    <a href="https://www.facebook.com/ratanov">
+                      <Button
+                        justIcon
+                        color="transparent"
+                        className={classes.margin5}
+                      >
+                        <i className={classes.socials + " fab fa-facebook"} />
                       </Button>
                     </a>
                   </Tooltip>

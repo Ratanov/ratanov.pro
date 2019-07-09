@@ -71,10 +71,10 @@ class ServicesPage extends React.Component {
               <GridItem xs={12} sm={12} md={4}>
                 <Card className={classes[this.state.cardAnimaton]+" cardService"}>
                   <CardHeader color="primary" className={classes.cardHeader+" cardServiceHeader"}>
-                    <h3>Создание сайтов</h3>
+                    <h3>{t('Service1')}</h3>
                   </CardHeader>
                   <CardBody className="contactInput">
-                    <p>Это продуманный и взвешенный маркетинговый ход, который при правильном подходе выведет компанию на новый уровень. Основная цель сайта – конвертировать входящий трафик в поток клиентов, которые обращаются к вам посредством звонка/заявки.</p>
+                    <p>{t('Service1Description')}</p>
                   </CardBody>
                   {/*<CardFooter className={classes.cardFooter}>*/}
                     {/*<Button color="primary" size="lg">{t('Send')}</Button>*/}
@@ -84,50 +84,50 @@ class ServicesPage extends React.Component {
               <GridItem xs={12} sm={12} md={4}>
                 <Card className={classes[this.state.cardAnimaton]+" cardService"}>
                   <CardHeader color="primary" className={classes.cardHeader+" cardServiceHeader"}>
-                    <h3>Продвижение сайтов</h3>
+                    <h3>{t('Service2')}</h3>
                   </CardHeader>
                   <CardBody className="contactInput">
-                    <p>Один из инструментов интернет-рекламы. Смысл его в том, чтобы из сотен и тысяч сайтов, предлагающих подобные услуги, поисковая система показала пользователю ваш сайт в числе первого десятка.</p>
+                    <p>{t('Service2Description')}</p>
                   </CardBody>
                 </Card>
               </GridItem>
               <GridItem xs={12} sm={12} md={4}>
                 <Card className={classes[this.state.cardAnimaton]+" cardService"}>
                   <CardHeader color="primary" className={classes.cardHeader+" cardServiceHeader"}>
-                    <h3>Обслуживание сайтов</h3>
+                    <h3>{t('Service3')}</h3>
                   </CardHeader>
                   <CardBody className="contactInput">
-                    <p>Квалифицированное и быстрое выполнение множества задач по обеспечению бесперебойного и эффективного функционирования вашего ресурса в сети, а также поддержка работоспособности сайта на протяжении его жизненного цикла.</p>
+                    <p>{t('Service3Description')}</p>
                   </CardBody>
                 </Card>
               </GridItem>
               <GridItem xs={12} sm={12} md={4}>
                 <Card className={classes[this.state.cardAnimaton]+" cardService"}>
                   <CardHeader color="primary" className={classes.cardHeader+" cardServiceHeader"}>
-                    <h3>Фирменный стиль</h3>
+                    <h3>{t('Service4')}</h3>
                   </CardHeader>
                   <CardBody className="contactInput">
-                    <p>Разработка дизайн-концепции для всей вашей компании, куда входит создание логотипа, визиток, фирменного бланка, презентаций, дизайна сувенирной продукции и прочего. Каждая концепция отображает образное мышление, воображение и творческие навыки дизайнера</p>
+                    <p>{t('Service4Description')}</p>
                   </CardBody>
                 </Card>
               </GridItem>
               <GridItem xs={12} sm={12} md={4}>
                 <Card className={classes[this.state.cardAnimaton]+" cardService"}>
                   <CardHeader color="primary" className={classes.cardHeader+" cardServiceHeader"}>
-                    <h3>Контекстная реклама</h3>
+                    <h3>{t('Service5')}</h3>
                   </CardHeader>
                   <CardBody className="contactInput">
-                    <p>Рекламные объявления, показанные в контексте. В контексте того, что ищет пользователь в поисковике. Ключевым словом является «ищет». Задача контекстной рекламы в том, чтобы потенциальный клиент нашел именно вас.</p>
+                    <p>{t('Service5Description')}</p>
                   </CardBody>
                 </Card>
               </GridItem>
               <GridItem xs={12} sm={12} md={4}>
                 <Card className={classes[this.state.cardAnimaton]+" cardService"}>
                   <CardHeader color="primary" className={classes.cardHeader+" cardServiceHeader"}>
-                    <h3>Медийная реклама и SMM</h3>
+                    <h3>{t('Service6')}</h3>
                   </CardHeader>
                   <CardBody className="contactInput">
-                    <p>Комплекс мероприятий, направленных на привлечение целевого трафика через социальные сети (VK, Facebook, Instagram и др.). Основной упор делается на контент, который создает «социальный эфффект» и люди сами распространяют его через своих знакомых и друзей.</p>
+                    <p>{t('Service6Description')}</p>
                   </CardBody>
                 </Card>
               </GridItem>
