@@ -21,10 +21,11 @@ import teamStyle from "assets/jss/material-kit-react/views/aboutPageSections/tea
 
 import ratanov from "assets/img/faces/oleg-ratanov.jpg";
 import liverka from "assets/img/faces/liverka.jpg";
+import { translate } from "react-i18next";
 
 class TeamSection extends React.Component {
   render() {
-    const { classes } = this.props;
+    const { classes, t } = this.props;
     const imageClasses = classNames(
       classes.imgRaised,
       classes.imgRoundedCircle,
@@ -43,17 +44,12 @@ class TeamSection extends React.Component {
                   </Link>
                 </GridItem>
                 <h4 className={classes.cardTitle}>
-                  <Link to={"/about/oleg-ratanov"}>Олег Ратанов</Link>
+                  <Link to={"/about/oleg-ratanov"}>{t('Oleg Ratanov')}</Link>
                   <br />
-                  <small className={classes.smallTitle}>Директор</small>
+                  <small className={classes.smallTitle}>{t('firstPosition')}</small>
                 </h4>
                 <CardBody>
-                  <p className={classes.description}>
-                    You can write here details about one of your team members.
-                    You can give more details about what they do. Feel free to
-                    add some <a href="#pablo">links</a> for people to be able to
-                    follow them outside the site.
-                  </p>
+                  <p className={classes.description}>{t('firstPositionDescription')}</p>
                 </CardBody>
                 <CardFooter className={classes.justifyCenter}>
                   <Tooltip
@@ -99,16 +95,12 @@ class TeamSection extends React.Component {
                   </Link>
                 </GridItem>
                 <h4 className={classes.cardTitle}>
-                  <Link to="/about/liverka">Валерия Губанова</Link>
+                  <Link to="/about/liverka">{t('Valeria Gubanova')}</Link>
                   <br />
-                  <small className={classes.smallTitle}>Художник Дизайнер Иллюстратор</small>
+                  <small className={classes.smallTitle}>{t('secondPosition')}</small>
                 </h4>
                 <CardBody>
-                  <p className={classes.description}>
-                    Творческое мышление и креатив мои верные спутники.
-                    К проектам отношусь с душой и любовью. Готова творить
-                    и реализовывать свое вдохновение в Ваших проектах
-                  </p>
+                  <p className={classes.description}>{t('secondPositionDescription')}</p>
                 </CardBody>
                 <CardFooter className={classes.justifyCenter}>
                   <Tooltip
@@ -153,4 +145,4 @@ class TeamSection extends React.Component {
   }
 }
 
-export default withStyles(teamStyle)(TeamSection);
+export default withStyles(teamStyle)(translate("translations")(TeamSection));

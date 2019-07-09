@@ -27,7 +27,7 @@ import { translate } from "react-i18next";
 
 class RatanovProfilePage extends React.Component {
   render() {
-    const { classes, ...rest } = this.props;
+    const { classes, t, ...rest } = this.props;
     const imageClasses = classNames(
       classes.imgRaised,
       classes.imgRoundedCircle,
@@ -57,8 +57,8 @@ class RatanovProfilePage extends React.Component {
                     <img src={profile} alt="..." className={imageClasses} />
                   </div>
                   <div className={classes.name}>
-                    <h3 className={classes.title}>Ратанов Олег</h3>
-                    <h6>Директор</h6>
+                    <h3 className={classes.title}>{t('Ratanov Oleg')}</h3>
+                    <h6>{t('firstPosition')}</h6>
                     <Tooltip
                       id="tooltip-ratanov-vk"
                       title="Перейти Вконтакт"
@@ -88,24 +88,24 @@ class RatanovProfilePage extends React.Component {
               </GridItem>
               <GridItem xs={12} sm={12} md={4}>
                 <div className={classes.title}>
-                  <h4>Обо мне</h4>
+                  <h4>{t('About me')}</h4>
                 </div>
                 <div className={classes.description}>
                   <p>
-                     Добро пожаловать на сайт веб-студии Ratanov.pro{" "}
+                    {t('firstPositionDescription')}
                   </p>
                 </div>
               </GridItem>
               <GridItem xs={12} sm={12} md={4}>
                 <div className={classes.title}>
-                  <h4>Навыки</h4>
+                  <h4>{t('Skills')}</h4>
                 </div>
                 <div>
                   <h5 className={"mt-0"}>HTML, CSS, JS</h5>
                   <CustomLinearProgress
                     variant="determinate"
                     color="primary"
-                    value={60}
+                    value={80}
                   />
                 </div>
                 <div>
@@ -113,7 +113,7 @@ class RatanovProfilePage extends React.Component {
                   <CustomLinearProgress
                     variant="determinate"
                     color="success"
-                    value={33}
+                    value={50}
                   />
                 </div>
                 <div>
@@ -121,7 +121,7 @@ class RatanovProfilePage extends React.Component {
                   <CustomLinearProgress
                     variant="determinate"
                     color="rose"
-                    value={25}
+                    value={30}
                   />
                 </div>
                 <div>
@@ -129,7 +129,7 @@ class RatanovProfilePage extends React.Component {
                   <CustomLinearProgress
                     variant="determinate"
                     color="info"
-                    value={15}
+                    value={40}
                   />
                 </div>
               </GridItem>

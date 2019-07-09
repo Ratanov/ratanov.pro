@@ -25,7 +25,7 @@ import { translate } from "react-i18next";
 
 class LiverkaProfilePage extends React.Component {
   render() {
-    const { classes, ...rest } = this.props;
+    const { classes, t, ...rest } = this.props;
     const imageClasses = classNames(
       classes.imgRaised,
       classes.imgRoundedCircle,
@@ -55,8 +55,8 @@ class LiverkaProfilePage extends React.Component {
                     <img src={profile} alt="..." className={imageClasses} />
                   </div>
                   <div className={classes.name}>
-                    <h3 className={classes.title}>Губанова Валерия</h3>
-                    <h6>Художник Дизайнер Иллюстратор</h6>
+                    <h3 className={classes.title}>{t('Gubanova Valeria')}</h3>
+                    <h6>{t('secondPosition')}</h6>
                     <Tooltip
                       id="tooltip-liverka-vk"
                       title="Перейти Вконтакт"
@@ -86,28 +86,29 @@ class LiverkaProfilePage extends React.Component {
               </GridItem>
               <GridItem xs={12} sm={12} md={4}>
                 <div className={classes.title}>
-                  <h4>Обо мне</h4>
+                  <h4>{t('About me')}</h4>
                 </div>
                 <div className={classes.description}>
+                  <p>{t('secondPositionDescription')}</p>
                   <p>
-                     Творческое мышление и креатив мои верные спутники. К проектам отношусь с душой и любовью. Готова творить и реализовывать свое вдохновение в Ваших проектах.
+                    {t('secondPositionDescription2')}
+                    <br />
+                    {t('secondPositionDescription3')}
                   </p>
                   <p>
-                    Внимательна к деталям, аккуратна.<br />
-                    Целеустремленная, коммуникабельная, амбициозная, трудолюбивая.
+                    {t('secondPositionDescription4')}
                   </p>
                   <p>
-                    Умею работать сразу над несколькими проектами, в ускоренном режиме ив сжатые сроки.<br />
-                    Легко обучаюсь и совершенствую свои навыки.
+                    {t('secondPositionDescription5')}
                   </p>
                 </div>
               </GridItem>
               <GridItem xs={12} sm={12} md={4}>
                 <div className={classes.title}>
-                  <h4>Навыки</h4>
+                  <h4>{t('Skills')}</h4>
                 </div>
                 <div>
-                  <h5 className={"mb-0"}>Рисование</h5>
+                  <h5 className={"m-0"}>{t('Drawing')}</h5>
                   <CustomLinearProgress
                     variant="determinate"
                     color="danger"
@@ -135,17 +136,17 @@ class LiverkaProfilePage extends React.Component {
                   <CustomLinearProgress
                     variant="determinate"
                     color="primary"
-                    value={10}
+                    value={50}
                     style={{ width: "20%", display: "inline-block", marginBottom: "0"  }}
                   />
                 </div>
                 <div>
                   <h5>CorelDRAW</h5>
-                  <CustomLinearProgress variant="determinate" color="success" value={65} />
+                  <CustomLinearProgress variant="determinate" color="success" value={70} />
                 </div>
                 <div>
                   <h5>Photoshop</h5>
-                  <CustomLinearProgress variant="determinate" color="info" value={60} />
+                  <CustomLinearProgress variant="determinate" color="info" value={70} />
                 </div>
                 <div>
                   <h5>Adobe Illustrator</h5>

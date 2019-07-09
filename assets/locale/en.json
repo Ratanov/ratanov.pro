@@ -32,5 +32,20 @@
   "WebsiteSection SecondWork": "Artist Valeria Liverka",
   "WebsiteSection ThirdWork": "Online shop Ekomod",
   "WebsiteSection FourthWork": "Car service ChipGas",
-  "ServicesPage Title": "Services"
+  "ServicesPage Title": "Services",
+  "Oleg Ratanov": "Oleg Ratanov",
+  "Ratanov Oleg": "Ratanov Oleg",
+  "firstPosition": "Director",
+  "firstPositionDescription": "Once I discovered the world of web development and immediately fell in love with it. I am engaged in web programming since 2015. After becoming acquainted with ReactJS, I was interested in the development as a frontend developer. In addition, web developers were able to create their own applications for mobile devices.",
+  "Valeria Gubanova": "Valeria Gubanova",
+  "Gubanova Valeria": "Gubanova Valeria",
+  "secondPosition": "Artist Designer Illustrator",
+  "secondPositionDescription": "Creative thinking and creative are my faithful companions. I treat projects with soul and love. Ready to create and realize your inspiration in your projects.",
+  "secondPositionDescription2": "Attentive to detail, neat.",
+  "secondPositionDescription3": "Purposeful, sociable, ambitious, hardworking.",
+  "secondPositionDescription4": "I can work on several projects at once, in an accelerated mode and in a short time.",
+  "secondPositionDescription5": "Easy to learn and improve their skills.",
+  "About me": "About me",
+  "Skills": "Skills",
+  "Drawing": "Drawing"
 }

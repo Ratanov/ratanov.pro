@@ -29,8 +29,6 @@ function Footer({ ...props }) {
           <a
             href="https://www.ratanov.pro"
             className={aClasses}
-            target="_blank"
-            rel="noopener noreferrer"
           >
             Ratanov.pro
           </a>{" "}Web Studio
@@ -46,8 +44,6 @@ function Footer({ ...props }) {
           <a
             href="https://reactjs.org/"
             className={"react-link"}
-            target="_blank"
-            rel="noopener noreferrer"
           >
             React
           </a>
