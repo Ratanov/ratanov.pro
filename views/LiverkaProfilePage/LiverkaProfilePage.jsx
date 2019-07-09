@@ -59,11 +59,11 @@ class LiverkaProfilePage extends React.Component {
                     <h6>{t('secondPosition')}</h6>
                     <Tooltip
                       id="tooltip-liverka-vk"
-                      title="Перейти Вконтакт"
+                      title="VK"
                       placement="bottom"
                       classes={{ tooltip: classes.tooltip }}
                     >
-                      <a href="https://vk.com/id63163502" target="_blank" rel="noopener noreferrer">
+                      <a href="https://vk.com/id63163502">
                         <Button justIcon link>
                           <i className={"fab fa-vk"} />
                         </Button>
@@ -71,11 +71,11 @@ class LiverkaProfilePage extends React.Component {
                     </Tooltip>
                     <Tooltip
                       id="tooltip-liverka-insta"
-                      title="Перейти в Instagram"
+                      title="Instagram"
                       placement="bottom"
                       classes={{ tooltip: classes.tooltip }}
                     >
-                      <a href="https://www.instagram.com/liverka/" target="_blank" rel="noopener noreferrer">
+                      <a href="https://www.instagram.com/liverka/">
                         <Button justIcon link>
                           <i className={"fab fa-instagram"} />
                         </Button>

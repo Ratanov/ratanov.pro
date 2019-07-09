@@ -61,11 +61,23 @@ class RatanovProfilePage extends React.Component {
                     <h6>{t('firstPosition')}</h6>
                     <Tooltip
                       id="tooltip-ratanov-vk"
-                      title="Перейти Вконтакт"
+                      title="GitHub"
                       placement="bottom"
                       classes={{ tooltip: classes.tooltip }}
                     >
-                      <a href="https://vk.com/o.ratanov" target="_blank" rel="noopener noreferrer">
+                      <a href="https://github.com/Ratanov">
+                        <Button justIcon link>
+                          <i className={"fab fa-github"} />
+                        </Button>
+                      </a>
+                    </Tooltip>
+                    <Tooltip
+                      id="tooltip-ratanov-vk"
+                      title="VK"
+                      placement="bottom"
+                      classes={{ tooltip: classes.tooltip }}
+                    >
+                      <a href="https://vk.com/o.ratanov">
                         <Button justIcon link>
                           <i className={"fab fa-vk"} />
                         </Button>
@@ -73,7 +85,7 @@ class RatanovProfilePage extends React.Component {
                     </Tooltip>
                     <Tooltip
                       id="tooltip-ratanov-insta"
-                      title="Перейти в Instagram"
+                      title="Instagram"
                       placement="bottom"
                       classes={{ tooltip: classes.tooltip }}
                     >
@@ -106,6 +118,14 @@ class RatanovProfilePage extends React.Component {
                     variant="determinate"
                     color="primary"
                     value={80}
+                  />
+                </div>
+                <div>
+                  <h5>Mercurial, Git, GitHub</h5>
+                  <CustomLinearProgress
+                    variant="determinate"
+                    color="gray"
+                    value={65}
                   />
                 </div>
                 <div>

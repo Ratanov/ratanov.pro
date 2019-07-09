@@ -33,7 +33,7 @@ class TeamSection extends React.Component {
     );
     return (
       <div className={classes.section}>
-        <h2 className={classes.title}>Наша команда</h2>
+        <h2 className={classes.title}>{t('Our Team')}</h2>
         <div>
           <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={5}>
@@ -54,11 +54,23 @@ class TeamSection extends React.Component {
                 <CardFooter className={classes.justifyCenter}>
                   <Tooltip
                     id="tooltip-ratanov-vk"
-                    title="Перейти Вконтакт"
+                    title="GitHub"
                     placement="bottom"
                     classes={{ tooltip: classes.tooltip }}
                   >
-                    <a href="https://vk.com/o.ratanov" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/Ratanov">
+                      <Button justIcon link>
+                        <i className={"fab fa-github"} />
+                      </Button>
+                    </a>
+                  </Tooltip>
+                  <Tooltip
+                    id="tooltip-ratanov-vk"
+                    title="VK"
+                    placement="bottom"
+                    classes={{ tooltip: classes.tooltip }}
+                  >
+                    <a href="https://vk.com/o.ratanov">
                       <Button
                         justIcon
                         color="transparent"
@@ -70,11 +82,11 @@ class TeamSection extends React.Component {
                   </Tooltip>
                   <Tooltip
                     id="tooltip-ratanov-insta"
-                    title="Перейти в Instagram"
+                    title="Instagram"
                     placement="bottom"
                     classes={{ tooltip: classes.tooltip }}
                   >
-                    <a href="https://www.instagram.com/olegratanov/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/olegratanov/">
                       <Button
                         justIcon
                         color="transparent"
@@ -105,11 +117,11 @@ class TeamSection extends React.Component {
                 <CardFooter className={classes.justifyCenter}>
                   <Tooltip
                     id="tooltip-liverka-vk"
-                    title="Перейти Вконтакт"
+                    title="VK"
                     placement="bottom"
                     classes={{ tooltip: classes.tooltip }}
                   >
-                    <a href="https://vk.com/id63163502" target="_blank" rel="noopener noreferrer">
+                    <a href="https://vk.com/id63163502">
                       <Button
                         justIcon
                         color="transparent"
@@ -121,11 +133,11 @@ class TeamSection extends React.Component {
                   </Tooltip>
                   <Tooltip
                     id="tooltip-liverka-insta"
-                    title="Перейти в Instagram"
+                    title="Instagram"
                     placement="bottom"
                     classes={{ tooltip: classes.tooltip }}
                   >
-                    <a href="https://www.instagram.com/liverka/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/liverka/">
                       <Button
                         justIcon
                         color="transparent"
