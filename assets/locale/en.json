@@ -1,7 +1,7 @@
 {
   "Menu About": "About",
   "Menu Services": "Services",
-  "Menu Contacts": "Contacts",
+  "Menu Contacts": "Contact",
   "Call": "Call",
   "Order": "Hire us",
   "Write in WhatsApp": "Write in WhatsApp",
@@ -31,5 +31,6 @@
   "WebsiteSection FirstWork": "Artist Damir Bozik",
   "WebsiteSection SecondWork": "Artist Valeria Liverka",
   "WebsiteSection ThirdWork": "Online shop Ekomod",
-  "WebsiteSection FourthWork": "Car service ChipGas"
+  "WebsiteSection FourthWork": "Car service ChipGas",
+  "ServicesPage Title": "Services"
 }

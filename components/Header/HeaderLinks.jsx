@@ -29,7 +29,7 @@ function HeaderLinks({ ...props }) {
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Link to="/" className={classes.navLink}>
+        <Link to="/services" className={classes.navLink}>
           <Trans>Menu Services</Trans>
         </Link>
       </ListItem>

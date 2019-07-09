@@ -14,6 +14,7 @@ import LiverkaProfilePage from "views/LiverkaProfilePage/LiverkaProfilePage.jsx"
 import Components from "views/Components/Components.jsx";
 import AboutPage from "views/AboutPage/AboutPage.jsx";
 import LoginPage from "views/LoginPage/LoginPage.jsx";
+import ServicesPage from "./views/ServicesPage/ServicesPage.jsx";
 import ContactPage from "./views/ContactPage/ContactPage.jsx";
 
 import i18n from './i18n';
@@ -27,6 +28,7 @@ ReactDOM.render(
       <Route path="/login-page" component={LoginPage} />
       <Route path="/components" component={Components} />
       <Route path="/contact" component={ContactPage} />
+      <Route path="/services" component={ServicesPage} />
       <Route path="/about/liverka" component={LiverkaProfilePage} />
       <Route path="/about/oleg-ratanov" component={RatanovProfilePage} />
       <Route path="/about" component={AboutPage} />
