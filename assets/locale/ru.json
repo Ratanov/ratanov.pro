@@ -8,12 +8,12 @@
   "HomePage Brand Title": "Веб-студия Ratanov.pro",
   "HomePage Brand Subtitle": "Объединяем вместе технологию и творчество",
   "ProductSection Title": "Давайте поговорим о нашем подходе",
-  "ProductSection FirstSection Title": "Индивидуальность",
+  "ProductSection FirstSection Title": "Оригинальность",
   "ProductSection FirstSection Description": "Каждый проект мы рассматриваем с неординарной точки зрения. Учитывая специфику задания, делаем проект самостоятельным, своеобразным и непохожим на других.",
   "ProductSection SecondSection Title": "Сотрудничество",
-  "ProductSection SecondSection Description": "Русский текст",
+  "ProductSection SecondSection Description": "Каждый клиент для нас - уникален, а подход к нему - индивидуален! Приоритет нашей компании - постройка и развитие долгосрочных отношений, приносящих взаимную выгоду.",
   "ProductSection ThirdSection Title": "Любовь к делу",
-  "ProductSection ThirdSection Description": "Русский текст",
+  "ProductSection ThirdSection Description": "Мы стремимся оказать услуги не только в рамках требований клиента, но и существенно превзойти его ожидания.",
   "WorkSection Title": "Отправьте заявку, чтобы создать крутой проект",
   "WorkSection Description": "Заполните поля ниже и мы свяжемся с Вами как можно быстрее.",
   "Name": "Имя",
@@ -24,5 +24,7 @@
   "Close": "Закрыть",
   "OrderModal Title": "Новая заявка",
   "OrderModal Description1": "Обращаем ваше внимание, что заявка будет рассмотрена в рабочие часы студии.",
-  "OrderModal Description2": "Если вы оставили заявку в нерабочее время, она будет обработана в начале следующего рабочего дня. По возможности, пожалуйста, указывайте желаемое время для связи с вами."
+  "OrderModal Description2": "Если вы оставили заявку в нерабочее время, она будет обработана в начале следующего рабочего дня. По возможности, пожалуйста, указывайте желаемое время для связи с вами.",
+  "ContactPage Title": "Контакты",
+  "ContactPage WriteToUs": "Напишите нам"
 }

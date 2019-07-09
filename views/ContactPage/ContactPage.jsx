@@ -43,7 +43,7 @@ class ContactPage extends React.Component {
     );
   }
   render() {
-    const { classes, ...rest } = this.props;
+    const { classes, t, ...rest } = this.props;
     return (
       <div>
         <ScrollToTopOnMount />
@@ -66,24 +66,20 @@ class ContactPage extends React.Component {
             <GridContainer justify="center">
               <GridItem xs={12} sm={12} md={7}>
                 <Card className={classes[this.state.cardAnimaton]+" get-in-touch"}>
-                  <h1>Get in Touch</h1>
-                  <p>You need more information? Check what other persons are saying about our product. They are very happy with their purchase.</p>
-                  <b>Find us at the office</b>
-                  <p>Bld Mihail Kogalniceanu, nr. 8,<br />
-                  7652 Bucharest,<br />
-                  Romania</p>
+                  <h1>{t('ContactPage Title')}</h1>
                   <br />
-                  <b>Give us a ring</b>
-                  <p>Michael Jordan<br />
-                    +40 762 321 762<br />
-                    Mon - Fri, 8:00-22:00</p>
+                  <b>{t('Phone')}</b>
+                  <p>+7 960 087 87 08</p>
+                  <br />
+                  <b>{t('Email')}</b>
+                  <p>79600878708@yandex.ru</p>
                 </Card>
               </GridItem>
               <GridItem xs={12} sm={12} md={5}>
                 <Card className={classes[this.state.cardAnimaton]}>
                   <form className={classes.form}>
                     <CardHeader color="primary" className={classes.cardHeader}>
-                      <h4>Напишите нам</h4>
+                      <h4>{t('ContactPage WriteToUs')}</h4>
                       {/*<div className={classes.socialLine}>*/}
                         {/*<Button*/}
                           {/*justIcon*/}
@@ -97,7 +93,7 @@ class ContactPage extends React.Component {
                     </CardHeader>
                     <CardBody className="contactInput">
                       <CustomInput
-                        labelText="Имя"
+                        labelText={t('Name')}
                         id="name"
                         formControlProps={{
                           fullWidth: true
@@ -112,7 +108,7 @@ class ContactPage extends React.Component {
                         }}
                       />
                       <CustomInput
-                        labelText="Email"
+                        labelText={t('Email')}
                         id="email"
                         formControlProps={{
                           fullWidth: true
@@ -127,7 +123,7 @@ class ContactPage extends React.Component {
                         }}
                       />
                       <CustomInput
-                        labelText="Сообщение"
+                        labelText={t('Message')}
                         id="message"
                         formControlProps={{
                           fullWidth: true,
@@ -140,9 +136,7 @@ class ContactPage extends React.Component {
                       />
                     </CardBody>
                     <CardFooter className={classes.cardFooter}>
-                      <Button color="primary" size="lg">
-                        Отправить
-                      </Button>
+                      <Button color="primary" size="lg">{t('Send')}</Button>
                     </CardFooter>
                   </form>
                 </Card>

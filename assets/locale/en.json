@@ -8,12 +8,12 @@
   "HomePage Brand Title": "Ratanov.pro Web Studio",
   "HomePage Brand Subtitle": "We combine technology and creativity",
   "ProductSection Title": "Let's talk about our approach",
-  "ProductSection FirstSection Title": "Individuality",
+  "ProductSection FirstSection Title": "Originality",
   "ProductSection FirstSection Description": "We consider each project from an extraordinary point of view. Taking into account the specifics of the task, we make the project independent, original, and unlike others.",
   "ProductSection SecondSection Title": "Cooperation",
-  "ProductSection SecondSection Description": "Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.",
+  "ProductSection SecondSection Description": "Each client is unique for us, and the approach to it is individual! The priority of our company is the construction and development of long-term relationships that bring mutual benefits.",
   "ProductSection ThirdSection Title": "Love to work",
-  "ProductSection ThirdSection Description": "Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.",
+  "ProductSection ThirdSection Description": "We strive to provide services not only within the requirements of the client, but also significantly exceed his expectations.",
   "WorkSection Title": "Send us a request to create unique project for you",
   "WorkSection Description": "Hire us now - we're here to assist you. Drop us a line, and we'll get back to you in a blink of an eye.",
   "Name": "Name",
@@ -24,5 +24,7 @@
   "Close": "Close",
   "OrderModal Title": "New order",
   "OrderModal Description1": "Please note that the application will be reviewed in the studio working hours.",
-  "OrderModal Description2": "If you leave a request after hours, it will be processed at the beginning of the next business day. If possible, please indicate the desired time to contact you."
+  "OrderModal Description2": "If you leave a request after hours, it will be processed at the beginning of the next business day. If possible, please indicate the desired time to contact you.",
+  "ContactPage Title": "Get in Touch",
+  "ContactPage WriteToUs": "Write to us"
 }

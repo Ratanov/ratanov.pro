@@ -20,7 +20,7 @@ class WorkSection extends React.Component {
     return (
       <div className={classes.section} name="scroll-to-order">
         <GridContainer justify="center">
-          <GridItem xs={12} sm={12} md={6}>
+          <GridItem xs={12} sm={12} md={7}>
             <h2 className={classes.title}>{t('WorkSection Title')}</h2>
             <h4 className={classes.description}>{t('WorkSection Description')}</h4>
             <form>
