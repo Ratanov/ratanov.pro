@@ -14,10 +14,11 @@ import godmed from "assets/img/portfolio/godmed.jpg";
 import chipgas from "assets/img/portfolio/chipgas.jpg";
 
 import websiteSectionStyle from "assets/jss/material-kit-react/views/homePageSections/websiteSectionStyle.jsx";
+import { translate } from "react-i18next";
 
 class WebsiteSection extends React.Component {
   render() {
-    const { classes } = this.props;
+    const { classes, t } = this.props;
     return (
       <div className={classes.section}>
         {/*<div className={classes.container+" p-0"}>*/}
@@ -39,7 +40,7 @@ class WebsiteSection extends React.Component {
                   classes.imgFluid
                 }
               />
-              <h5 className={classes.portfolioTitle}>Художник Дамир Bozik</h5>
+              <h5 className={classes.portfolioTitle}>{t('WebsiteSection FirstWork')}</h5>
               <a href="https://bozik.ru/" target="_blank" rel="noopener noreferrer" className={classes.link}>
                 <Button color="primary" size="sm" simple>
                   https://bozik.ru/
@@ -58,7 +59,7 @@ class WebsiteSection extends React.Component {
                   classes.imgFluid
                 }
               />
-              <h5 className={classes.portfolioTitle}>Художница Валерия Liverka</h5>
+              <h5 className={classes.portfolioTitle}>{t('WebsiteSection SecondWork')}</h5>
               <a href="https://liverka-art.ru/" target="_blank" rel="noopener noreferrer" className={classes.link}>
                 <Button color="primary" size="sm" simple>
                   https://liverka-art.ru/
@@ -77,7 +78,7 @@ class WebsiteSection extends React.Component {
                   classes.imgFluid
                 }
               />
-              <h5 className={classes.portfolioTitle}>Интернет магазин Экомёд</h5>
+              <h5 className={classes.portfolioTitle}>{t('WebsiteSection ThirdWork')}</h5>
               <a href="https://godmed.ru/" target="_blank" rel="noopener noreferrer" className={classes.link}>
                 <Button color="primary" size="sm" simple>
                   https://godmed.ru/
@@ -96,7 +97,7 @@ class WebsiteSection extends React.Component {
                   classes.imgFluid
                 }
               />
-              <h5 className={classes.portfolioTitle}>Автоцентр ChipGas</h5>
+              <h5 className={classes.portfolioTitle}>{t('WebsiteSection FourthWork')}</h5>
               <a href="https://chipgas.ru/" target="_blank" rel="noopener noreferrer" className={classes.link}>
                 <Button color="primary" size="sm" simple>
                   https://chipgas.ru/
@@ -110,4 +111,4 @@ class WebsiteSection extends React.Component {
   }
 }
 
-export default withStyles(websiteSectionStyle)(WebsiteSection);
+export default withStyles(websiteSectionStyle)(translate("translations")(WebsiteSection));

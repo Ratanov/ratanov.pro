@@ -26,5 +26,10 @@
   "OrderModal Description1": "Обращаем ваше внимание, что заявка будет рассмотрена в рабочие часы студии.",
   "OrderModal Description2": "Если вы оставили заявку в нерабочее время, она будет обработана в начале следующего рабочего дня. По возможности, пожалуйста, указывайте желаемое время для связи с вами.",
   "ContactPage Title": "Контакты",
-  "ContactPage WriteToUs": "Напишите нам"
+  "ContactPage WriteToUs": "Напишите нам",
+  "PortfolioSection Title": "Наши работы",
+  "WebsiteSection FirstWork": "Художник Дамир Bozik",
+  "WebsiteSection SecondWork": "Художница Валерия Liverka",
+  "WebsiteSection ThirdWork": "Интернет магазин Экомёд",
+  "WebsiteSection FourthWork": "Автосервис ChipGas"
 }

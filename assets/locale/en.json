@@ -26,5 +26,10 @@
   "OrderModal Description1": "Please note that the application will be reviewed in the studio working hours.",
   "OrderModal Description2": "If you leave a request after hours, it will be processed at the beginning of the next business day. If possible, please indicate the desired time to contact you.",
   "ContactPage Title": "Get in Touch",
-  "ContactPage WriteToUs": "Write to us"
+  "ContactPage WriteToUs": "Write to us",
+  "PortfolioSection Title": "Our works",
+  "WebsiteSection FirstWork": "Artist Damir Bozik",
+  "WebsiteSection SecondWork": "Artist Valeria Liverka",
+  "WebsiteSection ThirdWork": "Online shop Ekomod",
+  "WebsiteSection FourthWork": "Car service ChipGas"
 }
