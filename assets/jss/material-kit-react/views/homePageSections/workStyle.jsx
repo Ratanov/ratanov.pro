@@ -23,6 +23,11 @@ const workStyle = {
   },
   textCenter: {
     textAlign: "center"
+  },
+  captcha: {
+    display: "flex",
+    justifyContent: "center",
+    marginBottom: "10px"
   }
 };
 

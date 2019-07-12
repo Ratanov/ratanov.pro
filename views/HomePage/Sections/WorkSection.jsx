@@ -13,8 +13,41 @@ import Button from "components/CustomButtons/Button.jsx";
 import workStyle from "assets/jss/material-kit-react/views/homePageSections/workStyle.jsx";
 
 import { translate } from "react-i18next";
+import Recaptcha from 'react-recaptcha';
 
 class WorkSection extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.recaptchaLoaded = this.recaptchaLoaded.bind(this);
+    this.verifyCallback = this.verifyCallback.bind(this);
+    this.handleSend = this.handleSend.bind(this);
+
+    this.state = {
+      isVerified: false
+    };
+  }
+
+  recaptchaLoaded() {
+    console.log('capcha successfully loaded');
+  }
+
+  verifyCallback(response) {
+    if (response) {
+      this.setState({
+        isVerified: true
+      })
+    }
+  }
+
+  handleSend() {
+    if (this.state.isVerified) {
+      alert('Сообщение отправлено')
+    } else {
+      alert('Please verify that you are a human!')
+    }
+  }
+
   render() {
     const { classes, t } = this.props;
     return (
@@ -69,10 +102,18 @@ class WorkSection extends React.Component {
                 </GridItem>
               </GridContainer>
               <GridContainer justify="center">
-                <GridItem xs={12} sm={12} md={12}
-                  className={classes.textCenter}
-                >
-                  <Button color="primary">{t('Send')}</Button>
+                <GridItem xs={12} sm={12} md={12} className={classes.captcha}>
+                  <Recaptcha
+                    sitekey="6LdKdK0UAAAAAM_v3X0sf8lMHmoHYSYfprVUOWQV"
+                    render="explicit"
+                    onloadCallback={this.recaptchaLoaded}
+                    verifyCallback={this.verifyCallback}
+                  />
+                </GridItem>
+              </GridContainer>
+              <GridContainer justify="center">
+                <GridItem xs={12} sm={12} md={12} className={classes.textCenter}>
+                  <Button color="primary" onClick={this.handleSend}>{t('Send')}</Button>
                 </GridItem>
               </GridContainer>
             </form>
