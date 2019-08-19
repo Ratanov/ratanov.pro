@@ -33,58 +33,58 @@ function HeaderLinks({ ...props }) {
           <Trans>Menu Services</Trans>
         </Link>
       </ListItem>
-      <ListItem className={classes.listItem}>
-        <Link to="/contact" className={classes.navLink}>
-          <Trans>Menu Contacts</Trans>
-        </Link>
-      </ListItem>
+      {/*<ListItem className={classes.listItem}>*/}
+        {/*<Link to="/contact" className={classes.navLink}>*/}
+          {/*<Trans>Menu Contacts</Trans>*/}
+        {/*</Link>*/}
+      {/*</ListItem>*/}
       <ListItem className={classes.listItem + " mr-1"}>
         <OrderButton />
       </ListItem>
-      <ListItem className={classes.listItem+" desktop-d-none"}>
-        <a className={classes.telNavLink} href="tel:+7600878708">
-          <Button
-            color="transparent"
-            target="_blank"
-            className={classes.navLink}
-          >
-            <Trans>Call</Trans>&nbsp;
-            <PhoneInTalk className={classes.iconCall} />
-          </Button>
-        </a>
-      </ListItem>
-      <ListItem className={classes.listItem+" mobile-d-none"}>
-        <Tooltip
-          id="phoneNumber"
-          title="+7***"
-          placement={window.innerWidth > 959 ? "bottom" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            href="#"
-            color="transparent"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fa fa-phone m-0"} />
-          </Button>
-        </Tooltip>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Tooltip
-          id="whatsapp"
-          title={<Trans>Write in WhatsApp</Trans>}
-          placement={window.innerWidth > 959 ? "bottom" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            href="#"
-            color="transparent"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-whatsapp m-0"} />
-          </Button>
-        </Tooltip>
-      </ListItem>
+      {/*<ListItem className={classes.listItem+" desktop-d-none"}>*/}
+        {/*<a className={classes.telNavLink} href="tel:+7600878708">*/}
+          {/*<Button*/}
+            {/*color="transparent"*/}
+            {/*target="_blank"*/}
+            {/*className={classes.navLink}*/}
+          {/*>*/}
+            {/*<Trans>Call</Trans>&nbsp;*/}
+            {/*<PhoneInTalk className={classes.iconCall} />*/}
+          {/*</Button>*/}
+        {/*</a>*/}
+      {/*</ListItem>*/}
+      {/*<ListItem className={classes.listItem+" mobile-d-none"}>*/}
+        {/*<Tooltip*/}
+          {/*id="phoneNumber"*/}
+          {/*title="+7***"*/}
+          {/*placement={window.innerWidth > 959 ? "bottom" : "left"}*/}
+          {/*classes={{ tooltip: classes.tooltip }}*/}
+        {/*>*/}
+          {/*<Button*/}
+            {/*href="#"*/}
+            {/*color="transparent"*/}
+            {/*className={classes.navLink}*/}
+          {/*>*/}
+            {/*<i className={classes.socialIcons + " fa fa-phone m-0"} />*/}
+          {/*</Button>*/}
+        {/*</Tooltip>*/}
+      {/*</ListItem>*/}
+      {/*<ListItem className={classes.listItem}>*/}
+        {/*<Tooltip*/}
+          {/*id="whatsapp"*/}
+          {/*title={<Trans>Write in WhatsApp</Trans>}*/}
+          {/*placement={window.innerWidth > 959 ? "bottom" : "left"}*/}
+          {/*classes={{ tooltip: classes.tooltip }}*/}
+        {/*>*/}
+          {/*<Button*/}
+            {/*href="#"*/}
+            {/*color="transparent"*/}
+            {/*className={classes.navLink}*/}
+          {/*>*/}
+            {/*<i className={classes.socialIcons + " fab fa-whatsapp m-0"} />*/}
+          {/*</Button>*/}
+        {/*</Tooltip>*/}
+      {/*</ListItem>*/}
       {/*<ListItem className={classes.listItem}>*/}
         {/*<Tooltip*/}
           {/*id="vk"*/}
