@@ -136,16 +136,14 @@ class OrderButton extends React.Component {
               <GridItem xs={12} sm={12} md={12}>
                 <CustomInput
                   inputProps={{
-                    name:"message"
+                    name:"message",
+                    multiline: true,
+                    rows: 5
                   }}
                   labelText={<Trans>Message</Trans>}
                   id="message"
                   formControlProps={{
                     fullWidth: true
-                  }}
-                  inputProps={{
-                    multiline: true,
-                    rows: 5
                   }}
                 />
               </GridItem>
