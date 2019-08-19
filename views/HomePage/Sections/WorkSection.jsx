@@ -11,17 +11,19 @@ import CustomInput from "components/CustomInput/CustomInput.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 
 import workStyle from "assets/jss/material-kit-react/views/homePageSections/workStyle.jsx";
+import { sendFormEmail } from "../../../utils";
 
 import { translate } from "react-i18next";
-import Recaptcha from 'react-recaptcha';
 
 class WorkSection extends React.Component {
   constructor(props) {
     super(props);
 
+    this.form = React.createRef();
+
     this.recaptchaLoaded = this.recaptchaLoaded.bind(this);
     this.verifyCallback = this.verifyCallback.bind(this);
-    this.handleSend = this.handleSend.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
 
     this.state = {
       isVerified: false
@@ -40,12 +42,14 @@ class WorkSection extends React.Component {
     }
   }
 
-  handleSend() {
-    if (this.state.isVerified) {
-      alert('Сообщение отправлено')
-    } else {
-      alert('Please verify that you are a human!')
-    }
+  handleSubmit(event) {
+    event.preventDefault();
+    sendFormEmail(this.form.current);
+    // if (this.state.isVerified) {
+    //   sendFormEmail(this.form.current);
+    // } else {
+    //   alert('Please verify that you are a human!')
+    // }
   }
 
   render() {
@@ -56,10 +60,13 @@ class WorkSection extends React.Component {
           <GridItem xs={12} sm={12} md={9}>
             <h2 className={classes.title}>{t('WorkSection Title')}</h2>
             <h4 className={classes.description}>{t('WorkSection Description')}</h4>
-            <form>
+            <form ref={this.form} onSubmit={this.handleSubmit}>
               <GridContainer>
                 <GridItem xs={12} sm={12} md={4}>
                   <CustomInput
+                    inputProps={{
+                      name:"name"
+                    }}
                     labelText={t('Name')}
                     id="name"
                     formControlProps={{
@@ -69,6 +76,9 @@ class WorkSection extends React.Component {
                 </GridItem>
                 <GridItem xs={12} sm={12} md={4}>
                   <CustomInput
+                    inputProps={{
+                      name:"email"
+                    }}
                     labelText={t('Email')}
                     id="email"
                     formControlProps={{
@@ -78,6 +88,9 @@ class WorkSection extends React.Component {
                 </GridItem>
                 <GridItem xs={12} sm={12} md={4}>
                   <CustomInput
+                    inputProps={{
+                      name:"phone"
+                    }}
                     labelText={t('Phone')}
                     id="phone"
                     formControlProps={{
@@ -89,6 +102,9 @@ class WorkSection extends React.Component {
               <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={12}>
                   <CustomInput
+                    inputProps={{
+                      name:"message"
+                    }}
                     labelText={t('Message')}
                     id="message"
                     formControlProps={{
@@ -101,19 +117,19 @@ class WorkSection extends React.Component {
                   />
                 </GridItem>
               </GridContainer>
-              <GridContainer justify="center">
-                <GridItem xs={12} sm={12} md={12} className={classes.captcha}>
-                  <Recaptcha
-                    sitekey="6LdKdK0UAAAAAM_v3X0sf8lMHmoHYSYfprVUOWQV"
-                    render="explicit"
-                    onloadCallback={this.recaptchaLoaded}
-                    verifyCallback={this.verifyCallback}
-                  />
-                </GridItem>
-              </GridContainer>
+              {/*<GridContainer justify="center">*/}
+                {/*<GridItem xs={12} sm={12} md={12} className={classes.captcha}>*/}
+                  {/*<Recaptcha*/}
+                    {/*sitekey="6LdKdK0UAAAAAM_v3X0sf8lMHmoHYSYfprVUOWQV"*/}
+                    {/*render="explicit"*/}
+                    {/*onloadCallback={this.recaptchaLoaded}*/}
+                    {/*verifyCallback={this.verifyCallback}*/}
+                  {/*/>*/}
+                {/*</GridItem>*/}
+              {/*</GridContainer>*/}
               <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={12} className={classes.textCenter}>
-                  <Button color="primary" onClick={this.handleSend}>{t('Send')}</Button>
+                  <Button type="submit" color="primary">{t('Send')}</Button>
                 </GridItem>
               </GridContainer>
             </form>
