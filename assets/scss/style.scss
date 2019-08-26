@@ -26,6 +26,10 @@
   margin-right: 3em!important;
 }
 
+.ml-1 {
+  margin-left: 1em!important;
+}
+
 .p-0 {
   padding: 0!important;
 }
@@ -199,6 +203,14 @@ main.react-images__pager {
 .contactInput div {
   //margin-bottom: 3px!important;
 }
+
+.customDropdownLanguage span {
+  color: inherit!important;
+}
+
+//.customDropdownLanguage span span {
+//  color: inherit!important;
+//}
 
 .customDropdownLanguage .material-icons {
   font-size: 20px!important;

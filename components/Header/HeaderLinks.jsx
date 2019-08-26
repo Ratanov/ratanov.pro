@@ -153,7 +153,7 @@ function HeaderLinks({ ...props }) {
           {/*</Button>*/}
         {/*</Tooltip>*/}
       {/*</ListItem>*/}
-      <ListItem className={classes.listItem}>
+      <ListItem className={classes.listItem+" ml-1"}>
         <Languages />
       </ListItem>
     </List>

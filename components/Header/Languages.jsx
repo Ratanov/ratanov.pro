@@ -30,55 +30,92 @@ class Languages extends React.Component {
     const { classes } = this.props;
     return (
       <div className="customDropdownLanguage">
-        <CustomDropdown
-          left
-          hoverColor="primary"
-          // dropdownHeader="Language"
-          buttonIcon="language"
-          buttonProps={{
-            className: classes.navLink,
-            color: "transparent"
-          }}
-          dropdownList={[
-            <FormControl
-              component="fieldset"
-              className={classes.formControl}
-            >
-              <RadioGroup
-                aria-label="language"
-                name="language"
-                className={classes.group}
-                value={this.state.value}
-                onChange={this.handleChange}
-              >
-                <FormControlLabel
-                  value="ru"
-                  control={<Radio />}
-                  label="Russian"
-                />
-              </RadioGroup>
-            </FormControl>,
-            { divider: true },
-            <FormControl
-              component="fieldset"
-              className={classes.formControl}
-            >
-              <RadioGroup
-                aria-label="language"
-                name="language"
-                className={classes.group}
-                value={this.state.value}
-                onChange={this.handleChange}
-              >
-                <FormControlLabel
-                  value="en"
-                  control={<Radio />}
-                  label="English"
-                />
-              </RadioGroup>
-            </FormControl>
-          ]}
-        />
+        {/*<CustomDropdown*/}
+          {/*left*/}
+          {/*hoverColor="primary"*/}
+          {/*// dropdownHeader="Language"*/}
+          {/*buttonIcon="language"*/}
+          {/*buttonProps={{*/}
+            {/*className: classes.navLink,*/}
+            {/*color: "transparent"*/}
+          {/*}}*/}
+          {/*dropdownList={[*/}
+            {/*<FormControl*/}
+              {/*component="fieldset"*/}
+              {/*className={classes.formControl}*/}
+            {/*>*/}
+              {/*<RadioGroup*/}
+                {/*aria-label="language"*/}
+                {/*name="language"*/}
+                {/*className={classes.group}*/}
+                {/*value={this.state.value}*/}
+                {/*onChange={this.handleChange}*/}
+              {/*>*/}
+                {/*<FormControlLabel*/}
+                  {/*value="ru"*/}
+                  {/*control={<Radio />}*/}
+                  {/*label="Russian"*/}
+                {/*/>*/}
+              {/*</RadioGroup>*/}
+            {/*</FormControl>,*/}
+            {/*{ divider: true },*/}
+            {/*<FormControl*/}
+              {/*component="fieldset"*/}
+              {/*className={classes.formControl}*/}
+            {/*>*/}
+              {/*<RadioGroup*/}
+                {/*aria-label="language"*/}
+                {/*name="language"*/}
+                {/*className={classes.group}*/}
+                {/*value={this.state.value}*/}
+                {/*onChange={this.handleChange}*/}
+              {/*>*/}
+                {/*<FormControlLabel*/}
+                  {/*value="en"*/}
+                  {/*control={<Radio />}*/}
+                  {/*label="English"*/}
+                {/*/>*/}
+              {/*</RadioGroup>*/}
+            {/*</FormControl>*/}
+          {/*]}*/}
+        {/*/>*/}
+        <FormControl
+          component="fieldset"
+          className={classes.formControl}
+        >
+          <RadioGroup
+            aria-label="language"
+            name="language"
+            className={classes.group}
+            value={this.state.value}
+            onChange={this.handleChange}
+          >
+            <FormControlLabel
+              value="ru"
+              control={<Radio />}
+              label="Рус"
+            />
+          </RadioGroup>
+        </FormControl>,
+        {/*{ divider: true },*/}
+        <FormControl
+          component="fieldset"
+          className={classes.formControl}
+        >
+          <RadioGroup
+            aria-label="language"
+            name="language"
+            className={classes.group}
+            value={this.state.value}
+            onChange={this.handleChange}
+          >
+            <FormControlLabel
+              value="en"
+              control={<Radio />}
+              label="Eng"
+            />
+          </RadioGroup>
+        </FormControl>
       </div>
     );
   }
