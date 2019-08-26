@@ -42,7 +42,7 @@ class HomePage extends React.Component {
             }}
             {...rest}
         />
-        <Parallax big filter image={require("assets/img/bg4.jpg")}>
+        <Parallax big filter image={require("assets/img/bg1.jpg")}>
           <div className={classes.container}>
             <GridContainer>
               <GridItem>
