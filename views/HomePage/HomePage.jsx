@@ -11,6 +11,7 @@ import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
+import Button from "components/CustomButtons/Button.jsx";
 
 import homePageStyle from "assets/jss/material-kit-react/views/homePageStyle.jsx";
 
@@ -44,22 +45,26 @@ class HomePage extends React.Component {
         />
         <Parallax big filter image={require("assets/img/bg1.jpg")}>
           <div className={classes.container}>
-            <GridContainer>
-              <GridItem>
+            <GridContainer className={classes.containerBrand}>
+              <GridItem className="p-0">
                 <div className={classes.brand}>
                   <h1 className={classes.title}>{t('HomePage Brand Title')}</h1>
                   <h3 className={classes.subtitle}>{t('HomePage Brand Subtitle')}</h3>
                 </div>
               </GridItem>
             </GridContainer>
-            <ScrollLink
-              className={classes.scrolldown}
-              to="scroll-to-container"
-              spy={true}
-              smooth={true}
-              duration={1000} >
-              <i className={"fas fa-chevron-down icon-jump"} />
-            </ScrollLink>
+            <GridContainer className={classes.containerScrollDown} justify="center">
+              <ScrollLink
+                className={classes.scrolldown}
+                to="scroll-to-container"
+                spy={true}
+                smooth={true}
+                duration={1000} >
+                <Button simple className={classes.btnScrollDown}>
+                  <i className="fas fa-chevron-down icon-jump mr-0" />
+                </Button>
+              </ScrollLink>
+            </GridContainer>
           </div>
         </Parallax>
         <div className={classNames(classes.main, classes.mainRaised)+" home-container-mobile"}>

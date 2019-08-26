@@ -4,6 +4,9 @@ const homePageStyle = {
   container: {
     zIndex: "12",
     color: "#FFFFFF",
+    display: "flex",
+    flexDirection: "column",
+    height: "80%",
     ...container
   },
   title: {
@@ -41,15 +44,24 @@ const homePageStyle = {
       "0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)"
   },
   scrolldown: {
-    position: "absolute",
-    bottom: "0",
-    left: "50%",
-    marginBottom: "100px",
+    // position: "absolute",
+    // bottom: "0",
+    // left: "50%",
+    paddingBottom: "20px",
     color: "white",
     cursor: "pointer",
     "&:hover, &:focus": {
       color: "white",
     }
+  },
+  btnScrollDown: {
+    padding: "20px 15px"
+  },
+  containerBrand: {
+    margin: "auto auto 0 0"
+  },
+  containerScrollDown: {
+    margin: "auto auto 0 auto"
   }
 };
 
