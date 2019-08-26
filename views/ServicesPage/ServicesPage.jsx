@@ -121,16 +121,16 @@ class ServicesPage extends React.Component {
                   </CardBody>
                 </Card>
               </GridItem>
-              <GridItem xs={12} sm={12} md={4}>
-                <Card className={classes[this.state.cardAnimaton]+" cardService"}>
-                  <CardHeader color="primary" className={classes.cardHeader+" cardServiceHeader"}>
-                    <h3>{t('Service6')}</h3>
-                  </CardHeader>
-                  <CardBody className="contactInput">
-                    <p>{t('Service6Description')}</p>
-                  </CardBody>
-                </Card>
-              </GridItem>
+              {/*<GridItem xs={12} sm={12} md={4}>*/}
+                {/*<Card className={classes[this.state.cardAnimaton]+" cardService"}>*/}
+                  {/*<CardHeader color="primary" className={classes.cardHeader+" cardServiceHeader"}>*/}
+                    {/*<h3>{t('Service6')}</h3>*/}
+                  {/*</CardHeader>*/}
+                  {/*<CardBody className="contactInput">*/}
+                    {/*<p>{t('Service6Description')}</p>*/}
+                  {/*</CardBody>*/}
+                {/*</Card>*/}
+              {/*</GridItem>*/}
             </GridContainer>
           </div>
           <Footer whiteFont />
