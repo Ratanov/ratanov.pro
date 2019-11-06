@@ -18,7 +18,7 @@ import homePageStyle from "assets/jss/material-kit-react/views/homePageStyle.jsx
 // Sections for this page
 import ProductSection from "./Sections/ProductSection.jsx";
 import WorkSection from "./Sections/WorkSection.jsx";
-import PortfolioSection from "./Sections/PortfolioSection.jsx";
+import SectionContent from "./Sections/SectionContent.jsx";
 import ScrollToTopOnMount from "components/ScrollToTop/ScrollToTop.jsx";
 
 // react-scroll https://github.com/fisshy/react-scroll
@@ -70,7 +70,7 @@ class HomePage extends React.Component {
         <div className={classNames(classes.main, classes.mainRaised)+" home-container-mobile"}>
           <div name="scroll-to-container" className={classes.container+" containerMaxContent"}>
             <ProductSection />
-            <PortfolioSection />
+            <SectionContent />
             <WorkSection />
           </div>
         </div>

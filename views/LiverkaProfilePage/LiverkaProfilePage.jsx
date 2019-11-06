@@ -56,7 +56,7 @@ class LiverkaProfilePage extends React.Component {
                   </div>
                   <div className={classes.name}>
                     <h3 className={classes.title}>{t('Gubanova Valeria')}</h3>
-                    <h6>{t('secondPosition')}</h6>
+                    <h6 className={classes.secondTitle}>{t('secondPosition')}</h6>
                     <Tooltip
                       id="tooltip-liverka-vk"
                       title="VK"

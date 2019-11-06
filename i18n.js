@@ -18,7 +18,7 @@ i18n
   //.use(reactI18nextModule) // passes i18n down to react-i18next
   //.use(initReactI18next)
   .init({
-    debug: true,
+    debug: false,
     lng: "ru",
     fallbackLng: "ru", // use en if detected lng is not available
 

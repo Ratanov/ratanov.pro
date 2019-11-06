@@ -16,8 +16,11 @@ const profilePageStyle = {
   description: {
     margin: "0 auto 0",
     // maxWidth: "600px",
-    color: "#999",
-    textAlign: "left !important"
+    color: "#767676",
+    textAlign: "left!important",
+    "& p": {
+      fontSize: "16px"
+    }
   },
   name: {
     marginTop: "-80px"
@@ -40,7 +43,13 @@ const profilePageStyle = {
     position: "relative",
     marginTop: "30px",
     minHeight: "32px",
-    textDecoration: "none"
+    textDecoration: "none",
+    "& h4": {
+      fontWeight: "700"
+    }
+  },
+  secondTitle: {
+    marginTop: "0"
   },
   socials: {
     marginTop: "0",
@@ -51,7 +60,7 @@ const profilePageStyle = {
     height: "100%",
     lineHeight: "41px",
     fontSize: "20px",
-    color: "#999"
+    color: "#767676"
   },
   profileDescription: {
     padding: "20px 30px"

@@ -20,93 +20,93 @@ class WebsiteSection extends React.Component {
   render() {
     const { classes, t } = this.props;
     return (
-      <div className={classes.section}>
-        {/*<div className={classes.container+" p-0"}>*/}
-          {/*<GridContainer justify="center">*/}
-            {/*<GridItem xs={12} sm={12} md={8}>*/}
-              {/*<h2 className={classes.title}>Наши работы</h2>*/}
-            {/*</GridItem>*/}
-          {/*</GridContainer>*/}
-          <GridContainer justify="center" className={"m-0"}>
-            <GridItem xs={12} sm={12} md={4} className={"home-page-portfolio-item"}>
-              <img
-                src={bozik}
-                alt="bozik-art.ru"
-                className={
-                  classes.imgRaised +
-                  " " +
-                  classes.imgRounded +
-                  " " +
-                  classes.imgFluid
-                }
-              />
-              <h5 className={classes.portfolioTitle}>{t('WebsiteSection FirstWork')}</h5>
-              <a href="https://bozik.ru/" target="_blank" rel="noopener noreferrer" className={classes.link}>
-                <Button color="primary" size="sm" simple>
-                  https://bozik.ru/
-                </Button>
-              </a>
-            </GridItem>
-            <GridItem xs={12} sm={12} md={4} className={"home-page-portfolio-item"}>
-              <img
-                src={liverka}
-                alt="liverka-art.ru"
-                className={
-                  classes.imgRaised +
-                  " " +
-                  classes.imgRounded +
-                  " " +
-                  classes.imgFluid
-                }
-              />
-              <h5 className={classes.portfolioTitle}>{t('WebsiteSection SecondWork')}</h5>
-              <a href="https://liverka-art.ru/" target="_blank" rel="noopener noreferrer" className={classes.link}>
-                <Button color="primary" size="sm" simple>
-                  https://liverka-art.ru/
-                </Button>
-              </a>
-            </GridItem>
-            <GridItem xs={12} sm={12} md={4} className={"home-page-portfolio-item"}>
-              <img
-                src={godmed}
-                alt="godmed.ru"
-                className={
-                  classes.imgRaised +
-                  " " +
-                  classes.imgRounded +
-                  " " +
-                  classes.imgFluid
-                }
-              />
-              <h5 className={classes.portfolioTitle}>{t('WebsiteSection ThirdWork')}</h5>
-              <a href="https://godmed.ru/" target="_blank" rel="noopener noreferrer" className={classes.link}>
-                <Button color="primary" size="sm" simple>
-                  https://godmed.ru/
-                </Button>
-              </a>
-            </GridItem>
-            <GridItem xs={12} sm={12} md={4} className={"home-page-portfolio-item"}>
-              <img
-                src={chipgas}
-                alt="Chipgas.ru"
-                className={
-                  classes.imgRaised +
-                  " " +
-                  classes.imgRounded +
-                  " " +
-                  classes.imgFluid
-                }
-              />
-              <h5 className={classes.portfolioTitle}>{t('WebsiteSection FourthWork')}</h5>
-              <a href="https://chipgas.ru/" target="_blank" rel="noopener noreferrer" className={classes.link}>
-                <Button color="primary" size="sm" simple>
-                  https://chipgas.ru/
-                </Button>
-              </a>
-            </GridItem>
-          </GridContainer>
-        {/*</div>*/}
-      </div>
+        <div className={classes.section+" pt-80px"}>
+          {/*<div className={classes.container+" p-0"}>*/}
+            {/*<GridContainer justify="center">*/}
+              {/*<GridItem xs={12} sm={12} md={8}>*/}
+                {/*<h2 className={classes.title}>Наши работы</h2>*/}
+              {/*</GridItem>*/}
+            {/*</GridContainer>*/}
+            <GridContainer justify="center" className={"m-0"}>
+              <GridItem xs={12} sm={12} md={4} className={"home-page-portfolio-item"}>
+                <img
+                  src={bozik}
+                  alt="bozik-art.ru"
+                  className={
+                    classes.imgRaised +
+                    " " +
+                    classes.imgRounded +
+                    " " +
+                    classes.imgFluid
+                  }
+                />
+                <h5 className={classes.portfolioTitle}>{t('WebsiteSection FirstWork')}</h5>
+                <a href="https://bozik.ru/" target="_blank" rel="noopener noreferrer" className={classes.link}>
+                  <Button color="primary" size="sm" simple>
+                    https://bozik.ru/
+                  </Button>
+                </a>
+              </GridItem>
+              <GridItem xs={12} sm={12} md={4} className={"home-page-portfolio-item"}>
+                <img
+                  src={liverka}
+                  alt="liverka-art.ru"
+                  className={
+                    classes.imgRaised +
+                    " " +
+                    classes.imgRounded +
+                    " " +
+                    classes.imgFluid
+                  }
+                />
+                <h5 className={classes.portfolioTitle}>{t('WebsiteSection SecondWork')}</h5>
+                <a href="https://liverka-art.ru/" target="_blank" rel="noopener noreferrer" className={classes.link}>
+                  <Button color="primary" size="sm" simple>
+                    https://liverka-art.ru/
+                  </Button>
+                </a>
+              </GridItem>
+              <GridItem xs={12} sm={12} md={4} className={"home-page-portfolio-item"}>
+                <img
+                  src={godmed}
+                  alt="godmed.ru"
+                  className={
+                    classes.imgRaised +
+                    " " +
+                    classes.imgRounded +
+                    " " +
+                    classes.imgFluid
+                  }
+                />
+                <h5 className={classes.portfolioTitle}>{t('WebsiteSection ThirdWork')}</h5>
+                <a href="https://godmed.ru/" target="_blank" rel="noopener noreferrer" className={classes.link}>
+                  <Button color="primary" size="sm" simple>
+                    https://godmed.ru/
+                  </Button>
+                </a>
+              </GridItem>
+              <GridItem xs={12} sm={12} md={4} className={"home-page-portfolio-item"}>
+                <img
+                  src={chipgas}
+                  alt="Chipgas.ru"
+                  className={
+                    classes.imgRaised +
+                    " " +
+                    classes.imgRounded +
+                    " " +
+                    classes.imgFluid
+                  }
+                />
+                <h5 className={classes.portfolioTitle}>{t('WebsiteSection FourthWork')}</h5>
+                <a href="https://chipgas.ru/" target="_blank" rel="noopener noreferrer" className={classes.link}>
+                  <Button color="primary" size="sm" simple>
+                    https://chipgas.ru/
+                  </Button>
+                </a>
+              </GridItem>
+            </GridContainer>
+          {/*</div>*/}
+        </div>
     );
   }
 }

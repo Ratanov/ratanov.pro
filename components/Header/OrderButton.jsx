@@ -8,7 +8,7 @@ import DialogTitle from "@material-ui/core/DialogTitle";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogActions from "@material-ui/core/DialogActions";
 // @material-ui/icons
-import { Star, StarBorder, Close } from "@material-ui/icons";
+import { Star, StarBorder, Close, Send } from "@material-ui/icons";
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
@@ -63,10 +63,9 @@ class OrderButton extends React.Component {
           <StarBorder className={"iconOrderStarHover"} />
         </Button>
         <Dialog
-          fullScreen
           classes={{
             root: classes.center,
-            paper: classes.modal,
+            paper: classes.modal+" customModal"
           }}
           open={this.state.classicModal}
           TransitionComponent={Transition}
@@ -138,7 +137,7 @@ class OrderButton extends React.Component {
                   inputProps={{
                     name:"message",
                     multiline: true,
-                    rows: 5
+                    rows: 4
                   }}
                   labelText={<Trans>Message</Trans>}
                   id="message"
@@ -156,15 +155,16 @@ class OrderButton extends React.Component {
             </GridContainer>
             </DialogContent>
             <DialogActions className={classes.modalFooter}>
-              <Button type="submit" color="transparent" simple>
-                <Trans>Send</Trans>
-              </Button>
               <Button
                 onClick={() => this.handleClose("classicModal")}
-                color="danger"
+                color="transparent"
                 simple
               >
                 <Trans>Close</Trans>
+              </Button>
+              <Button type="submit" color="primary" round  className={"linkIcon"}>
+                <Trans>Send</Trans>
+                <Send className={"iconArrowForward"} />
               </Button>
             </DialogActions>
           </form>

@@ -19,12 +19,16 @@ const teamStyle = {
     marginLeft: "auto",
     marginRight: "auto"
   },
-  cardTitle,
+  cardTitle: {
+    ...cardTitle,
+    marginTop: "2rem"
+  },
   smallTitle: {
     color: "#6c757d"
   },
   description: {
-    color: "#999"
+    color: "#767676",
+    fontSize: "16px"
   },
   justifyCenter: {
     justifyContent: "center !important"
@@ -38,7 +42,7 @@ const teamStyle = {
     height: "100%",
     lineHeight: "41px",
     fontSize: "20px",
-    color: "#999999"
+    color: "#767676"
   },
   margin5: {
     margin: "5px"

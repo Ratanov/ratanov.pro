@@ -58,7 +58,7 @@ class RatanovProfilePage extends React.Component {
                   </div>
                   <div className={classes.name}>
                     <h3 className={classes.title}>{t('Ratanov Oleg')}</h3>
-                    <h6>{t('firstPosition')}</h6>
+                    <h6 className={classes.secondTitle}>{t('firstPosition')}</h6>
                     <Tooltip
                       id="tooltip-ratanov-github"
                       title="GitHub"
@@ -171,8 +171,7 @@ class RatanovProfilePage extends React.Component {
               </GridItem>
             </GridContainer>
           </div>
-          <br /><br /><br />
-          <div className={"portfolioSection-mobile"}>
+          <div className={"portfolioSection-mobile"} id="websites">
             <WebsiteSection />
           </div>
         </div>

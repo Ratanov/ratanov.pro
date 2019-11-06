@@ -7,18 +7,18 @@ const workStyle = {
     ...container
   },
   section: {
-    padding: "42px 0"
+    padding: "30px 0 50px"
   },
   title: {
     ...title,
-    marginBottom: "50px",
-    marginTop: "30px",
+    marginBottom: "30px",
+    marginTop: "0",
     minHeight: "32px",
     textDecoration: "none",
     textAlign: "center"
   },
   description: {
-    color: "#999",
+    color: "#767676",
     textAlign: "center"
   },
   textCenter: {

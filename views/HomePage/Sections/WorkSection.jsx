@@ -1,46 +1,40 @@
 import React from "react";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-
 // @material-ui/icons
-
+import { Send } from "@material-ui/icons";
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import CustomInput from "components/CustomInput/CustomInput.jsx";
 import Button from "components/CustomButtons/Button.jsx";
-
 import workStyle from "assets/jss/material-kit-react/views/homePageSections/workStyle.jsx";
 import { sendFormEmail } from "../../../utils";
-
 import { translate } from "react-i18next";
 
 class WorkSection extends React.Component {
   constructor(props) {
     super(props);
-
     this.form = React.createRef();
-
-    this.recaptchaLoaded = this.recaptchaLoaded.bind(this);
-    this.verifyCallback = this.verifyCallback.bind(this);
+    // this.recaptchaLoaded = this.recaptchaLoaded.bind(this);
+    // this.verifyCallback = this.verifyCallback.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-
-    this.state = {
-      isVerified: false
-    };
+    // this.state = {
+    //   isVerified: false
+    // };
   }
 
-  recaptchaLoaded() {
-    console.log('capcha successfully loaded');
-  }
+  // recaptchaLoaded() {
+  //   console.log('capcha successfully loaded');
+  // }
 
-  verifyCallback(response) {
-    if (response) {
-      this.setState({
-        isVerified: true
-      })
-    }
-  }
+  // verifyCallback(response) {
+  //   if (response) {
+  //     this.setState({
+  //       isVerified: true
+  //     })
+  //   }
+  // }
 
   handleSubmit(event) {
     event.preventDefault();
@@ -57,10 +51,10 @@ class WorkSection extends React.Component {
     return (
       <div className={classes.section} name="scroll-to-order">
         <GridContainer justify="center">
-          <GridItem xs={12} sm={12} md={8}>
+          <GridItem xs={12} sm={12} md={9}>
             <h2 className={classes.title}>{t('WorkSection Title')}</h2>
             <h4 className={classes.description}>{t('WorkSection Description')}</h4>
-            <form ref={this.form} onSubmit={this.handleSubmit}>
+            <form className="mb-0" ref={this.form} onSubmit={this.handleSubmit}>
               <GridContainer>
                 <GridItem xs={12} sm={12} md={4}>
                   <CustomInput
@@ -127,7 +121,10 @@ class WorkSection extends React.Component {
               {/*</GridContainer>*/}
               <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={12} className={classes.textCenter}>
-                  <Button type="submit" color="primary">{t('Send')}</Button>
+                  <Button round type="submit" color="primary" className={"linkIcon"}>
+                    {t('Send')}
+                    <Send className={"iconArrowForward"} />
+                  </Button>
                 </GridItem>
               </GridContainer>
             </form>

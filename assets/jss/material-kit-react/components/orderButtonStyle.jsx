@@ -53,11 +53,13 @@ const orderButtonStyle = theme => ({
   ...modalStyle,
   modalHeader: {
     paddingLeft: "15px",
-    paddingRight: "15px"
+    paddingRight: "15px",
+    paddingBottom: "10px"
   },
   modalBody: {
     paddingLeft: "15px",
-    paddingRight: "15px"
+    paddingRight: "15px",
+    paddingBottom: "0"
   },
   modalFooter: {
     paddingLeft: "15px",
