@@ -61,12 +61,28 @@ class Parallax extends React.Component {
         className={parallaxClasses}
         style={{
           ...style,
-          backgroundImage: "url(" + image + ")",
+          // backgroundImage: "url(" + image + ")",
           ...this.state
         }}
         ref="parallax"
       >
         {children}
+        <div className="waveWrapper waveAnimation">
+          <div className={"waveWrapperInner"}>
+            <div className=" bgTop">
+              <div className="wave waveTop"
+                   style={{backgroundImage: "url('https://ratanov.pro/img/waves/wave-top.png')"}}></div>
+            </div>
+            <div className=" bgMiddle">
+              <div className="wave waveMiddle"
+                   style={{backgroundImage: "url('https://ratanov.pro/img/waves/wave-mid.png')"}}></div>
+            </div>
+            <div className=" bgBottom">
+              <div className="wave waveBottom"
+                   style={{backgroundImage: "url('https://ratanov.pro/img/waves/wave-bot.png')"}}></div>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
