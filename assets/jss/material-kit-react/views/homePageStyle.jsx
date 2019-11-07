@@ -1,27 +1,32 @@
 import { container, title } from "assets/jss/material-kit-react.jsx";
 
-const homePageStyle = {
+const homePageStyle = theme => ({
   container: {
     zIndex: "12",
     color: "#FFFFFF",
     display: "flex",
     flexDirection: "column",
-    height: "80%",
+    height: "100%",
     ...container
   },
   title: {
     ...title,
     display: "inline-block",
     position: "relative",
-    margin: ".88rem 0",
+    margin: "0 0 1.25rem",
     minHeight: "32px",
     color: "#FFFFFF",
     textDecoration: "none"
   },
   subtitle: {
-    fontSize: "1.313rem",
+    fontSize: "1.25rem",
     maxWidth: "500px",
-    margin: ".88rem 0 0"
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "1rem"
+    }
+  },
+  brandDescription: {
+    margin: "1.25rem 0"
   },
   main: {
     background: "#FFFFFF",
@@ -44,10 +49,6 @@ const homePageStyle = {
       "0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)"
   },
   scrolldown: {
-    // position: "absolute",
-    // bottom: "0",
-    // left: "50%",
-    paddingBottom: "20px",
     color: "white",
     cursor: "pointer",
     "&:hover, &:focus": {
@@ -55,14 +56,20 @@ const homePageStyle = {
     }
   },
   btnScrollDown: {
-    padding: "20px 15px"
+    padding: "15px",
+    margin: "0"
   },
   containerBrand: {
-    margin: "auto auto 0 0"
+    margin: "auto auto auto 0"
   },
   containerScrollDown: {
-    margin: "auto auto 0 auto"
+    position: "absolute",
+    bottom: "10%",
+    marginLeft: "auto",
+    marginRight: "auto",
+    left: "0",
+    right: "0"
   }
-};
+});
 
 export default homePageStyle;

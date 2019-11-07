@@ -18,8 +18,6 @@ import presentationiPadComments from "assets/img/presentationViewSectionComponen
 import presentationiPadTable from "assets/img/presentationViewSectionComponent/ipad-table.jpg";
 
 import { translate } from "react-i18next";
-// @material-ui/icons
-import { ArrowForward } from "@material-ui/icons";
 
 class SectionContent extends React.Component {
   render() {
@@ -41,14 +39,8 @@ class SectionContent extends React.Component {
                 beautiful and easy to use for the end user navigating your
                 website.{" "}
               </p>
-              <Link to="/about/oleg-ratanov#websites" className={classes.navLink+" linkIcon"}>
-                <Button
-                  color="primary"
-                  round
-                >
-                  Посмотреть работы
-                  <ArrowForward className={"iconArrowForward"} />
-                </Button>
+              <Link to="/about/oleg-ratanov#websites" className={classes.navLink}>
+                <Button color="primary" className="btn-big m-0">Посмотреть работы</Button>
               </Link>
             </GridItem>
             <GridItem md={8}>

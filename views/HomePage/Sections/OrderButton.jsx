@@ -8,7 +8,7 @@ import DialogTitle from "@material-ui/core/DialogTitle";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogActions from "@material-ui/core/DialogActions";
 // @material-ui/icons
-import { Star, StarBorder, Close, Send } from "@material-ui/icons";
+import { Close } from "@material-ui/icons";
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
@@ -16,10 +16,11 @@ import Button from "components/CustomButtons/Button.jsx";
 import orderButtonStyle from "assets/jss/material-kit-react/components/orderButtonStyle.jsx";
 import CustomInput from "components/CustomInput/CustomInput.jsx";
 import { Trans } from 'react-i18next';
-import { sendFormEmail } from "../../utils";
+import { sendFormOrder } from "../../../utils";
+import MultipleSelect from "./MultipleSelect.jsx";
 
 function Transition(props) {
-  return <Slide direction="left" {...props} />;
+  return <Slide direction="right" {...props} />;
 }
 
 class OrderButton extends React.Component {
@@ -46,21 +47,19 @@ class OrderButton extends React.Component {
   }
   handleSubmit(event) {
     event.preventDefault();
-    sendFormEmail(this.form.current);
+    sendFormOrder(this.form.current);
   }
   render() {
     const { classes } = this.props;
     return (
-      <div>
+      <>
         <Button
           color="transparent"
           // block
-          className={classes.navLink+" buttonOrder"}
+          className={classes.navLink+" buttonOrder btn-big"}
           onClick={() => this.handleClickOpen("classicModal")}
         >
-          <Trans>Order</Trans>&nbsp;
-          <Star className={classes.iconOrder+" iconOrderStar"} />
-          <StarBorder className={"iconOrderStarHover"} />
+          <Trans>Order</Trans>
         </Button>
         <Dialog
           classes={{
@@ -132,6 +131,9 @@ class OrderButton extends React.Component {
                   }}
                 />
               </GridItem>
+              {/*<GridItem xs={12} sm={12} md={12}>*/}
+                {/*<MultipleSelect />*/}
+              {/*</GridItem>*/}
               <GridItem xs={12} sm={12} md={12}>
                 <CustomInput
                   inputProps={{
@@ -162,14 +164,13 @@ class OrderButton extends React.Component {
               >
                 <Trans>Close</Trans>
               </Button>
-              <Button type="submit" color="primary" round  className={"linkIcon"}>
+              <Button type="submit" color="primary">
                 <Trans>Send</Trans>
-                <Send className={"iconArrowForward"} />
               </Button>
             </DialogActions>
           </form>
         </Dialog>
-      </div>
+      </>
     );
   }
 }

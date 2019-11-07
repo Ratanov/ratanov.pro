@@ -19,11 +19,11 @@ class ProductSection extends React.Component {
     const { classes, t } = this.props;
     return (
       <div className={classes.section}>
-        <GridContainer justify="center">
-          <GridItem xs={10} md={8} className={"px-0"}>
-            <h3 className={classes.title+" home-txt"}>Material Kit React PRO is a Material-UI Kit with a fresh, new design inspired by Google's Material Design. You asked for it, so we built it. It's a great pleasure to introduce to you the material concepts in an easy to use and beautiful set of components.</h3>
-          </GridItem>
-        </GridContainer>
+        {/*<GridContainer justify="center">*/}
+          {/*<GridItem xs={10} md={8} className={"px-0"}>*/}
+            {/*<h3 className={classes.title+" home-txt"}>Material Kit React PRO is a Material-UI Kit with a fresh, new design inspired by Google's Material Design. You asked for it, so we built it. It's a great pleasure to introduce to you the material concepts in an easy to use and beautiful set of components.</h3>*/}
+          {/*</GridItem>*/}
+        {/*</GridContainer>*/}
         <GridContainer justify="center">
           <GridItem xs={12} md={8}>
             <h2 className={classes.title+" mt-30px"}>{t('ProductSection Title')}</h2>

@@ -13,7 +13,6 @@ import { PhoneInTalk } from "@material-ui/icons";
 
 // core components
 import Button from "components/CustomButtons/Button.jsx";
-import OrderButton from "components/Header/OrderButton.jsx";
 import Languages from "components/Header/Languages.jsx";
 
 import headerLinksStyle from "assets/jss/material-kit-react/components/headerLinksStyle.jsx";
@@ -38,9 +37,6 @@ function HeaderLinks({ ...props }) {
           {/*<Trans>Menu Contacts</Trans>*/}
         {/*</Link>*/}
       {/*</ListItem>*/}
-      <ListItem className={classes.listItem + " mr-1"}>
-        <OrderButton />
-      </ListItem>
       {/*<ListItem className={classes.listItem+" desktop-d-none"}>*/}
         {/*<a className={classes.telNavLink} href="tel:+7600878708">*/}
           {/*<Button*/}
@@ -153,9 +149,9 @@ function HeaderLinks({ ...props }) {
           {/*</Button>*/}
         {/*</Tooltip>*/}
       {/*</ListItem>*/}
-      <ListItem className={classes.listItem+" ml-1"}>
-        <Languages />
-      </ListItem>
+      {/*<ListItem className={classes.listItem+" ml-1"}>*/}
+        {/*<Languages />*/}
+      {/*</ListItem>*/}
     </List>
   );
 }

@@ -18,19 +18,19 @@ import homePageStyle from "assets/jss/material-kit-react/views/homePageStyle.jsx
 // Sections for this page
 import ProductSection from "./Sections/ProductSection.jsx";
 import WorkSection from "./Sections/WorkSection.jsx";
-import SectionContent from "./Sections/SectionContent.jsx";
+// import SectionContent from "./Sections/SectionContent.jsx";
 import ScrollToTopOnMount from "components/ScrollToTop/ScrollToTop.jsx";
+import OrderButton from "./Sections/OrderButton.jsx";
 
 // react-scroll https://github.com/fisshy/react-scroll
 import { Link as ScrollLink } from 'react-scroll';
-
 import { translate } from "react-i18next";
 
 class HomePage extends React.Component {
   render() {
     const { classes, t, ...rest } = this.props;
     return (
-      <div>
+      <>
         <ScrollToTopOnMount />
         <Header
             brand="RATANOV.PRO"
@@ -50,7 +50,12 @@ class HomePage extends React.Component {
               <GridItem className="p-0">
                 <div className={classes.brand}>
                   <h1 className={classes.title}>{t('HomePage Brand Title')}</h1>
-                  <h3 className={classes.subtitle}>{t('HomePage Brand Subtitle')}</h3>
+                  <div className={classes.brandDescription}>
+                    <h2 className={classes.subtitle}>{t('HomePage Brand Subtitle1')}</h2>
+                    <h2 className={classes.subtitle}>{t('HomePage Brand Subtitle2')}</h2>
+                    <h3 className={classes.subtitle}>{t('HomePage Brand Subtitle3')}</h3>
+                  </div>
+                  <OrderButton />
                 </div>
               </GridItem>
             </GridContainer>
@@ -71,12 +76,12 @@ class HomePage extends React.Component {
         <div className={classNames(classes.main, classes.mainRaised)+" home-container-mobile"}>
           <div name="scroll-to-container" className={classes.container+" containerMaxContent"}>
             <ProductSection />
-            <SectionContent />
+            {/*<SectionContent />*/}
             <WorkSection />
           </div>
         </div>
         <Footer />
-      </div>
+      </>
     );
   }
 }

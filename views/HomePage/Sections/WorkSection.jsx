@@ -1,8 +1,6 @@
 import React from "react";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-// @material-ui/icons
-import { Send } from "@material-ui/icons";
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
@@ -51,12 +49,12 @@ class WorkSection extends React.Component {
     return (
       <div className={classes.section} name="scroll-to-order">
         <GridContainer justify="center">
-          <GridItem xs={12} sm={12} md={9}>
+          <GridItem xs={12} sm={10} md={8}>
             <h2 className={classes.title}>{t('WorkSection Title')}</h2>
             <h4 className={classes.description}>{t('WorkSection Description')}</h4>
             <form className="mb-0" ref={this.form} onSubmit={this.handleSubmit}>
-              <GridContainer>
-                <GridItem xs={12} sm={12} md={4}>
+              <GridContainer justify="center">
+                <GridItem xs={12} sm={6} md={6}>
                   <CustomInput
                     inputProps={{
                       name:"name"
@@ -68,25 +66,13 @@ class WorkSection extends React.Component {
                     }}
                   />
                 </GridItem>
-                <GridItem xs={12} sm={12} md={4}>
+                <GridItem xs={12} sm={6} md={6}>
                   <CustomInput
                     inputProps={{
                       name:"email"
                     }}
                     labelText={t('Email')}
                     id="email"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                </GridItem>
-                <GridItem xs={12} sm={12} md={4}>
-                  <CustomInput
-                    inputProps={{
-                      name:"phone"
-                    }}
-                    labelText={t('Phone')}
-                    id="phone"
                     formControlProps={{
                       fullWidth: true
                     }}
@@ -99,7 +85,7 @@ class WorkSection extends React.Component {
                     inputProps={{
                       name:"message",
                       multiline: true,
-                      rows: 5
+                      rows: 4
                     }}
                     labelText={t('Message')}
                     id="message"
@@ -121,9 +107,8 @@ class WorkSection extends React.Component {
               {/*</GridContainer>*/}
               <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={12} className={classes.textCenter}>
-                  <Button round type="submit" color="primary" className={"linkIcon"}>
+                  <Button type="submit" color="primary" className="btn-big">
                     {t('Send')}
-                    <Send className={"iconArrowForward"} />
                   </Button>
                 </GridItem>
               </GridContainer>
