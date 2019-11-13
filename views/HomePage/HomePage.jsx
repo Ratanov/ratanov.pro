@@ -51,8 +51,8 @@ class HomePage extends React.Component {
                 <div className={classes.brand}>
                   <h1 className={classes.title}>{t('HomePage Brand Title')}</h1>
                   <div className={classes.brandDescription}>
-                    <h2 className={classes.subtitle}>{t('HomePage Brand Subtitle1')}</h2>
-                    <h2 className={classes.subtitle}>{t('HomePage Brand Subtitle2')}</h2>
+                    {/*<h2 className={classes.subtitle}>{t('HomePage Brand Subtitle1')}</h2>*/}
+                    {/*<h2 className={classes.subtitle}>{t('HomePage Brand Subtitle2')}</h2>*/}
                     <h3 className={classes.subtitle}>{t('HomePage Brand Subtitle3')}</h3>
                   </div>
                   <OrderButton />
