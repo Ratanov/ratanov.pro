@@ -19,7 +19,7 @@ import profile from "assets/img/faces/liverka.jpg";
 import liverkaProfilePageStyle from "assets/jss/material-kit-react/views/liverkaProfilePageStyle";
 
 import ScrollToTopOnMount from "components/ScrollToTop/ScrollToTop.jsx";
-import LiverkaPortfolio from "./LiverkaPortfolio.jsx";
+import LiverkaPortfolio2 from "./LiverkaPortfolio2.jsx";
 
 import { translate } from "react-i18next";
 
@@ -155,7 +155,7 @@ class LiverkaProfilePage extends React.Component {
               </GridItem>
             </GridContainer>
           </div>
-          <LiverkaPortfolio />
+          <LiverkaPortfolio2 />
         </div>
         <Footer />
       </div>
