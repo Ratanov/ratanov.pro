@@ -24,7 +24,7 @@ export default function LiverkaPortfolio2() {
   };
   return (
     <>
-      <Gallery photos={photos} direction="column" onClick={openLightbox} />
+      <Gallery photos={photos} direction="column" margin={0} onClick={openLightbox} />
       {viewerIsOpen ? (
         <Lightbox
           mainSrc={photos[photoIndex].src}
