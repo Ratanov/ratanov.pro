@@ -431,3 +431,25 @@ main.react-images__pager {
     min-width: 213px!important;
   }
 }
+
+/*gallery img fix*/
+@media (max-width: 515px) {
+  .react-photo-gallery--gallery div img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 516px) and (max-width: 915px) {
+  .react-photo-gallery--gallery div img {
+    width: 50%;
+  }
+}
+
+@media (min-width: 916px) and (max-width: 1519px) {
+  .react-photo-gallery--gallery div img {
+    width: 33.3%;
+  }
+  .react-photo-gallery--gallery div img:nth-child(3n) {
+    width: 33.4%!important;
+  }
+}

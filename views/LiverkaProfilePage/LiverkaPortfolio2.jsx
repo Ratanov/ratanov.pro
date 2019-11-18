@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Gallery from "react-photo-gallery";
+import Gallery from "react-photo-gallery"; //http://neptunian.github.io/react-photo-gallery/
 import { photos } from "./LiverkaPortfolioImages";
 import Lightbox from 'react-image-lightbox'; //https://github.com/frontend-collective/react-image-lightbox
 import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app
@@ -33,6 +33,8 @@ export default function LiverkaPortfolio2() {
           onCloseRequest={closeLightbox}
           onMovePrevRequest={PrevRequest}
           onMoveNextRequest={NextRequest}
+          animationDuration={200}
+          // imagePadding={50}
           // imageTitle={11}
           // imageCaption={22}
         />
