@@ -17,7 +17,6 @@ const infoStyle = {
   },
   iconWrapper: {
     float: "left",
-    marginTop: "24px",
     marginRight: "10px"
   },
   primary: {
@@ -60,8 +59,8 @@ const infoStyle = {
     float: "none"
   },
   iconVertical: {
-    width: "61px",
-    height: "61px"
+    width: "80px",
+    height: "80px"
   }
 };
 

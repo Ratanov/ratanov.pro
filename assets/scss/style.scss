@@ -106,7 +106,7 @@
 }
 
 .container-mobile {
-  margin: -30px 10px 0px!important;
+  margin: -30px 30px 0px!important;
   //margin: 0 10px 0!important;
 }
 
@@ -204,11 +204,11 @@ main.react-images__pager {
 
 @media (max-width: 959px) {
   .home-container-mobile {
-    margin: 0 8px 0!important;
+    margin: 0 15px 0!important;
     //box-shadow: none!important;
   }
   .container-mobile {
-    margin: -30px 8px 0!important;
+    margin: -30px 15px 0!important;
   }
   .get-in-touch {
     padding-right: 0!important;
@@ -452,4 +452,24 @@ main.react-images__pager {
   .react-photo-gallery--gallery div img:nth-child(3n) {
     width: 33.4%!important;
   }
+}
+
+.info-area {
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 8px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  height: 100%;
+  text-align: center;
+}
+
+.info-area .info-area__description {
+  padding: 0 30px 20px;
+}
+
+.info-area .info-area__icon {
+  padding-top: 60px;
+}
+
+.py-15px {
+  padding-top: 15px!important;
+  padding-bottom: 15px!important;
 }

@@ -38,16 +38,11 @@ function Footer({ ...props }) {
             {/*</ListItem>*/}
           {/*</List>*/}
         </div>
-        <div className={classes.right}>
-          Made with
-          <img src={reactLogo} className="react-logo" alt="React" />
-          <a
-            href="https://reactjs.org/"
-            className={"react-link"}
-          >
-            React
-          </a>
-        </div>
+        {/*<div className={classes.right}>*/}
+          {/*Made with*/}
+          {/*<img src={reactLogo} className="react-logo" alt="React" />*/}
+          {/*<a href="https://reactjs.org/" className={"react-link"}>React</a>*/}
+        {/*</div>*/}
       </div>
     </footer>
   );
