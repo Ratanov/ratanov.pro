@@ -58,7 +58,7 @@ class Parallax extends React.Component {
     });
     return (
       <div
-        className={parallaxClasses}
+        className={parallaxClasses+" dis-solar-syst"}
         style={{
           ...style,
           // backgroundImage: "url(" + image + ")",
@@ -67,21 +67,34 @@ class Parallax extends React.Component {
         ref="parallax"
       >
         {children}
-        <div className="waveWrapper waveAnimation">
-          <div className={"waveWrapperInner"}>
-            <div className=" bgTop">
-              <div className="wave waveTop"
-                   style={{backgroundImage: "url('https://ratanov.pro/img/waves/wave-top.png')"}}></div>
-            </div>
-            <div className=" bgMiddle">
-              <div className="wave waveMiddle"
-                   style={{backgroundImage: "url('https://ratanov.pro/img/waves/wave-mid.png')"}}></div>
-            </div>
-            <div className=" bgBottom">
-              <div className="wave waveBottom"
-                   style={{backgroundImage: "url('https://ratanov.pro/img/waves/wave-bot.png')"}}></div>
-            </div>
-          </div>
+        {/*<div className="waveWrapper waveAnimation">*/}
+          {/*<div className={"waveWrapperInner"}>*/}
+            {/*<div className=" bgTop">*/}
+              {/*<div className="wave waveTop"*/}
+                   {/*style={{backgroundImage: "url('https://ratanov.pro/img/waves/wave-top.png')"}}></div>*/}
+            {/*</div>*/}
+            {/*<div className=" bgMiddle">*/}
+              {/*<div className="wave waveMiddle"*/}
+                   {/*style={{backgroundImage: "url('https://ratanov.pro/img/waves/wave-mid.png')"}}></div>*/}
+            {/*</div>*/}
+            {/*<div className=" bgBottom">*/}
+              {/*<div className="wave waveBottom"*/}
+                   {/*style={{backgroundImage: "url('https://ratanov.pro/img/waves/wave-bot.png')"}}></div>*/}
+            {/*</div>*/}
+          {/*</div>*/}
+        {/*</div>*/}
+        <div className="solar-syst">
+          <div className="sun"></div>
+          <div className="mercury"></div>
+          <div className="venus"></div>
+          <div className="earth"></div>
+          <div className="mars"></div>
+          <div className="jupiter"></div>
+          <div className="saturn"></div>
+          <div className="uranus"></div>
+          <div className="neptune"></div>
+          <div className="pluto"></div>
+          <div className="asteroids-belt"></div>
         </div>
       </div>
     );

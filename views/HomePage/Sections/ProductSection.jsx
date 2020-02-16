@@ -24,7 +24,7 @@ class ProductSection extends React.Component {
             {/*<h3 className={classes.title+" home-txt"}>Material Kit React PRO is a Material-UI Kit with a fresh, new design inspired by Google's Material Design. You asked for it, so we built it. It's a great pleasure to introduce to you the material concepts in an easy to use and beautiful set of components.</h3>*/}
           {/*</GridItem>*/}
         {/*</GridContainer>*/}
-        <GridContainer justify="left">
+        <GridContainer justify="flex-start">
           <GridItem xs={12}>
             <h2 className={classes.title+" mt-30px"}>{t('ProductSection Title')}</h2>
             {/*<h5 className={classes.description}>*/}
