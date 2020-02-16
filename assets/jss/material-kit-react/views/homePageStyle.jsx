@@ -54,9 +54,9 @@ const homePageStyle = theme => ({
   btnScrollDown: {
     padding: "15px",
     margin: "0",
-    color: "rgba(0,0,0,.5);",
+    color: "rgba(255,255,255,.5);",
     "&:hover, &:focus": {
-      color: "rgba(0,0,0,.8);"
+      color: "rgba(255,255,255,1);"
     }
   },
   containerBrand: {
